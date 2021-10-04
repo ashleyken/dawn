@@ -6,10 +6,10 @@
     "colors_text": "#121212",
     "colors_outline_button_labels": "#5c9196",
     "colors_background_1": "#efefef",
-    "gradient_background_1": "linear-gradient(180deg, rgba(239,239,239,1) 75%, rgba(229,162,159,1) 100%)",
+    "gradient_background_1": "",
     "colors_background_2": "#44433e",
     "type_header_font": "assistant_n4",
-    "type_body_font": "assistant_n4",
+    "type_body_font": "sans-serif",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -33,7 +33,8 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo_width": 100,
+          "logo": "shopify:\/\/shop_images\/carmatslogo.png",
+          "logo_width": 250,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "show_line_separator": true,

@@ -1,0 +1,124 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * din-2014:
+ *   - http://typekit.com/eulas/00000000000000007735afe4
+ *   - http://typekit.com/eulas/00000000000000007735aff6
+ *
+ * © 2009-2021 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-10-01 14:01:03 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=bhi6agg&ht=tk&f=32224.32231&a=3656710&app=typekit&e=css");
+
+@font-face {
+font-family:"din-2014";
+src:url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/35b7e6/00000000000000007735afe4/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;
+}
+
+@font-face {
+font-family:"din-2014";
+src:url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/1fe1ce/00000000000000007735aff6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+:root {
+	--font-body-family: "din-2014",sans-serif, {{ settings.type_body_font.fallback_families }};
+	--font-body-weight: {{ 300 }};
+	
+	--font-heading-family: "din-2014",sans-serif, {{ settings.type_header_font.fallback_families }};
+	--font-heading-weight: {{ 700 }};
+}
+
+.relative {
+	position: relative;
+}
+
+
+
+
+/*
+remove padding from the logo on both versions
+*/
+.header__heading-link {	
+	padding: 0;
+}
+
+/*
+colour the search / basket icons
+*/
+.header__icon {
+	color: rgb(var(--color-base-accent-1));
+}
+
+
+/*
+colour the top menu text links
+*/
+.header__menu-item {
+	color: rgba(var(--color-base-accent-1));
+	font-weight: var(--font-heading-weight);
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+.header__menu-item:hover {
+	color: rgb(var(--color-base-accent-1));
+}
+
+/*
+thicken and colour border bottom
+*/
+.header-wrapper--border-bottom {
+	border-bottom: 0.2rem solid rgba(var(--color-base-accent-1));
+}
+
+
+
+
+/*
+add ribbon
+*/
+@media screen and (min-width: 990px) {
+	.header {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.header__heading-logo {
+		width: 69px;
+		height: 45px;
+	}
+	.header__heading-logo {
+		opacity: 0;
+	}
+	.logo_ribbon_overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		transition: top ease 300ms;
+	}
+	.shopify-section-header-hidden .logo_ribbon_overlay {
+		top: -230px;
+	}
+}
+
+
+
+.footer-block__heading {
+	display: none;	
+}
+.footer-block__details-content {
+	text-transform: uppercase;	
+	font-weight: var(--font-heading-weight);
+}
+@media screen and (min-width: 750px) {
+	.footer-block__details-content > p, .footer-block__details-content > li {
+		margin: 0;
+		line-height: 1.4;
+		color: #fff;
+	}
+}
