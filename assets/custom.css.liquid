@@ -32,6 +32,8 @@ font-display:auto;font-style:normal;font-weight:700;
 	
 	--font-heading-family: "din-2014",sans-serif, {{ settings.type_header_font.fallback_families }};
 	--font-heading-weight: {{ 700 }};
+	
+	--page-width: 110rem;
 }
 
 .relative {
@@ -40,6 +42,15 @@ font-display:auto;font-style:normal;font-weight:700;
 
 
 
+/*
+I've reduced --page-width: 160rem; to --page-width: 110rem; so need to restore for header and footer
+*/
+.header.page-width {
+	max-width: 160rem;
+}
+.footer__content-top.page-width {
+	max-width: 160rem;
+}
 
 /*
 remove padding from the logo on both versions
@@ -78,7 +89,10 @@ thicken and colour border bottom
 
 
 
-
+.header__heading-logo {
+	width: 50px;
+	height: 50px;
+}
 /*
 add ribbon
 */
@@ -89,7 +103,7 @@ add ribbon
 	}
 	.header__heading-logo {
 		width: 69px;
-		height: 45px;
+		height: 48px;
 	}
 	.header__heading-logo {
 		opacity: 0;
@@ -107,18 +121,138 @@ add ribbon
 }
 
 
-
-.footer-block__heading {
-	display: none;	
+.footer {
+	position: relative;
 }
+.footer::after{
+	content: '';
+	background-image: url('{{ "OCM_logo.svg" | asset_url }}');
+	background-size: cover;
+	width: 80px;
+	height: 80px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: calc(50% - 40px);
+	margin-top: -40px;
+}
+
+.footer__content-bottom {
+	background: rgba(var(--color-base-background-1));
+}
+
 .footer-block__details-content {
 	text-transform: uppercase;	
 	font-weight: var(--font-heading-weight);
 }
+
+.footer-block__details-content > p, .footer-block__details-content > li {
+	margin: 0;
+	line-height: 1.4;
+	color: rgba(var(--color-base-solid-button-labels));;
+}
+
+.footer-block.grid__item:nth-of-type(1) .footer-block__heading {
+	display: none;
+}
+.footer-block.grid__item:nth-of-type(2) .footer-block__heading {
+	display: none;
+}
+.footer-block.grid__item p strong {
+	color: rgba(var(--color-base-accent-1));
+}
+.footer-block.grid__item p a {
+	color: rgba(var(--color-base-solid-button-labels));
+	text-decoration: none;
+}
+.footer-block.grid__item p a:hover {
+	text-decoration: underline;
+}
+
+/*
+there's a separate /assets/section-footer.css included within /sections/footer.liquid so I'll have to use important for now unless I put the custom css right at the bottom?
+*/
+.footer-block.grid__item:nth-of-type(3) .footer-block__heading {
+	text-transform: uppercase;	
+	color: rgba(var(--color-base-accent-1));
+	margin-bottom: 0!important;
+	font-size: inherit!important;
+}
+.footer-block__details-content .list-menu__item--link {
+	font-size: inherit!important;
+	padding: 0!important;
+	color: rgba(var(--color-base-solid-button-labels))!important;
+	line-height: 1.5;
+}
+
+
+.footer-block--newsletter .footer-block__heading {
+	text-transform: uppercase;	
+	color: rgba(var(--color-base-accent-1));
+	font-size: inherit!important;
+}
+.newsletter-form__field-wrapper .field__input {
+	background-color: rgba(var(--color-base-solid-button-labels))!important;
+}
+
+.list-social__item {
+	background-color: rgba(var(--color-base-accent-1))!important;
+	margin-left: 0.4rem;
+}
+.list-social__link {
+	color: 	rgba(var(--color-base-solid-button-labels))!important;
+	padding: 0.7rem!important;
+}
+.list-social__item .icon {
+	width: 3rem!important;
+	height: 3rem!important;
+}
+
+
+.content-for-layout {
+	background: linear-gradient(180deg, rgba(239,239,239,1) 75%, rgba(229,162,159,1) 100%);
+}
+
+
+.banner__box {
+	text-transform: uppercase;
+	background: none;
+}
+.banner__box .banner__heading {
+	color: 	rgba(var(--color-base-solid-button-labels))!important;
+}
+
+#Slider-template--15125899378874__multi_column .multicolumn-list__item {
+	border: 0.1rem solid rgba(var(--color-foreground));
+}
+.multicolumn-list__item h3 {
+	text-transform: uppercase;
+	font-size: 3.0rem;
+}
+
 @media screen and (min-width: 750px) {
-	.footer-block__details-content > p, .footer-block__details-content > li {
-		margin: 0;
-		line-height: 1.4;
-		color: #fff;
+	#Slider-template--15125899378874__multi_column .multicolumn-list__item {
+		border: 0.1rem solid rgba(var(--color-foreground));
+		margin: 0 1rem;
+		padding-left: 0;
 	}
+}
+
+.find_my_car_holder {
+	background: rgb(var(--color-foreground));
+	padding: 2rem 5rem;
+	text-align: center;
+	font-weight: 700;
+	font-size: 4rem;
+}
+.find_my_car_title {
+	color: rgba(var(--color-base-solid-button-labels));
+}
+.find_my_car_select {
+	width: 100%;	
+	background-color: rgba(var(--color-base-solid-button-labels));
+	font-weight: 700;
+	font-size: 1.8rem;
+	color: rgba(var(--color-base-accent-1))!important;
 }

@@ -330,16 +330,8 @@
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if section.settings.logo != blank -%}
             <div class="relative">
-            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-              src="{{ section.settings.logo | img_url: image_size }}"
-              loading="lazy"
-              class="header__heading-logo"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-            <img src="https://cdn.shopify.com/s/files/1/0530/8678/1626/files/carmatslogo_256x256_crop_center.png?v=1633353872" class="logo_ribbon_overlay small-hide medium-hide">
+              <img src="{{ "OCM_logo.svg" | asset_url }}" class="header__heading-logo" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+              <img src="{{ "OCM_logoribbon.svg" | asset_url }}" class="logo_ribbon_overlay small-hide medium-hide">
             </div>
           {%- else -%}
             <span class="h2">{{ shop.name }}</span>

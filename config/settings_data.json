@@ -10,6 +10,9 @@
     "colors_background_2": "#44433e",
     "type_header_font": "assistant_n4",
     "type_body_font": "sans-serif",
+    "social_twitter_link": "http:\/\/www.twitter.com\/officialcarmats",
+    "social_facebook_link": "https:\/\/www.facebook.com\/OFFICIALCARMATS\/",
+    "social_pinterest_link": "http:\/\/www.pinterest.com\/officialcarmats\/",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -17,7 +20,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store Test",
+              "text": "",
               "color_scheme": "background-1",
               "link": ""
             }
@@ -47,21 +50,21 @@
           "footer-1": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
+              "heading": "Address",
               "subtext": "<p>Official Car Mats<\/p><p>Unit 5, East Chorley Business Park<\/p><p>Chorley<\/p><p>Lancashire<\/p><p>PR6 0BJ<\/p><p>UK<\/p>"
             }
           },
           "dfcaa1c8-fc60-400b-abca-96dd41cdb361": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
+              "heading": "Contact Info",
               "subtext": "<p><strong>Telephone Support<\/strong><\/p><p>01257 476006<\/p><p><strong>Email<\/strong><\/p><p><a href=\"mailto:service@officialcarmats.co.uk\" target=\"_blank\" title=\"mailto:service@officialcarmats.co.uk\">service@officialcarmats.co.uk<\/a><\/p>"
             }
           },
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Links",
               "menu": "footer"
             }
           }
@@ -74,8 +77,8 @@
         "settings": {
           "color_scheme": "background-2",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "show_social": false,
+          "newsletter_heading": "Subscribe to our mailing list",
+          "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true

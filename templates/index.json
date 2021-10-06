@@ -93,10 +93,14 @@
         "column2",
         "column3"
       ]
+    },
+    "find-my-car": {
+      "type": "find-my-car"
     }
   },
   "order": [
     "image_banner",
+    "find-my-car",
     "rich_text",
     "featured_products",
     "collage",
