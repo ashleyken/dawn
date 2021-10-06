@@ -2,109 +2,155 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
-      "settings": {
-        "desktop_text_box_position": "flex-end"
-      },
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_label_2": ""
+            "heading": "Personalised or plain premium quality exact fit car mats & boot liners made in the UK",
+            "heading_size": "medium"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
-      ]
+        "heading"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/carmatslide.png",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "find-my-car": {
+      "type": "find-my-car",
+      "settings": {
+      }
     },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
         "heading": {
-          "type": "heading"
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
         },
         "text": {
-          "type": "text"
-        },
-        "button": {
-          "type": "button"
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
         }
       },
       "block_order": [
         "heading",
-        "text",
-        "button"
-      ]
-    },
-    "featured_products": {
-      "type": "featured-collection",
+        "text"
+      ],
       "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "image_ratio": "square"
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
-    "collage": {
-      "type": "collage",
+    "1633519483fdefc816": {
+      "type": "image-with-text",
       "blocks": {
-        "video": {
-          "type": "video"
+        "1633519483fdefc816-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
         },
-        "product": {
-          "type": "product"
-        },
-        "collection": {
-          "type": "collection"
+        "1633519483fdefc816-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Supplying tailored car mats & boot liners for the world's top brands.<\/p>"
+          }
         }
       },
       "block_order": [
-        "video",
-        "product",
-        "collection"
-      ]
-    },
-    "video": {
-      "type": "video"
+        "1633519483fdefc816-0",
+        "1633519483fdefc816-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2021-10-06_at_12.39.11.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
     },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
-          "type": "column"
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-10-06_at_12.32.42.png",
+            "title": "Free Delivery",
+            "text": "<p>Your tailored car mats will usually be dispatched within 5-7 days of your order being placed with FREE UK DELIVERY included in the price.<br\/><br\/>We accept all major credit and debit cards as well as Paypal and our industry standard secure server software safeguards the confidentiality of your information at all times.<br\/><br\/>Place your order securely online or you can call a member of our team on 01257 476006 to discuss your needs - we'd love to hear from you!<\/p>"
+          }
         },
         "column2": {
-          "type": "column"
-        },
-        "column3": {
-          "type": "column"
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-10-06_at_12.34.29.png",
+            "title": "5 Qualities",
+            "text": "<p>Finest durable materials - We use only the best materials to ensure that what your purchase is of the highest standard and will last a long time.<br\/><br\/>Top quality stitching - All of our stitching is quality controlled so that can ensure a high standard of finish throughout.<br\/><br\/>Rubber backed - Granular crumb backing will be used for your car mats to ensure they stay in place while driving.<br\/><br\/>Tailored car mats - All of our car mats are designed with quality in mind. We don’t scrimp on the materials we buy as we want our products to last you a long time. Where possible we use recycled materials so that we can help do our bit for the environment.<\/p>"
+          }
         }
       },
       "block_order": [
         "column1",
-        "column2",
-        "column3"
-      ]
+        "column2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     },
-    "find-my-car": {
-      "type": "find-my-car"
+    "1633520292ec6b1756": {
+      "type": "multicolumn",
+      "blocks": {
+        "1633520292ec6b1756-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-10-06_at_12.45.20.png",
+            "title": "Made in the UK",
+            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.<br\/><br\/>All of our car mats are designed to fit your car perfectly and come complete with the fittings or clips to help it stay in place in the footwell.<br\/><br\/>Supporting British manufacturing, our mats sets are made in the UK for quality and speedy delivery times. Most of our mat sets are 4 piece sets however some are 2 (like vans or sporty numbers) or 6 pieces (like MPV's) dependant on the vehicle specification.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1633520292ec6b1756-0"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "image_banner",
     "find-my-car",
     "rich_text",
-    "featured_products",
-    "collage",
-    "video",
-    "multi_column"
+    "1633519483fdefc816",
+    "multi_column",
+    "1633520292ec6b1756"
   ]
 }
