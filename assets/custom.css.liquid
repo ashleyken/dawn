@@ -39,7 +39,12 @@ font-display:auto;font-style:normal;font-weight:700;
 .relative {
 	position: relative;
 }
-
+.grid_centerer {
+	justify-content:center;
+}
+.grid_centerer .grid__item {
+	flex-grow: 0;
+}
 
 
 /*
@@ -118,6 +123,13 @@ add ribbon
 	.shopify-section-header-hidden .logo_ribbon_overlay {
 		top: -230px;
 	}
+	
+	.header__submenu.list-menu {
+		width: auto;
+		column-count: 4;
+	}
+	
+	
 }
 
 
@@ -245,6 +257,7 @@ there's a separate /assets/section-footer.css included within /sections/footer.l
 	text-align: center;
 	font-weight: 700;
 	font-size: 4rem;
+	margin-bottom: 3rem;
 }
 .find_my_car_title {
 	color: rgba(var(--color-base-solid-button-labels));
@@ -255,4 +268,11 @@ there's a separate /assets/section-footer.css included within /sections/footer.l
 	font-weight: 700;
 	font-size: 1.8rem;
 	color: rgba(var(--color-base-accent-1))!important;
+}
+
+.find_my_car_output {
+	margin-top: 3rem;
+}
+.find_my_car_output a {
+	margin-top: 3rem;
 }

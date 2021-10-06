@@ -43,7 +43,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a <a href=\"http:\/\/test.com\" target=\"_blank\" title=\"http:\/\/test.com\">product<\/a>, make announcements, or welcome customers to your store.<\/p>"
           }
         }
       },
