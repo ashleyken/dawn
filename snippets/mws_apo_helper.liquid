@@ -24,12 +24,12 @@ window.mwApoInit.onEvent = function (event, args) {
 
   if (event == "init::finish") {
     let options = document.querySelectorAll(
-      ".mw-option__value"
+      "div.mw-option__value"
     );
 
     if (options) {
       options.forEach((element) => {
-        if (!isVisible(element)) {
+        if (!isVisible(element) && ) {
           element.classList.add("mw-hidden");
         }
       });
