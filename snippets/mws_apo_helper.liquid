@@ -1,0 +1,81 @@
+<script>
+function mws_apo_hide_our_variants(selector_container, selector_items) {
+  const container = document.querySelectorAll(selector_container);
+  if (!container) {
+    return;
+  }
+  for (const i of container) {
+    const items = i.querySelectorAll(selector_items);
+    for (let item of items) {
+      if (item.textContent.indexOf("#MWS Options") >= 0) {
+        item.remove();
+      }
+    }
+    if (i.querySelectorAll(selector_items).length === 1) {
+      i.style.display = "none";
+    }
+  }
+}
+
+window.mwApoInit.onEvent = function (event, args) {
+  function isVisible(e) {
+    return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
+  }
+
+  if (event == "init::finish") {
+    let options = document.querySelectorAll(
+      ".mw-option__value"
+    );
+
+    if (options) {
+      options.forEach((element) => {
+        if (!isVisible(element)) {
+          element.classList.add("mw-hidden");
+        }
+      });
+    }
+
+    mws_apo_hide_our_variants(
+      ".no-js-hidden",
+      ".product-form__input label"
+    );
+
+    if (document.querySelector(".shopify-payment-button")) {
+      document.querySelector(".shopify-payment-button").style.display = "none";
+
+      var mutationObserver = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          document.querySelector(".shopify-payment-button").style.display =
+            "none";
+        });
+      });
+
+      mutationObserver.observe(
+        document.getElementsByClassName("shopify-payment-button")[0],
+        {
+          attributes: true,
+          characterData: true,
+          childList: true,
+          subtree: true,
+          attributeOldValue: true,
+          characterDataOldValue: true,
+        }
+      );
+    }
+  }
+
+};
+
+window.mwApoInit.onCallback = function (event, data) {
+    return data;
+};
+window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selector';
+</script>
+
+<style>
+  .mw-option__swatch-color {
+    display: block !important;
+  }
+</style>
+
+{% comment %}CUSTOMIZATION BELOW{% endcomment %}
