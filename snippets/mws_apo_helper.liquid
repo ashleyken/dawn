@@ -18,7 +18,23 @@ function mws_apo_hide_our_variants(selector_container, selector_items) {
 }
 
 window.mwApoInit.onEvent = function (event, args) {
+  function isVisible(e) {
+    return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
+  }
+
   if (event == "init::finish") {
+    let options = document.querySelectorAll(
+      ".mw-option__value"
+    );
+
+    if (options) {
+      options.forEach((element) => {
+        if (!isVisible(element)) {
+          element.classList.add("mw-hidden");
+        }
+      });
+    }
+
     mws_apo_hide_our_variants(
       ".no-js-hidden",
       ".product-form__input label"
@@ -47,8 +63,8 @@ window.mwApoInit.onEvent = function (event, args) {
       );
     }
   }
-};
 
+};
 
 window.mwApoInit.onCallback = function (event, data) {
     return data;
