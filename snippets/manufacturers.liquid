@@ -4,7 +4,9 @@
 	
 	for manufacturer in linklists['manufacturers'].links
 	
-		if manufacturer.object.handle == handle
+		assign handle_with_car_mats_added = handle | append: "-car-mats"
+	
+		if manufacturer.object.handle == handle_with_car_mats_added
 		
 			for model in manufacturer.links
 			

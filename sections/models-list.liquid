@@ -1,13 +1,50 @@
-{% capture modelhandles %}{% render "manufacturers", handle: collection.handle %}{% endcapture %}
+<div class="page-width">
+	<div class="models-list_holder grid_centerer grid grid--1-col grid--3-col-tablet grid--one-third-max grid--3-col-desktop">
 
-{%- assign handles = modelhandles | split: "," %}
+{%- liquid
 
-<h2>{{ modelhandles }}</h2>
+	assign manufacturer_handle_no_ext = collection.handle | remove: "-car-mats" | remove: "-boot-liners"
+	assign manufacturer_name_no_ext = collection.title | remove: " Floor Mats" | remove: " Boot Liners"
+	
+	capture modelhandles
+	render "manufacturers", handle: manufacturer_handle_no_ext
+	endcapture
+	
+	assign handles = modelhandles | split: ","
+	
+-%}
 
-{%- for handle in handles %}
+{%- for handle in handles -%}
+	
+	{%- assign model = "" -%}
+	
+	{%- if collection.handle contains "boot" -%}
+		
+		{%- assign extension = "Boot Liners" -%}
+		
+		{%- assign boot_handle = handle | remove: "-floor-mats" | append: "-boot-liners" -%}
+			
+		{%- if collections[boot_handle] != blank -%}
+			
+			{%- assign model = collections[boot_handle] -%}
+				
+		{%- endif -%}
+		
+	{%- else -%}
+	
+		{%- assign extension = "Floor Mats" -%}
+		
+		{%- assign model = collections[handle] -%}
+		
+	{%- endif -%}
+	
+	{%- if model != blank -%}
+		
+	<div class="grid__item"><div class="models-list_block"><a href="{{ model.url }}">{{ model.title | remove: manufacturer_name_no_ext | remove: extension }}<br>{{ extension }}</a></div></div>
+	
+	{%- endif -%}
+		
+{%- endfor -%}
 
-{%- assign model = collections[handle] %}
-
-<li><a href="{{ model.url }}">{{ model.title }}</a></li>
-
-{%- endfor %}
+	</div>
+</div>
