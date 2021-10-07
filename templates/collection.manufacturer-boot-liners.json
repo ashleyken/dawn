@@ -1,10 +1,14 @@
 {
   "sections": {
     "banner": {
-      "type": "manufacturer-banner"
+      "type": "manufacturer-banner",
+      "settings": {
+      }
     },
     "models-list": {
-      "type": "models-list"
+      "type": "models-list",
+      "settings": {
+      }
     }
   },
   "order": [
