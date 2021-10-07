@@ -1,14 +1,59 @@
-{% comment %}
 <script>
+function mws_apo_hide_our_variants(selector_container, selector_items) {
+  const container = document.querySelectorAll(selector_container);
+  if (!container) {
+    return;
+  }
+  for (const i of container) {
+    const items = i.querySelectorAll(selector_items);
+    for (let item of items) {
+      if (item.textContent.indexOf("#MWS Options") >= 0) {
+        item.remove();
+      }
+    }
+    if (i.querySelectorAll(selector_items).length === 1) {
+      i.style.display = "none";
+    }
+  }
+}
+
 window.mwApoInit.onEvent = function (event, args) {
-    console.log(event, args);
+  if (event == "init::finish") {
+    mws_apo_hide_our_variants(
+      ".selector-wrapper",
+      ".single-option-selector option"
+    );
+
+    if (document.querySelector(".shopify-payment-button")) {
+      document.querySelector(".shopify-payment-button").style.display = "none";
+
+      var mutationObserver = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          document.querySelector(".shopify-payment-button").style.display =
+            "none";
+        });
+      });
+
+      mutationObserver.observe(
+        document.getElementsByClassName("shopify-payment-button")[0],
+        {
+          attributes: true,
+          characterData: true,
+          childList: true,
+          subtree: true,
+          attributeOldValue: true,
+          characterDataOldValue: true,
+        }
+      );
+    }
+  }
 };
+
 window.mwApoInit.onCallback = function (event, data) {
     return data;
 };
 window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selector';
 </script>
-{% endcomment %}
 
 <style>
   .mw-option__swatch-color {
