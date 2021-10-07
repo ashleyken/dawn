@@ -1,0 +1,22 @@
+{%- liquid 
+
+	assign handles = ""
+	
+	for manufacturer in linklists['manufacturers'].links
+	
+		if manufacturer.object.handle == handle
+		
+			for model in manufacturer.links
+			
+				assign handles = handles | append: "," | append: model.object.handle
+	
+			endfor
+		
+		endif
+	
+	endfor
+	
+	assign handles = handles | remove_first: ","
+	
+	echo handles
+-%}

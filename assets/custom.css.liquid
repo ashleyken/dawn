@@ -126,10 +126,28 @@ add ribbon
 	
 	.header__submenu.list-menu {
 		width: auto;
+		background: #97b6b7;
+	}
+	.header__submenu .list-menu__item {
+		color: rgba(var(--color-base-solid-button-labels));
+		white-space: nowrap;
+	}
+	.header__inline-menu .list-menu li:nth-of-type(1) .header__submenu.list-menu {
 		column-count: 4;
 	}
-	
-	
+	.header__inline-menu .list-menu li:nth-of-type(2) .header__submenu.list-menu {
+		column-count: 4;
+	}
+	.header__inline-menu .list-menu li:nth-of-type(3) .header__submenu.list-menu {
+		column-count: 2;
+	}	
+}
+.menu-drawer__navigation, .menu-drawer__inner-submenu {
+	background: #97b6b7;
+}
+.link--text {
+	color: rgba(var(--color-base-solid-button-labels));
+	text-transform: uppercase;
 }
 
 
@@ -275,4 +293,9 @@ there's a separate /assets/section-footer.css included within /sections/footer.l
 }
 .find_my_car_output a {
 	margin-top: 3rem;
+}
+
+
+.title-wrapper-with-link {
+	display: none;
 }
