@@ -1,4 +1,4 @@
-{% capture modelhandles %}{% render "manufacturers", handle: "alfa-romeo" %}{% endcapture %}
+{% capture modelhandles %}{% render "manufacturers", handle: collection.handle %}{% endcapture %}
 
 {%- assign handles = modelhandles | split: "," %}
 

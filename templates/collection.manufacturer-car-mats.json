@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner"
+    },
+    "models-list": {
+      "type": "models-list"
+    }
+  },
+  "order": [
+    "banner",
+    "models-list"
+  ]
+}

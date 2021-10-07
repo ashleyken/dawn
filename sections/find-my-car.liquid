@@ -105,14 +105,14 @@ let manufacturers_and_models = {
 		"models" : {
 		{%- for collection in collections -%}
 			{% if collection.handle contains this_manufacturer %}
-				{% assign this_model = collection.title | remove: "Car Mats"  | remove: product_vendor | strip %}
+				{% assign this_model = collection.title | remove: "Car Mats" | remove: product_vendor | strip %}
 			"{{ collection.handle }}" : {
 				"display_name" : "{{ this_model }}",
 				"handle" : "{{ collection.handle }}",
 				"variants" : {
 					{%- for product in collection.products -%}
 					"{{ product.handle }}" : {
-						"display_name" : "{{ product.title | remove: this_model  | remove: "Car Mats"  | remove: product_vendor | strip  }}",
+						"display_name" : "{{ product.title | remove: this_model | remove: "Car Mats" | remove: product_vendor | strip  }}",
 						"handle" : "{{ shop.secure_url }}" + collectionHandle + "{{ product.url }}",
 					},
 					{% endfor %}
