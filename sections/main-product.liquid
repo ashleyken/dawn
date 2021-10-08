@@ -25,7 +25,11 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-        <div class="sticky-block">
+        <div class="sticky-block" style="
+    text-align: center;
+    position: sticky;
+    top: 0;
+">
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
