@@ -40,7 +40,7 @@
 	
 	{%- if model != blank -%}
 		
-	<div class="grid__item"><div class="models-list_block"><a href="{{ model.url }}">{{ model.title | remove: manufacturer_name_no_ext | remove: extension }}<br>{{ extension }}</a></div></div>
+	<div class="grid__item"><a href="{{ model.url }}" class="models-list_block_link"><div class="models-list_block">{{ model.title | remove: manufacturer_name_no_ext | remove: extension }}<br>{{ extension }}</a></div></div>
 	
 	{%- endif -%}
 		

@@ -4,7 +4,7 @@
       "type": "manufacturer-banner"
     },
     "product-grid": {
-      "type": "main-collection-product-grid"
+      "type": "model-product-grid"
     }
   },
   "order": [
