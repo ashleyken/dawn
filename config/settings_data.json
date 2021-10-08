@@ -14,6 +14,7 @@
     "social_twitter_link": "http:\/\/www.twitter.com\/officialcarmats",
     "social_facebook_link": "https:\/\/www.facebook.com\/OFFICIALCARMATS\/",
     "social_pinterest_link": "http:\/\/www.pinterest.com\/officialcarmats\/",
+    "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
