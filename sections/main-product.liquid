@@ -25,6 +25,7 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
+        <div class="sticky-block">
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -41,6 +42,7 @@
             {%- endunless -%}
           {%- endfor -%}
         </ul>
+        </div>
         <div class="slider-buttons no-js-hidden{% if product.media.size < 2 %} small-hide{% endif %}">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
           <div class="slider-counter caption">
