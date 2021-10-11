@@ -16,7 +16,8 @@ color: rgba(var(--color-foreground));
 
 
 Graphics I need
-- ribbon logo as svg, make it as a snippet and insert into the header.liquid
+- all manufacturers logos
+- mat template / mat colours / mat trims / mat text
 
 Things for me to do
 - graphical focus for the next step on the three dropdowns
@@ -27,7 +28,7 @@ Questions for Mike
 - that footer section css thing, should I just put my custom CSS at the bottom instead of using !important
 - need to add 'find my car' to the sports team collections, I did previously make collection-list-sports-template and I added <input type="hidden" id="collectionHandle" value="{{ collection.handle }}"> for some reason, I used this in both homepage-dropdowns.liquid and reg-lookup.liquid, that I've now combined into find-my-car.liquid - ah yes, it was to keep the collection in the URL structure when coming from a sports page
   I'm not sure how the templates work now they're json based rather than liquid based
-	- I also set up /templates/collections-list-personalised which was going to work in a similar way to sports teams but I don't think I got any further with that
+- how to add breadcrumbs to model page (all pages?)
 
 
 Things that I've done to update this theme
@@ -37,3 +38,16 @@ Things that I've done to update this theme
 "find-my-car": {
 	"type": "find-my-car"
 }
+
+
+
+<div class="product__media media" style="padding-top: 143%;">
+	<img
+		src="{{ 'mat_template.png' | asset_img_url: '1500x' }}"
+		sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
+		loading="lazy"
+		width="576"
+		height="auto"
+		alt="Customise your mat"
+	>
+</div>
