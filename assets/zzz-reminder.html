@@ -39,15 +39,20 @@ Things that I've done to update this theme
 	"type": "find-my-car"
 }
 
+- created a new Menu called 'manufacturers'
+	- this has the structure of /manufacturer_names/model_names/ and we'll have to add to this manually to provide data to the following pages
+- created /sections/models-list.liquid
+	- this takes the manufacturer's name from the collection name (in the template in the next step) and passes it to
+		- /snippets/manufacturers.liquid which goes through linklists['manufacturers'].links (all the items in the 'manufacturers' menu) and returns any that begin with the manufacturer name
+	- this goes through the handles returned and makes the blocks for each model to display and link through to each collection
+- created /templates/collection.manufacturer-car-mats.json
+	- edited this .json file to include models-list in the sections array
+	- this template now appears in top dropdown of Theme Settings as /collections/collection.manufacturer-car-mats if we need to edit it there
+	- created Collection 'Alfa Romeo Floor Mats' and assigned template 'manufacturer-car-mats' to this collection, will do this automatically using API in future when creating Collections
+	- created /sections/manufacturer-banner.liquid and added it to /templates/collection.manufacturer-car-mats.json sections array
+		- this takes the image from the Collection and displays it as an overlay of the banner, as well as showing the collection name and description
+- did the same thing as the above for collection.manufacturer-boot-liners.json and updated /sections/models-list.liquid and /snippets/manufacturers.liquid to be able to switch between car mats and boot liners (and if boot liners, don't display any that don't have an entry)
+- so now when we want to add the manufacturer to the main nav, under the 'car mats' and 'boot liners' pages, we add the Collection we just created, in this case 'Alfa Romeo Floor Mats' with template 'manufacturer-car-mats'
 
 
-<div class="product__media media" style="padding-top: 143%;">
-	<img
-		src="{{ 'mat_template.png' | asset_img_url: '1500x' }}"
-		sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | times: 0.64 | round }}px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)"
-		loading="lazy"
-		width="576"
-		height="auto"
-		alt="Customise your mat"
-	>
-</div>
+
