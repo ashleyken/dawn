@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "manufacturer-banner",
+      "settings": {
+      }
+    },
+    "models-list": {
+      "type": "models-list",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "models-list"
+  ]
+}
