@@ -17,6 +17,26 @@
 	endfor
 	
 -%}
+
+
+{%- for handle in handles -%}
+
+	{%- assign subcategory = "" -%}
+
+	{%- if collections[handle] != blank -%}
+		
+		{%- assign subcategory = collections[handle] -%}
+			
+	{%- endif -%}
+	
+
+	{%- if model != blank -%}
+		
+	<div class="grid__item"><a href="{{ subcategory.url }}" class="models-list_block_link"><div class="models-list_block">{{ subcategory.title }}<br>{{ extension }}</a></div></div>
+	
+	{%- endif -%}
+		
+{%- endfor -%}
 	
 	{{ collection.handle  }}
 	{{ collection.title  }}
