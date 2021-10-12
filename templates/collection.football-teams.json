@@ -5,14 +5,14 @@
       "settings": {
       }
     },
-    "models-list": {
-      "type": "models-list",
+    "football-teams-list": {
+      "type": "football-teams-list",
       "settings": {
       }
     }
   },
   "order": [
     "banner",
-    "models-list"
+    "football-teams-list"
   ]
 }
