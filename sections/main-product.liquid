@@ -74,6 +74,57 @@
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
+        {% comment %}
+        
+        This is the way I had it working previously when I used the list-sports template for everything
+
+        
+        {% if collection.template_suffix contains 'list-sports' %}
+        
+        We have come from one of the Sports pages and the team is {{ collection.title }}
+        
+        <input type="hidden" id="sportsName" value="{{ collection.title }}">
+        
+        <script>
+          $(document).ready(function() {
+          
+            if ($("#sportsName").length) {
+            
+              var sportsName = $("#sportsName").val();
+          
+              var sportsTimer = setInterval(selectBadge, 500);
+              
+              function abortSportsTimer() { // to be called when you want to stop the timer
+                clearInterval(sportsTimer);
+              }
+              
+              function selectBadge() {
+              
+                if ($("#mw_product_option_option_166966_324ae8f7-c5b2-4c2c-8122-66ee99049737").length) {
+                  
+                  // check to see if sportsName is actually one of the values
+                  if ($("#mw_product_option_option_166966_324ae8f7-c5b2-4c2c-8122-66ee99049737 option[value='" + sportsName + "']").length > 0) {
+                    $('#mw_product_option_option_166966_324ae8f7-c5b2-4c2c-8122-66ee99049737').val(sportsName).trigger('change');
+                  }
+                
+                  abortSportsTimer();
+                }
+                  
+              }
+          
+            }
+          });
+          
+        </script>
+        
+        
+        {% if collection.image %}<img src="{{ collection.image | img_url: 'medium' }}">{% endif %}
+        
+        {% endif %}
+        
+        {% endcomment %}
+
+
         {%- for block in section.blocks -%}
           {%- case block.type -%}
           {%- when '@app' -%}

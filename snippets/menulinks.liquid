@@ -1,0 +1,16 @@
+{%- liquid 
+
+	echo handle
+
+	assign handles = ""
+	
+	for menu_item in linklists[handle].links
+	
+		assign handles = handles | append: "," | append: menu_item.object.handle
+	
+	endfor
+	
+	assign handles = handles | remove_first: ","
+	
+	echo handles
+-%}

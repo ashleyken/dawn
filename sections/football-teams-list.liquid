@@ -1,7 +1,32 @@
 <div class="page-width">
+
+{%- liquid
+
+	assign menu_handle = "football-teams"
+	
+	capture menu_handles
+	render "menulinks", handle: menu_handle
+	endcapture
+	
+	assign handles = menu_handles | split: ","
+	
+	for handle in handles
+	
+	echo handle
+	
+	endfor
+	
+-%}
 	
 	{{ collection.handle  }}
 	{{ collection.title  }}
+	
+	{% comment %}
+	
+	Probably best not to do anything fancy converting the collection handle to get the Menu we set up in case there's no hard and fast rules about what they
+	want to do. We'll just hard code it and bring back the collections in whatever menu name we want
+	
+	{% endcomment %}
 	
 	<div class="models-list_holder grid_centerer grid grid--1-col grid--3-col-tablet grid--one-third-max grid--3-col-desktop">
 

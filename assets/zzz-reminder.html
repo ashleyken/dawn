@@ -57,7 +57,10 @@ Things that I've done to update this theme
 
 - created a new Menu called 'football teams'
 	- this has a single level where we have to add the football team collections manually
+	- make a note of the handle of this menu, in this case 'football-teams'
 - created /sections/football-teams-list.liquid
+	- hard-code the menu handle at the top to pass to
+	 - /snippets/menulinks.liquid which goes through linklists['football-teams'].links (all the items in the 'football-teams' menu) and returns all the collections
 - created /templates/collection.football-teams.json
 	- edited this .json file to include football-teams-list in the sections array
 - created /templates/collection.football-team.json
