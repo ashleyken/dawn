@@ -1,18 +1,18 @@
 {
   "sections": {
     "banner": {
-      "type": "manufacturer-banner",
+      "type": "collections-banner",
       "settings": {
       }
     },
-    "models-list": {
-      "type": "models-list",
+    "rugby-teams-list": {
+      "type": "rugby-teams-list",
       "settings": {
       }
     }
   },
   "order": [
     "banner",
-    "models-list"
+    "rugby-teams-list"
   ]
 }
