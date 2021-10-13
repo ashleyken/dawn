@@ -80,7 +80,7 @@
 
 
 
-
+<input type="hidden" id="collectionHandle" value="{{ collection.handle }}">
 
 
 
@@ -88,11 +88,12 @@
 
 let collectionHandle = '';
 
-if (document.querySelector("#collectionHandle")) {
+if (document.querySelector("#collectionHandle") && document.querySelector("#collectionHandle").value) {
 	let collectionHandle_input = document.querySelector("#collectionHandle");
 	collectionHandle = '/collections/' + collectionHandle_input.value;
 	console.log(collectionHandle);
 } 
+
 
 let manufacturers_and_models = {
 
