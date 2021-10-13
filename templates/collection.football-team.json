@@ -14,11 +14,38 @@
       "type": "category-text",
       "settings": {
       }
+    },
+    "163413202562fe9aab": {
+      "type": "multicolumn",
+      "blocks": {
+        "163413202562fe9aab-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-10-06_at_12.45.20.png",
+            "title": "MADE IN THE UK",
+            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163413202562fe9aab-0"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "banner",
     "find-my-car",
-    "category-text"
+    "category-text",
+    "163413202562fe9aab"
   ]
 }
