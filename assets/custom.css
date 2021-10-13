@@ -341,6 +341,34 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 }
 
 
+.collection_mats_bg_holder {
+	position: relative;
+	width: 100%;
+	margin: 5rem auto 10rem;
+}
+@media screen and (min-width: 750px) {
+	.collection_mats_bg_holder {
+		width: 50%;
+	}
+}
+.collection_mats_bg {
+	display: block;
+	width: 100%;
+}
+.collection_mats_bg_logo {
+	position: absolute;
+	height: 10%;
+	width: auto;
+	top: 51%;
+	top: 51%;
+}
+.collection_mats_bg_logo_1 {
+	left: 6%;
+}
+.collection_mats_bg_logo_2 {
+	right: 6%;
+}
+
 .manufacturer_banner_bg {
 	background-image: url('//cdn.shopify.com/s/files/1/0530/8678/1626/t/6/assets/manufacturer_banner_bg.png?v=18152910814484224319');
 	background-size: cover;
@@ -356,6 +384,10 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 	width: auto;
 	left: 50%;
 	transform: translateX(-50%);
+}
+.collection_banner_bg_logo {
+	height: 60%;	
+	
 }
 .manufacturer_banner_h1 {
 	text-transform: uppercase;
