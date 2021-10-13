@@ -1,18 +1,24 @@
 {
   "sections": {
     "banner": {
-      "type": "manufacturer-banner",
+      "type": "category-banner",
       "settings": {
       }
     },
-    "models-list": {
-      "type": "models-list",
+    "find-my-car": {
+      "type": "find-my-car",
+      "settings": {
+      }
+    },
+    "category-text": {
+      "type": "category-text",
       "settings": {
       }
     }
   },
   "order": [
     "banner",
-    "models-list"
+    "find-my-car",
+    "category-text"
   ]
 }
