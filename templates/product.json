@@ -13,7 +13,6 @@
         },
         "title": {
           "type": "title",
-          "disabled": false,
           "settings": {
           }
         },
