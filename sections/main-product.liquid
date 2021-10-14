@@ -74,55 +74,64 @@
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-        {% comment %}
-        
-        This is the way I had it working previously when I used the list-sports template for everything
 
+        {% if collection.template_suffix contains '-team' %}
         
-        {% if collection.template_suffix contains 'list-sports' %}
+          {% assign teamName = collection.title | remove: " Car Floor Mats" %}
         
-        We have come from one of the Sports pages and the team is {{ collection.title }}
-        
-        <input type="hidden" id="sportsName" value="{{ collection.title }}">
-        
-        <script>
-          $(document).ready(function() {
+          We have come from one of the Team pages and the team is {{ teamName }}
           
-            if ($("#sportsName").length) {
+          {% if collection.image %}<br><br><img src="{{ collection.image | img_url: 'small' }}">{% endif %}
+          
+          <input type="hidden" id="teamName" value="{{ teamName }}">
+          
+          <script>
+          
+          let teamName = document.querySelector("#teamName").value;
+          let teamTimer = setInterval(selectBadge, 500);
+          
+          function abortTeamTimer() { // to be called when you want to stop the timer
+            clearInterval(teamTimer);
+          }
+          
+          function selectBadge() {
+          
+            let mwSelectMenu = document.getElementById("select_o_21162");
             
-              var sportsName = $("#sportsName").val();
-          
-              var sportsTimer = setInterval(selectBadge, 500);
+            if (mwSelectMenu) {
               
-              function abortSportsTimer() { // to be called when you want to stop the timer
-                clearInterval(sportsTimer);
-              }
+              console.log('menu exists');
               
-              function selectBadge() {
-              
-                if ($("#mw_product_option_option_166966_324ae8f7-c5b2-4c2c-8122-66ee99049737").length) {
-                  
-                  // check to see if sportsName is actually one of the values
-                  if ($("#mw_product_option_option_166966_324ae8f7-c5b2-4c2c-8122-66ee99049737 option[value='" + sportsName + "']").length > 0) {
-                    $('#mw_product_option_option_166966_324ae8f7-c5b2-4c2c-8122-66ee99049737').val(sportsName).trigger('change');
-                  }
-                
-                  abortSportsTimer();
+              for (i = 0; i < mwSelectMenu.length; ++i){
+                if (mwSelectMenu.options[i].text == '' + teamName + ''){
+                  console.log(teamName);
+                  mwSelectMenu.options.selectedIndex = i;
+                  abortTeamTimer();
                 }
-                  
               }
-          
+              
+              
             }
-          });
           
-        </script>
-        
-        
-        {% if collection.image %}<img src="{{ collection.image | img_url: 'medium' }}">{% endif %}
-        
+          }
+          
+          </script>
+          
         {% endif %}
         
-        {% endcomment %}
+        
+        {%- for media in product.media -%}
+          {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+            
+            <div class="product_image_holder">
+            {% render 'product-thumbnail_mat', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+            </div>
+  
+          {%- endunless -%}
+        {%- endfor -%}
+          
+        
+
 
 
         {%- for block in section.blocks -%}
@@ -137,6 +146,23 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
+            
+            
+            
+            {%- if product.metafields.mat_options.size_name.value != blank %}
+            Size: {{ product.metafields.mat_options.size_name.value }} / 
+            {% endif %}
+            {% if product.metafields.mat_options.no_of_pieces.value != blank %}
+            No of pieces: {{ product.metafields.mat_options.no_of_pieces.value }} / 
+            {% endif %}
+            {% if product.metafields.mat_options.no_of_clips.value != blank %}
+            No of clips: {{ product.metafields.mat_options.no_of_clips.value }} / 
+            {% endif %}
+            {% if product.metafields.mat_options.fitting_type.value != blank %}
+            Fitting type: {{ product.metafields.mat_options.fitting_type.value }}
+            {% endif %}
+            
+            
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
