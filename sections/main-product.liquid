@@ -94,12 +94,11 @@
             
             if (mwSelectMenu) {
               
-              console.log('menu exists');
-              
               for (i = 0; i < mwSelectMenu.length; ++i){
                 if (mwSelectMenu.options[i].text == '' + teamName + ''){
                   console.log(teamName);
                   mwSelectMenu.options.selectedIndex = i;
+                  mwSelectMenu.dispatchEvent(new Event('change'));
                   abortTeamTimer();
                 }
               }
