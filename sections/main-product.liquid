@@ -30,19 +30,13 @@
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
-          {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-
-          {%- for media in product.media -%}
-            {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-              <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
+              <li class="product__media-item grid__item slider__slide" data-media-id="{{ section.id }}-{{ media.id }}">
                 <modal-opener class="product__modal-opener product__modal-opener--image no-js-hidden" data-modal="#ProductModal-{{ section.id }}">
                   <div class="product__media media media--transparent" style="padding-top: 143.0%;">
                     <img src="{{ 'mat_template.png' | asset_img_url: '1500x' }}" loading="lazy" width="576" height="auto" alt="Customize your mat">
                   </div>
                 </modal-opener>
               </li>
-            {%- endunless -%}
-          {%- endfor -%}
         </ul>
         <div class="slider-buttons no-js-hidden{% if product.media.size < 2 %} small-hide{% endif %}">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
@@ -144,7 +138,8 @@
             </p>
           {%- when 'title' -%}
             <h1 class="product__title" {{ block.shopify_attributes }}>
-              {{ product.title | escape }}
+              {{- product.vendor | escape -}}<br>
+              {{- product.description -}}
             </h1>
             
             
@@ -183,12 +178,14 @@
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
+          {% comment %}
           {%- when 'description' -%}
             {%- if product.description != blank -%}
               <div class="product__description rte">
                 {{ product.description }}
               </div>
             {%- endif -%}
+          {% endcomment %}
           {%- when 'custom_liquid' -%}
             {{ block.settings.custom_liquid }}
           {%- when 'collapsible_tab' -%}
