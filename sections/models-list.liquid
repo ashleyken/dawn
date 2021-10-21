@@ -1,62 +1,62 @@
 <div class="page-width">
 	<div class="models-list_holder grid_centerer grid grid--1-col grid--3-col-tablet grid--one-third-max grid--3-col-desktop">
 
-{%- liquid
+{%- assign manufacturer_handle = collection.handle -%}
+{%- assign manufacturer_handle_no_ext = collection.handle | remove: "-car-mats" | remove: "-boot-liners" -%}
+{%- assign manufacturer_name_no_ext = collection.title | remove: " Floor Mats" | remove: " Boot Liners" -%}
+{%- assign manufacturer_car_mats = manufacturer_handle_no_ext | append: "-car-mats" -%}
+{%- assign manufacturer_boot_liners = manufacturer_handle_no_ext | append: "-boot-liners" -%}
 
-	assign manufacturer_handle_no_ext = collection.handle | remove: "-car-mats" | remove: "-boot-liners"
-	assign manufacturer_name_no_ext = collection.title | remove: " Floor Mats" | remove: " Boot Liners"
-	
-	capture modelhandles
-	render "manufacturers", handle: manufacturer_handle_no_ext
-	endcapture
-	
-	assign handles = modelhandles | split: ","
-	
--%}
+	{%- capture this_manufacturer %}{{ manufacturer_handle_no_ext | handleize }}{% endcapture -%}
 
-{%- for handle in handles -%}
+	{%- for collection in collections -%}
 	
-	{%- assign model = "" -%}
+		{%- assign extension = "" -%}
+		{%- assign model = "" -%}
+		
+		{{ collection.handle }}
 	
-	{%- if collection.handle contains "boot" -%}
-		
-		{%- assign extension = "Boot Liners" -%}
-		
-		{%- assign boot_handle = handle | remove: "-floor-mats" | append: "-boot-liners" -%}
-			
-		{%- if collections[boot_handle] != blank -%}
-			
-			{%- assign model = collections[boot_handle] -%}
+		{% if collection.handle contains this_manufacturer %}
+
+			{%- if collection.handle == manufacturer_car_mats -%}
+
+			{%- elsif collection.handle == manufacturer_boot_liners -%}
+
+			{%- elsif collection.handle contains "boot" -%}
+					
+				{%- assign extension = "Boot Liners" -%}
+				{%- assign model = collection -%}
 				
-		{%- endif -%}
-		
-	{%- else -%}
-	
-		{%- assign extension = "Floor Mats" -%}
-		
-		{%- assign model = collections[handle] -%}
-		
-	{%- endif -%}
-	
-	{%- if model != blank -%}
-	
-	<div class="grid__item">
-		
-		<a href="{{ model.url }}" class="models-list_block_link">
-		
-			<div class="models-list_block">
+			{%- else -%}
 			
-				<div class="models-list_block_text">
-				{{ model.title | remove: manufacturer_name_no_ext | remove: extension }}<br>{{ extension }}
+				{%- if manufacturer_handle contains "boot" -%}
+				
+				{%- else -%}
+					{%- assign extension = "Floor Mats" -%}
+					{%- assign model = collection -%}
+				{%- endif -%}
+				
+			{%- endif -%}
+			
+			{%- if model != blank -%}
+				<div class="grid__item">
+					
+					<a href="{{ model.url }}" class="models-list_block_link">
+					
+						<div class="models-list_block">
+						
+							<div class="models-list_block_text">
+							{{ model.title | remove: manufacturer_name_no_ext | remove: extension }}<br>{{ extension }}
+							</div>
+						
+						</div>
+					</a>
 				</div>
+			{% endif %}
 			
-			</div>
-		</a>
-	</div>
-	
-	{%- endif -%}
-		
-{%- endfor -%}
+		{% endif %}
+	{% endfor %}
+
 
 	</div>
 </div>

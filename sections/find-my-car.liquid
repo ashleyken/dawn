@@ -99,13 +99,20 @@ let manufacturers_and_models = {
 
 {%- for product_vendor in shop.vendors -%}
 
-	{% capture this_manufacturer %}{{ product_vendor | handleize }}{% endcapture %}
+	{%- capture this_manufacturer -%}{{ product_vendor | handleize }}{%- endcapture -%}
+	{%- assign manufacturer_car_mats = this_manufacturer | append: "-car-mats" -%}
+	{%- assign manufacturer_boot_liners = this_manufacturer | append: "-boot-liners" -%}
 	
 	"{{ product_vendor | handleize }}" : {
 		"name" : "{{ product_vendor }}",
 		"models" : {
 		{%- for collection in collections -%}
-			{% if collection.handle contains this_manufacturer %}
+			{%- if collection.handle contains this_manufacturer -%}
+			
+				{%- if collection.handle == manufacturer_car_mats -%}
+				{%- elsif collection.handle == manufacturer_boot_liners -%}
+				{%- else -%}
+			
 				{% assign this_model = collection.title | remove: "Car Mats" | remove: product_vendor | strip %}
 			"{{ collection.handle }}" : {
 				"display_name" : "{{ this_model }}",
@@ -119,11 +126,12 @@ let manufacturers_and_models = {
 					{% endfor %}
 				}
 			},
-			{% endif %}
-		{% endfor %}
+				{%- endif -%}
+			{%- endif -%}
+		{%- endfor -%}
 		}
 	},
-	{% endfor %}
+{%- endfor -%}
 	
 };
 
