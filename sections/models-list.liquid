@@ -4,58 +4,49 @@
 {%- assign manufacturer_handle = collection.handle -%}
 {%- assign manufacturer_handle_no_ext = collection.handle | remove: "-car-mats" | remove: "-boot-liners" -%}
 {%- assign manufacturer_name_no_ext = collection.title | remove: " Floor Mats" | remove: " Boot Liners" -%}
-{%- assign manufacturer_car_mats = manufacturer_handle_no_ext | append: "-car-mats" -%}
-{%- assign manufacturer_boot_liners = manufacturer_handle_no_ext | append: "-boot-liners" -%}
 
-	{%- capture this_manufacturer %}{{ manufacturer_handle_no_ext | handleize }}{% endcapture -%}
+{%- capture manufacturer_handles %}{%- render "lookup", key: manufacturer_handle_no_ext -%}{% endcapture -%}
+{%- assign handles = manufacturer_handles | split: "," -%}
 
-	{%- for collection in collections -%}
+{%- for handle in handles -%}
+
+	{%- assign model = '' -%}
 	
-		{%- assign extension = "" -%}
-		{%- assign model = "" -%}
+	{%- if handle contains "boot" -%}
 		
-		{{ collection.handle }}
+		{%- assign extension = "Boot Liners" -%}
+		{%- assign model = collections[handle] -%}
+		
+	{%- else -%}
 	
-		{% if collection.handle contains this_manufacturer %}
-
-			{%- if collection.handle == manufacturer_car_mats -%}
-
-			{%- elsif collection.handle == manufacturer_boot_liners -%}
-
-			{%- elsif collection.handle contains "boot" -%}
-					
-				{%- assign extension = "Boot Liners" -%}
-				{%- assign model = collection -%}
-				
-			{%- else -%}
+		{%- if manufacturer_handle contains "boot" -%}
+		
+		{%- else -%}
+			{%- assign extension = "Floor Mats" -%}
+			{%- assign model = collections[handle] -%}
+		{%- endif -%}
+		
+	{%- endif -%}
+	
+	{%- if model != blank -%}
+	
+	<div class="grid__item">
+		
+		<a href="{{ model.url }}" class="models-list_block_link">
+		
+			<div class="models-list_block">
 			
-				{%- if manufacturer_handle contains "boot" -%}
-				
-				{%- else -%}
-					{%- assign extension = "Floor Mats" -%}
-					{%- assign model = collection -%}
-				{%- endif -%}
-				
-			{%- endif -%}
-			
-			{%- if model != blank -%}
-				<div class="grid__item">
-					
-					<a href="{{ model.url }}" class="models-list_block_link">
-					
-						<div class="models-list_block">
-						
-							<div class="models-list_block_text">
-							{{ model.title | remove: manufacturer_name_no_ext | remove: extension }}<br>{{ extension }}
-							</div>
-						
-						</div>
-					</a>
+				<div class="models-list_block_text">
+				{{ model.title | remove: manufacturer_name_no_ext | remove: extension }}<br>{{ extension }}
 				</div>
-			{% endif %}
 			
-		{% endif %}
-	{% endfor %}
+			</div>
+		</a>
+	</div>
+	
+	{%- endif -%}
+	
+{%- endfor -%}
 
 
 	</div>
