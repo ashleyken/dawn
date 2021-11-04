@@ -115,10 +115,10 @@
         "2b8a0134-371c-416c-8619-b7b0c38335d7"
       ],
       "settings": {
-        "section_height": "650px",
-        "section_height_mobile": "auto",
+        "section_height": "450px",
+        "section_height_mobile": "400px",
         "parallax": true,
-        "dots_style": "bars",
+        "dots_style": "none",
         "arrows_style": "none",
         "arrows_style_mobile": "none",
         "autoplay": true,
@@ -133,7 +133,7 @@
         "arrow_size_mobile": 40,
         "arrow_chevron_size": 12,
         "arrow_chevron_size_mobile": 12,
-        "text_animation": true,
+        "text_animation": false,
         "fade": true,
         "zoom_animation": true
       }
