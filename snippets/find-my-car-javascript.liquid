@@ -1,1 +1,11 @@
-let collectionHandle = '';rn
+
+	
+let collectionHandle = '';
+
+if (document.querySelector("#collectionHandle") && document.querySelector("#collectionHandle").value) {
+	let collectionHandle_input = document.querySelector("#collectionHandle");
+	collectionHandle = '/collections/' + collectionHandle_input.value;
+	console.log(collectionHandle);
+} 
+
+	
