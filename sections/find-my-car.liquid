@@ -83,7 +83,7 @@
 <input type="hidden" id="collectionHandle" value="{{ collection.handle }}">
 
 
-
+<script src="http://cms.officialcarmats.co.uk/manufacturers_and_models.js"></script>
 <script>
 
 let collectionHandle = '';
@@ -94,8 +94,6 @@ if (document.querySelector("#collectionHandle") && document.querySelector("#coll
 	console.log(collectionHandle);
 } 
 
-
-{% render "find-my-car-javascript" %}
 
 {% comment %}
 let manufacturers_and_models = {
