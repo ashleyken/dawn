@@ -95,6 +95,9 @@ if (document.querySelector("#collectionHandle") && document.querySelector("#coll
 } 
 
 
+{% render "find-my-car-javascript" %}
+
+{% comment %}
 let manufacturers_and_models = {
 
 {%- for product_vendor in shop.vendors -%}
@@ -129,6 +132,7 @@ let manufacturers_and_models = {
 {%- endfor -%}
 	
 };
+{% endcomment %}
 
 
 
@@ -239,6 +243,7 @@ if (document.querySelector("#fMCLookupForm")) {
 	
 }
 
+	
 </script>
 
 
