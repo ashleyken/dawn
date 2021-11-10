@@ -1,0 +1,11 @@
+{
+	"layout": false,
+	"sections": {
+		"partial": {
+			"type": "partial-collection"
+		}
+	},
+	"order": [
+		"partial"
+	]
+}

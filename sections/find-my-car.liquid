@@ -82,11 +82,9 @@
 
 <input type="hidden" id="collectionHandle" value="{{ collection.handle }}">
 
-<script>
 
-document.addEventListener("DOMContentLoaded", function(){
-	console.log('test');
-});
+
+<script>
 
 let collectionHandle = '';
 
@@ -97,43 +95,35 @@ if (document.querySelector("#collectionHandle") && document.querySelector("#coll
 } 
 
 
-{% comment %}
-let manufacturers_and_models = {
+window.theme = window.theme || {};
 
-{%- for product_vendor in shop.vendors -%}
+window.theme.mam = {% render "lookup_json" %};
 
-	{%- capture this_manufacturer -%}{{ product_vendor | handleize }}{%- endcapture -%}
-	{%- capture manufacturer_handles %}{%- render "lookup", key: this_manufacturer -%}{% endcapture -%}
-	{%- assign handles = manufacturer_handles | split: "," -%}
+(function(){
+	
+	let manufacturer_handle = 'alfa-romeo-car-mats';
 	
 	
-	"{{ product_vendor | handleize }}" : {
-		"name" : "{{ product_vendor }}",
-		"models" : {
-		{%- for handle in handles -%}
-			
-			{%- assign model = collections[handle] -%}
-			{% assign this_model = model.title | remove: "Car Mats" | remove: product_vendor | strip %}
-			"{{ model.handle }}" : {
-				"display_name" : "{{ this_model }}",
-				"handle" : "{{ model.handle }}",
-				"variants" : {
-					{%- for product in model.products -%}
-					"{{ product.handle }}" : {
-						"display_name" : "{{ product.title | remove: this_model | remove: "Car Mats" | remove: product_vendor | strip  }}",
-						"handle" : "{{ shop.secure_url }}" + collectionHandle + "{{ product.url }}",
-					},
-					{% endfor %}
-				}
-			},
-		{%- endfor -%}
-		}
-	},
-{%- endfor -%}
+	let my_manufacturer = window.theme.mam.manufacturers.find(function(manufacturer){
+		return manufacturer.shopify_handle === manufacturer_handle
+	});
 	
-};
-{% endcomment %}
-
+	console.table(my_manufacturer.models);
+	
+	my_manufacturer.models.forEach(function(model){
+		console.log(model.name);
+	});
+	
+	let models_html = my_manufacturer.models.map(function(model){
+		return `<option value="${model.shopify_handle}">${model.name}</option>`
+	});
+	
+	let models_html_shortened = my_manufacturer.models.map(model => `<option value="${model.shopify_handle}">${model.name}</option>`);
+	
+	console.log(models_html.join(''));
+	console.log(models_html_shortened.join(''));
+	
+})();
 
 
 
@@ -143,9 +133,11 @@ if (document.querySelector("#fMCDManufacturer")) {
 	let manufacturer = '';
 	let model = '';
 
-	const fMCDManufacturer = document.querySelector("#fMCDManufacturer");
-	const fMCDModel = document.querySelector("#fMCDModel");
-	const fMCDVariant = document.querySelector("#fMCDVariant");
+	const fMCDForm = document.querySelector("#fMCDropdownForm");
+	
+	const fMCDManufacturer = fMCDForm.querySelector("#fMCDManufacturer");
+	const fMCDModel = fMCDForm.querySelector("#fMCDModel");
+	const fMCDVariant = fMCDForm.querySelector("#fMCDVariant");
 	
 	fMCDManufacturer.addEventListener('change', (event) => {
 
@@ -153,21 +145,7 @@ if (document.querySelector("#fMCDManufacturer")) {
 
 		console.log(manufacturer);
 		
-		
 		/*
-		let formData = {
-			manufacturer: event.target.value,
-			collectionHandle: collectionHandle
-		};
-		
-		fetch("http://officialcarmats-co-uk.stackstaging.com/proc_lookup_dropdowns.php", {
-			method: "POST",
-			body:  JSON.stringify(formData)
-		})
-		.then((response) => response.json())
-		.then(function(data){ 
-			console.log('test' + data)
-		});
 		if (typeof manufacturers_and_models[manufacturer] != 'undefined') {
 	
 			fMCDModel.innerHTML = '<option value="">MODEL</option>';
