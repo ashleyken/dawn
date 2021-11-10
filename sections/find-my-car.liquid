@@ -82,9 +82,11 @@
 
 <input type="hidden" id="collectionHandle" value="{{ collection.handle }}">
 
-
-<script src="http://cms.officialcarmats.co.uk/manufacturers_and_models.js"></script>
 <script>
+
+document.addEventListener("DOMContentLoaded", function(){
+	console.log('test');
+});
 
 let collectionHandle = '';
 
@@ -151,6 +153,21 @@ if (document.querySelector("#fMCDManufacturer")) {
 
 		console.log(manufacturer);
 		
+		
+		/*
+		let formData = {
+			manufacturer: event.target.value,
+			collectionHandle: collectionHandle
+		};
+		
+		fetch("http://officialcarmats-co-uk.stackstaging.com/proc_lookup_dropdowns.php", {
+			method: "POST",
+			body:  JSON.stringify(formData)
+		})
+		.then((response) => response.json())
+		.then(function(data){ 
+			console.log('test' + data)
+		});
 		if (typeof manufacturers_and_models[manufacturer] != 'undefined') {
 	
 			fMCDModel.innerHTML = '<option value="">MODEL</option>';
@@ -168,6 +185,7 @@ if (document.querySelector("#fMCDManufacturer")) {
 			}
 			fMCDModel.focus();
 		}	
+		*/
 	});
 	
 	
