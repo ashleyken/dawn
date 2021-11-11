@@ -11,7 +11,7 @@
 					<select id="fMCDManufacturer" class="find_my_car_select select__select">
 						<option value="">MAKE</option>
 						{%- for product_vendor in shop.vendors -%}
-						<option value="{{ product_vendor | handleize }}">{{ product_vendor }}</option>
+						<option value="{{ product_vendor | handleize }}-car-mats">{{ product_vendor }}</option>
 						{%- endfor -%}
 					</select>
 				</div>
@@ -100,142 +100,127 @@ window.theme = window.theme || {};
 window.theme.mam = {% render "lookup_json" %};
 
 (function(){
+
+	if (document.querySelector("#fMCDManufacturer")) {
 	
-	let manufacturer_handle = 'alfa-romeo-car-mats';
+		let manufacturer_handle = '';
+		let model_handle = '';
+	
+		const fMCDForm = document.querySelector("#fMCDropdownForm");
+		
+		const fMCDManufacturer = fMCDForm.querySelector("#fMCDManufacturer");
+		const fMCDModel = fMCDForm.querySelector("#fMCDModel");
+		const fMCDVariant = fMCDForm.querySelector("#fMCDVariant");
+		
+		fMCDManufacturer.addEventListener('change', (event) => {
+	
+			manufacturer_handle = event.target.value;
+	
+			// console.log(manufacturer_handle);
+			
+			let manufacturer_matched = window.theme.mam.manufacturers.find(function(manufacturer_to_match){
+				return manufacturer_to_match.shopify_handle === manufacturer_handle
+			});
+			
+			/*
+			console.table(manufacturer_matched.models);
+			
+			manufacturer_matched.models.forEach(function(model){
+				console.log(model.name);
+			});
+			
+			let models_html = manufacturer_matched.models.map(function(model){
+				return `<option value="${model.shopify_handle}">${model.name}</option>`
+			});
+			*/
+			
+			let models_html = manufacturer_matched.models.map(model => `<option value="${model.shopify_handle}">${model.name}</option>`);
+			
+			fMCDModel.innerHTML = '<option value="">MODEL</option>' + models_html.join('');
+			fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>';
+			
+			fMCDModel.focus();
+			
+		});
+		
+		
+	
+		fMCDModel.addEventListener('change', (event) => {
+		
+			model_handle = event.target.value;
+			
+			console.log("http://127.0.0.1:9292/collections/" + model_handle + "?view=_partial");
+			
+			// fetch("{{ shop.secure_url }}/collections/" + model_handle + "?view=_partial", {
+			fetch("http://127.0.0.1:9292/collections/" + model_handle + "?view=_partial", {
+				method: "GET"
+			})
+			.then((response) => response.text())
+			.then(function(data){ 
+				let json = JSON.parse(data.replace(/(<([^>]+)>)/gi, ""));
+
+				let mats_html = json.products.map(mat=> `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`);
+
+				fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>' + mats_html.join('');
+				fMCDVariant.focus();
+			});
+			
+		});
+		
+		fMCDVariant.addEventListener('change', (event) => {
+			
+			let handle = event.target.value;
+		
+			if (handle.length > 0) {
+				window.location.href = handle;
+			}
+		
+		});
+		
+		
+	}
 	
 	
-	let my_manufacturer = window.theme.mam.manufacturers.find(function(manufacturer){
-		return manufacturer.shopify_handle === manufacturer_handle
-	});
 	
-	console.table(my_manufacturer.models);
+	if (document.querySelector("#fMCLookupForm")) {
 	
-	my_manufacturer.models.forEach(function(model){
-		console.log(model.name);
-	});
+		const fMCLookupForm = document.querySelector("#fMCLookupForm");
+		let fMCLookupInput = fMCLookupForm.querySelector("#fMCLookupInput");
+		let fMCLookupResponse = fMCLookupForm.querySelector("#fMCLookupResponse");
+		
+			
+		fMCLookupForm.addEventListener('submit', (event) => {
+			
+			event.preventDefault();
 	
-	let models_html = my_manufacturer.models.map(function(model){
-		return `<option value="${model.shopify_handle}">${model.name}</option>`
-	});
-	
-	let models_html_shortened = my_manufacturer.models.map(model => `<option value="${model.shopify_handle}">${model.name}</option>`);
-	
-	console.log(models_html.join(''));
-	console.log(models_html_shortened.join(''));
-	
+			let formData = {
+				reg: fMCLookupInput.value,
+				collectionHandle: collectionHandle
+			};
+			
+			fetch("http://officialcarmats-co-uk.stackstaging.com/proc_lookup.php", {
+				method: "POST",
+				body:  JSON.stringify(formData)
+			})
+			.then((response) => response.json())
+			.then(function(data){ 
+				console.log(data)
+				fMCLookupResponse.innerHTML = data.output;
+				// https://stackoverflow.com/questions/3795481/javascript-slidedown-without-jquery
+			});
+			
+		
+		});
+		
+	}
+
+
+
 })();
 
 
 
 
-if (document.querySelector("#fMCDManufacturer")) {
-
-	let manufacturer = '';
-	let model = '';
-
-	const fMCDForm = document.querySelector("#fMCDropdownForm");
-	
-	const fMCDManufacturer = fMCDForm.querySelector("#fMCDManufacturer");
-	const fMCDModel = fMCDForm.querySelector("#fMCDModel");
-	const fMCDVariant = fMCDForm.querySelector("#fMCDVariant");
-	
-	fMCDManufacturer.addEventListener('change', (event) => {
-
-		manufacturer = event.target.value;
-
-		console.log(manufacturer);
-		
-		/*
-		if (typeof manufacturers_and_models[manufacturer] != 'undefined') {
-	
-			fMCDModel.innerHTML = '<option value="">MODEL</option>';
-			fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>';
-	
-			let models = manufacturers_and_models[manufacturer]['models'];
-	
-			for (key in models) {
-	
-				let opt = document.createElement("option");
-				opt.value = models[key]['handle'];
-				opt.text = models[key]['display_name'];
-				fMCDModel.add(opt);
-	
-			}
-			fMCDModel.focus();
-		}	
-		*/
-	});
-	
-	
-
-	fMCDModel.addEventListener('change', (event) => {
-	
-		model = event.target.value;
-		
-		if (typeof manufacturers_and_models[manufacturer]['models'][model] != 'undefined') {
-		
-			fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>';
-	
-			let variants =  manufacturers_and_models[manufacturer]['models'][model]['variants'];
-	
-			for (key in variants) {
-		
-				let opt = document.createElement("option");
-				opt.value = variants[key]['handle'];
-				opt.text = variants[key]['display_name'];
-				fMCDVariant.add(opt);
-	
-			}
-			fMCDVariant.focus();
-		}
-	});
-	
-	fMCDVariant.addEventListener('change', (event) => {
-		
-		let handle = event.target.value;
-	
-		if (handle.length > 0) {
-			window.location.href = handle;
-		}
-	
-	});
-	
-	
-}
-
-
-
-if (document.querySelector("#fMCLookupForm")) {
-
-	const fMCLookupForm = document.querySelector("#fMCLookupForm");
-	let fMCLookupInput = document.querySelector("#fMCLookupInput");
-	let fMCLookupResponse = document.querySelector("#fMCLookupResponse");
-	
-		
-	fMCLookupForm.addEventListener('submit', (event) => {
-		
-		event.preventDefault();
-
-		let formData = {
-			reg: fMCLookupInput.value,
-			collectionHandle: collectionHandle
-		};
-		
-		fetch("http://officialcarmats-co-uk.stackstaging.com/proc_lookup.php", {
-			method: "POST",
-			body:  JSON.stringify(formData)
-		})
-		.then((response) => response.json())
-		.then(function(data){ 
-			console.log(data)
-			fMCLookupResponse.innerHTML = data.output;
-			// https://stackoverflow.com/questions/3795481/javascript-slidedown-without-jquery
-		});
-		
-	
-	});
-	
-}
 
 	
 </script>

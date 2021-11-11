@@ -1,7 +1,7 @@
 {
 "products": [
 	{%- for product in collection.products -%}
-	{"title": {{ product.title | json }}, 'handle':{{ product.handle | json }}}
+	{"title": {{ product.title | remove: product.vendor | remove: "Car Mats" | json }}, "handle":{{ product.handle | json }}}
 	{%- unless forloop.last %},{%- endunless -%}
 	{%- endfor -%}
 ]
