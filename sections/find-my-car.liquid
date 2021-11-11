@@ -149,10 +149,7 @@ window.theme.mam = {% render "lookup_json" %};
 		
 			model_handle = event.target.value;
 			
-			console.log("http://127.0.0.1:9292/collections/" + model_handle + "?view=_partial");
-			
-			// fetch("{{ shop.secure_url }}/collections/" + model_handle + "?view=_partial", {
-			fetch("http://127.0.0.1:9292/collections/" + model_handle + "?view=_partial", {
+			fetch("{{ shop.secure_url }}/collections/" + model_handle + "?view=_partial", {
 				method: "GET"
 			})
 			.then((response) => response.text())
