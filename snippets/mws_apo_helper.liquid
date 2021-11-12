@@ -173,6 +173,11 @@ window.mwApoInit.onCallback = function (event, data) {
         });
       }
     });
+
+    let selectedElem = document.querySelectorAll('.mw-option__control--type-select');
+    selectedElem.forEach(element => {
+      let val = element.value;
+    });
   }
   return data;
 };
