@@ -5,6 +5,32 @@
       "settings": {
       }
     },
+    "1636726297f7ef1b26": {
+      "type": "rich-text-about",
+      "blocks": {
+        "1636726297f7ef1b26-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "5 Mat Qualities",
+            "heading_size": "h1"
+          }
+        },
+        "1636726297f7ef1b26-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1636726297f7ef1b26-0",
+        "1636726297f7ef1b26-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "163672227249c109c8": {
       "type": "image-with-text-about",
       "blocks": {
@@ -134,14 +160,150 @@
         "height": "adapt",
         "layout": "image_first"
       }
+    },
+    "16367262384739c8a1": {
+      "type": "rich-text-about",
+      "blocks": {
+        "16367262384739c8a1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bindings",
+            "heading_size": "h1"
+          }
+        },
+        "16367262384739c8a1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Keep it simple and classic with a plain black binding or Choose from a wide range of bindings colours and styles to suit your own exterior or interior of your cars, what ever your taste we’ve got you covered.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16367262384739c8a1-0",
+        "16367262384739c8a1-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1636725727d1f273d8": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "1636725727d1f273d8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nubuck"
+          }
+        },
+        "1636725727d1f273d8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1636725727d1f273d8-0",
+        "1636725727d1f273d8-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/nubuck.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
+    },
+    "1636725773e295c781": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "1636725773e295c781-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Prestitch"
+          }
+        },
+        "1636725773e295c781-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1636725773e295c781-0",
+        "1636725773e295c781-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/prestitch.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
+    },
+    "16367258033ac61c5f": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "16367258033ac61c5f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Striped"
+          }
+        },
+        "16367258033ac61c5f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16367258033ac61c5f-0",
+        "16367258033ac61c5f-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/striped.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
+    },
+    "163672582810abe785": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "163672582810abe785-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Solid"
+          }
+        },
+        "163672582810abe785-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163672582810abe785-0",
+        "163672582810abe785-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/full-colours.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
+    "1636726297f7ef1b26",
     "163672227249c109c8",
     "1636724279d23a5b2e",
     "163672469154f6e53a",
     "1636724747000c4236",
-    "163672490725b20691"
+    "163672490725b20691",
+    "16367262384739c8a1",
+    "1636725727d1f273d8",
+    "1636725773e295c781",
+    "16367258033ac61c5f",
+    "163672582810abe785"
   ]
 }
