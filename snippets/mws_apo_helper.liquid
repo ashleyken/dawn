@@ -87,7 +87,7 @@ function overlayImages(params) {
       let img = document.createElement('img');
       img.classList.add("lazyautosizes","lazyloaded","forOverlay");
       img.style.display = 'none';
-      img.setAttribute(src, image);
+      img.setAttribute('src', image);
       img.setAttribute('srcset', image)
 
       let mainImage = document.querySelector('.slider__slide .product__modal-opener .product__media');
