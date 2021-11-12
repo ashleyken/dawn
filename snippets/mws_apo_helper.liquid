@@ -17,19 +17,33 @@ function mws_apo_hide_our_variants(selector_container, selector_items) {
   }
 }
 
-function imageElement(id) {
+function imageElement(id, optionType) {
   if (typeof mwApoInit.response !== "undefined") {
     for (const val of Object.values(mwApoInit.response)) {
       for (const key in val.values) {
         if (key == id) {
-          if (
-            typeof val.values[id].value.images !== "undefined" &&
-            val.values[id].value.images.length &&
-            val.values[id].value.images[1]
-          ) {
-            for (const iterator of val.values[id].value.images) {
-              if (iterator.hasOwnProperty("url")) {
-                return iterator.url;
+          if (optionType === "select") {
+            if (
+              typeof val.values[id].value.images !== "undefined" &&
+              val.values[id].value.images.length &&
+              val.values[id].value.images[0]
+            ) {
+              for (const iterator of val.values[id].value.images) {
+                if (iterator.hasOwnProperty("url")) {
+                  return iterator.url;
+                }
+              }
+            }
+          } else {
+            if (
+              typeof val.values[id].value.images !== "undefined" &&
+              val.values[id].value.images.length &&
+              val.values[id].value.images[1]
+            ) {
+              for (const iterator of val.values[id].value.images) {
+                if (iterator.hasOwnProperty("url")) {
+                  return iterator.url;
+                }
               }
             }
           }
@@ -39,11 +53,11 @@ function imageElement(id) {
   }
 }
 
-function swatches(params) {
+function overlayImages(params) {
   $(".mw-option__value").each(function (index, element) {
     var $this = $(this);
     var selected = $this.attr("data-value-id");
-    const image = imageElement(selected);
+    const image = imageElement(selected, "swatch");
 
     if (typeof image !== "undefined") {
       $this.find(".mw-option__swatch-image").attr("src", image);
@@ -57,6 +71,32 @@ function swatches(params) {
             " />"
         )
       );
+    }
+  });
+
+  let selectElement = document.querySelectorAll(
+    ".mw-option__control--type-select .mw-option__value"
+  );
+  selectElement.forEach((element) => {
+    let selected = element.getAttribute("value");
+    const image = imageElement(selected, "select");
+
+    if (typeof image !== "undefined") {
+      element.setAttribute("src", image);
+
+      let img = document.createElement("img");
+      img.classList.add("lazyautosizes", "lazyloaded", "forOverlay");
+      img.style.display = "none";
+      img.setAttribute("src", image);
+      img.setAttribute("srcset", image);
+
+      let mainImage = document.querySelector(
+        ".slider__slide .product__modal-opener .product__media"
+      );
+
+      if (mainImage) {
+        mainImage.append(img);
+      }
     }
   });
 }
@@ -82,7 +122,7 @@ window.mwApoInit.onEvent = function (event, args) {
     );
 
     setTimeout(() => {
-      swatches();
+      overlayImages();
     }, 300);
 
     if (document.querySelector(".shopify-payment-button")) {
@@ -123,7 +163,7 @@ window.mwApoInit.onCallback = function (event, data) {
     ) {
       var $this = $(this);
       var selected = $this.attr("data-value-id");
-      const image = imageElement(selected);
+      const image = imageElement(selected, 'swatch');
       if (typeof image !== "undefined") {
         $(
           ".slider__slide .product__modal-opener .product__media .forOverlay"
@@ -133,6 +173,27 @@ window.mwApoInit.onCallback = function (event, data) {
             $el.removeAttr("style");
           }
         });
+      }
+    });
+
+    let selectedElem = document.querySelectorAll(
+      ".mw-option__control--type-select"
+    );
+    selectedElem.forEach((element) => {
+      const val = element.value;
+      if (val !== "") {
+        let selectedOption = element.querySelector('[value="' + val + '"');
+        let id = selectedOption.getAttribute('value');
+        const image = imageElement(id, 'select');
+
+        if (typeof image !== "undefined") {
+          document.querySelectorAll('.slider__slide .product__modal-opener .product__media .forOverlay').forEach(el => {
+            const imgOverlay = el;
+            if (imgOverlay.getAttribute('srcset') === image) {
+              imgOverlay.removeAttribute('style')
+            }
+          })
+        }
       }
     });
   }
@@ -152,6 +213,9 @@ window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selecto
   }
   .mw-option--type-radio .mw-option__value .mw-stack--spacing-tight .mw-stack__item:first-child {
     margin-bottom: -8px;
+  }
+  .mw-option--type-select .mw-option__media {
+    display: none;
   }
 </style>
 
