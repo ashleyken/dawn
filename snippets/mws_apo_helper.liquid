@@ -163,7 +163,7 @@ window.mwApoInit.onCallback = function (event, data) {
     ) {
       var $this = $(this);
       var selected = $this.attr("data-value-id");
-      const image = imageElement(selected);
+      const image = imageElement(selected, 'swatch');
       if (typeof image !== "undefined") {
         $(
           ".slider__slide .product__modal-opener .product__media .forOverlay"
@@ -183,6 +183,17 @@ window.mwApoInit.onCallback = function (event, data) {
       const val = element.value;
       if (val !== "") {
         let selectedOption = element.querySelector('[value="' + val + '"');
+        let id = selectedOption.getAttribute('value');
+        const image = imageElement(id, 'select');
+
+        if (typeof image !== "undefined") {
+          document.querySelectorAll('.slider__slide .product__modal-opener .product__media .forOverlay').forEach(el => {
+            const imgOverlay = el;
+            if (imgOverlay.getAttribute('srcset') === image) {
+              imgOverlay.removeAttribute('style')
+            }
+          })
+        }
       }
     });
   }
