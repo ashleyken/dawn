@@ -4,7 +4,7 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text-about.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="{% unless section.settings.full_width %}page-width{% endunless %}">
+<div class="page-width page-width--narrow">
   <div class="rich-text-about color-{{ section.settings.color_scheme }}{% if section.settings.full_width %} rich-text-about--full-width{% endif %}">
     <div class="rich-text-about__blocks">
       {%- for block in section.blocks -%}
