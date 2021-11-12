@@ -11,31 +11,23 @@
         "163672227249c109c8-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Classic"
           }
         },
         "163672227249c109c8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "163672227249c109c8-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "text": "<p>Affordable and durable – Our classic car mats are manufactured from  600g\/m2 looped pile carpet with granular backing (made from recycled tyres).<\/p>"
           }
         }
       },
       "block_order": [
         "163672227249c109c8-0",
-        "163672227249c109c8-1",
-        "163672227249c109c8-2"
+        "163672227249c109c8-1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/mat_classic.jpg",
         "height": "adapt",
-        "color_scheme": "background-1",
         "layout": "image_first"
       }
     }
