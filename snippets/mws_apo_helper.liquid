@@ -39,7 +39,7 @@ function imageElement(id) {
   }
 }
 
-function swatches(params) {
+function overlayImages(params) {
   $(".mw-option__value").each(function (index, element) {
     var $this = $(this);
     var selected = $this.attr("data-value-id");
@@ -57,6 +57,16 @@ function swatches(params) {
             " />"
         )
       );
+    }
+  });
+
+  let selectElement = document.querySelectorAll('.mw-option__control--type-select .mw-option__value');
+  selectElement.forEach(element => {
+    let selected = element.getAttribute('value');
+    const image = imageElement(selected);
+
+    if (typeof image !== 'undefined') {
+      element.setAttribute('src', image)
     }
   });
 }
@@ -82,7 +92,7 @@ window.mwApoInit.onEvent = function (event, args) {
     );
 
     setTimeout(() => {
-      swatches();
+      overlayImages();
     }, 300);
 
     if (document.querySelector(".shopify-payment-button")) {
