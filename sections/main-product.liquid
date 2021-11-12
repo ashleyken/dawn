@@ -38,94 +38,67 @@
                 </modal-opener>
               </li>
         </ul>
-        <div class="slider-buttons no-js-hidden{% if product.media.size < 2 %} small-hide{% endif %}">
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-            <span class="slider-counter--total">{% if section.settings.hide_variants %}{{ product.media.size | minus: variant_images.size | plus: 1 }}{% else %}{{ product.media.size }}{% endif %}</span>
+        <div class="grid grid--1-col">
+          <div class="grid__item">
+            {%- for media in product.media -%}
+              {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+                
+                <div class="product_image_holder">
+                {% render 'product-thumbnail_mat', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                </div>
+      
+              {%- endunless -%}
+            {%- endfor -%}
           </div>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+          <div class="grid__item">
+            {% if collection.template_suffix contains '-team' %}
+            
+              {% assign teamName = collection.title | remove: " Car Floor Mats" %}
+            
+              
+              {% if collection.image %}<img src="{{ collection.image | img_url: 'medium' }}" class="product_badge_image">{% endif %}
+              
+              <input type="hidden" id="teamName" value="{{ teamName }}">
+              
+              <script>
+              
+              let teamName = document.querySelector("#teamName").value;
+              let teamTimer = setInterval(selectBadge, 500);
+              
+              function abortTeamTimer() { // to be called when you want to stop the timer
+                clearInterval(teamTimer);
+              }
+              
+              function selectBadge() {
+              
+                let mwSelectMenu = document.getElementById("select_o_21162");
+                
+                if (mwSelectMenu) {
+                  
+                  for (i = 0; i < mwSelectMenu.length; ++i){
+                    if (mwSelectMenu.options[i].text == '' + teamName + ''){
+                      console.log(teamName);
+                      mwSelectMenu.options.selectedIndex = i;
+                      mwSelectMenu.dispatchEvent(new Event('change'));
+                      abortTeamTimer();
+                    }
+                  }
+                  
+                  
+                }
+              
+              }
+              
+              </script>
+              
+            {% endif %}
+          </div>
         </div>
       </slider-component>
-      {%- if first_3d_model -%}
-        <button
-          class="button button--full-width product__xr-button"
-          type="button"
-          aria-label="{{ 'products.product.xr_button_label' | t }}"
-          data-shopify-xr
-          data-shopify-model3d-id="{{ first_3d_model.id }}"
-          data-shopify-title="{{ product.title | escape }}"
-          data-shopify-xr-hidden
-        >
-          {% render 'icon-3d-model' %}
-          {{ 'products.product.xr_button' | t }}
-        </button>
-      {%- endif -%}
     </div>
     <div class="product__info-wrapper grid__item">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
-
-        {% if collection.template_suffix contains '-team' %}
-        
-          {% assign teamName = collection.title | remove: " Car Floor Mats" %}
-        
-          We have come from one of the Team pages and the team is {{ teamName }}
-          
-          {% if collection.image %}<br><br><img src="{{ collection.image | img_url: 'small' }}">{% endif %}
-          
-          <input type="hidden" id="teamName" value="{{ teamName }}">
-          
-          <script>
-          
-          let teamName = document.querySelector("#teamName").value;
-          let teamTimer = setInterval(selectBadge, 500);
-          
-          function abortTeamTimer() { // to be called when you want to stop the timer
-            clearInterval(teamTimer);
-          }
-          
-          function selectBadge() {
-          
-            let mwSelectMenu = document.getElementById("select_o_21162");
-            
-            if (mwSelectMenu) {
-              
-              for (i = 0; i < mwSelectMenu.length; ++i){
-                if (mwSelectMenu.options[i].text == '' + teamName + ''){
-                  console.log(teamName);
-                  mwSelectMenu.options.selectedIndex = i;
-                  mwSelectMenu.dispatchEvent(new Event('change'));
-                  abortTeamTimer();
-                }
-              }
-              
-              
-            }
-          
-          }
-          
-          </script>
-          
-        {% endif %}
-        
-        
-        {%- for media in product.media -%}
-          {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-            
-            <div class="product_image_holder">
-            {% render 'product-thumbnail_mat', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </div>
-  
-          {%- endunless -%}
-        {%- endfor -%}
-          
-        
-
-
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
