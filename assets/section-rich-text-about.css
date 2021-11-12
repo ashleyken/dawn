@@ -76,3 +76,7 @@
 .rich-text-about__blocks > * + a {
   margin-top: 3rem;
 }
+
+.rich-text-about__heading_underline {
+  border-bottom: 1px solid #000;
+}
