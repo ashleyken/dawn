@@ -83,6 +83,16 @@ function overlayImages(params) {
 
     if (typeof image !== "undefined") {
       element.setAttribute("src", image);
+
+      let img = document.createElement('img');
+      img.classList.add("lazyautosizes","lazyloaded","forOverlay");
+      img.style.display = 'none';
+
+      let mainImage = document.querySelector('.slider__slide .product__modal-opener .product__media');
+
+      if (mainImage) {
+        mainImage.append(img)
+      }
     }
   });
 }
