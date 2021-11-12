@@ -57,7 +57,7 @@ function overlayImages(params) {
   $(".mw-option__value").each(function (index, element) {
     var $this = $(this);
     var selected = $this.attr("data-value-id");
-    const image = imageElement(selected, 'swatch');
+    const image = imageElement(selected, "swatch");
 
     if (typeof image !== "undefined") {
       $this.find(".mw-option__swatch-image").attr("src", image);
@@ -84,16 +84,18 @@ function overlayImages(params) {
     if (typeof image !== "undefined") {
       element.setAttribute("src", image);
 
-      let img = document.createElement('img');
-      img.classList.add("lazyautosizes","lazyloaded","forOverlay");
-      img.style.display = 'none';
-      img.setAttribute('src', image);
-      img.setAttribute('srcset', image)
+      let img = document.createElement("img");
+      img.classList.add("lazyautosizes", "lazyloaded", "forOverlay");
+      img.style.display = "none";
+      img.setAttribute("src", image);
+      img.setAttribute("srcset", image);
 
-      let mainImage = document.querySelector('.slider__slide .product__modal-opener .product__media');
+      let mainImage = document.querySelector(
+        ".slider__slide .product__modal-opener .product__media"
+      );
 
       if (mainImage) {
-        mainImage.append(img)
+        mainImage.append(img);
       }
     }
   });
@@ -174,9 +176,14 @@ window.mwApoInit.onCallback = function (event, data) {
       }
     });
 
-    let selectedElem = document.querySelectorAll('.mw-option__control--type-select');
-    selectedElem.forEach(element => {
-      let val = element.value;
+    let selectedElem = document.querySelectorAll(
+      ".mw-option__control--type-select"
+    );
+    selectedElem.forEach((element) => {
+      const val = element.value;
+      if (val !== "") {
+        let selectedOption = element.querySelector('[value="' + val + '"');
+      }
     });
   }
   return data;
