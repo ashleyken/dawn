@@ -17,19 +17,33 @@ function mws_apo_hide_our_variants(selector_container, selector_items) {
   }
 }
 
-function imageElement(id) {
+function imageElement(id, optionType) {
   if (typeof mwApoInit.response !== "undefined") {
     for (const val of Object.values(mwApoInit.response)) {
       for (const key in val.values) {
         if (key == id) {
-          if (
-            typeof val.values[id].value.images !== "undefined" &&
-            val.values[id].value.images.length &&
-            val.values[id].value.images[1]
-          ) {
-            for (const iterator of val.values[id].value.images) {
-              if (iterator.hasOwnProperty("url")) {
-                return iterator.url;
+          if (optionType === "select") {
+            if (
+              typeof val.values[id].value.images !== "undefined" &&
+              val.values[id].value.images.length &&
+              val.values[id].value.images[0]
+            ) {
+              for (const iterator of val.values[id].value.images) {
+                if (iterator.hasOwnProperty("url")) {
+                  return iterator.url;
+                }
+              }
+            }
+          } else {
+            if (
+              typeof val.values[id].value.images !== "undefined" &&
+              val.values[id].value.images.length &&
+              val.values[id].value.images[1]
+            ) {
+              for (const iterator of val.values[id].value.images) {
+                if (iterator.hasOwnProperty("url")) {
+                  return iterator.url;
+                }
               }
             }
           }
@@ -43,7 +57,7 @@ function overlayImages(params) {
   $(".mw-option__value").each(function (index, element) {
     var $this = $(this);
     var selected = $this.attr("data-value-id");
-    const image = imageElement(selected);
+    const image = imageElement(selected, swatch);
 
     if (typeof image !== "undefined") {
       $this.find(".mw-option__swatch-image").attr("src", image);
@@ -60,13 +74,15 @@ function overlayImages(params) {
     }
   });
 
-  let selectElement = document.querySelectorAll('.mw-option__control--type-select .mw-option__value');
-  selectElement.forEach(element => {
-    let selected = element.getAttribute('value');
-    const image = imageElement(selected);
+  let selectElement = document.querySelectorAll(
+    ".mw-option__control--type-select .mw-option__value"
+  );
+  selectElement.forEach((element) => {
+    let selected = element.getAttribute("value");
+    const image = imageElement(selected, "select");
 
-    if (typeof image !== 'undefined') {
-      element.setAttribute('src', image)
+    if (typeof image !== "undefined") {
+      element.setAttribute("src", image);
     }
   });
 }
