@@ -31,7 +31,6 @@
 
 .rich-text-about:not(.color-background-1) {
   padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -43,7 +42,6 @@
 
   .rich-text-about:not(.color-background-1) {
     padding-top: calc(5rem + var(--page-width-margin));
-    padding-bottom: calc(5rem + var(--page-width-margin));
   }
 
   .rich-text-about__blocks {
