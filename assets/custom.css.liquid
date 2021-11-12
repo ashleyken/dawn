@@ -46,6 +46,11 @@ font-display:auto;font-style:normal;font-weight:700;
 	flex-grow: 0;
 }
 
+@media screen and (min-width: 750px) {
+	.grid__item_two_thirds {
+		width: calc(66.66% - 1rem * 2 / 3);
+	}
+}
 
 /*
 I've reduced --page-width: 160rem; to --page-width: 110rem; so need to restore for header and footer
@@ -546,6 +551,15 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 }
 .mw-option--type-radio .mw-option__value {
 	margin-top: 0px!important;
+}
+
+.image-with-text-about__content {
+	justify-content: start;
+}
+@media screen and (min-width: 990px) {
+	.image-with-text-about__content {
+			padding: 0rem 7rem 7rem;
+	}
 }
 
 
