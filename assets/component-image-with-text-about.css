@@ -82,7 +82,7 @@
   align-items: flex-start;
   height: 100%;
   justify-content: start;
-  padding: 4rem 4rem 5rem;
+  padding: 4rem 0 5rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 990px) {
   .image-with-text-about__content {
-    padding: 0 7rem 7rem;
+    padding: 0 0 4rem 4rem;
   }
 }
 
@@ -123,6 +123,7 @@
 
 .image-with-text-about__heading {
   margin-bottom: 0;
+  text-transform: initial;
 }
 
 .image-with-text-about__text p {

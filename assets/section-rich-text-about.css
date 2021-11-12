@@ -11,7 +11,7 @@
 .rich-text-about__blocks {
   margin: auto;
   /* 2.5rem margin on left & right */
-  width: calc(100% - 5rem);
+  width: 100%;
 }
 
 .rich-text-about__blocks * {
@@ -20,7 +20,7 @@
 
 .rich-text-about--full-width .rich-text-about__blocks {
   /* 4rem (1.5rem + 2.5rem) margin on left & right */
-  width: calc(100% - 8rem);
+  width: 100%;
 }
 
 .rich-text-about:not(.rich-text-about--full-width),
@@ -79,4 +79,5 @@
 
 .rich-text-about__heading_underline {
   border-bottom: 1px solid #000;
+  padding-bottom: 1rem;
 }
