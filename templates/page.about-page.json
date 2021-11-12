@@ -30,10 +30,37 @@
         "height": "adapt",
         "layout": "image_first"
       }
+    },
+    "1636724279d23a5b2e": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "1636724279d23a5b2e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Classic Velour"
+          }
+        },
+        "1636724279d23a5b2e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Upgrade to the Classic Velour which  is a 900g\/m2 tufted (like a toothbrush) carpet, easy to clean and longer lasting than the Classic grade.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1636724279d23a5b2e-0",
+        "1636724279d23a5b2e-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mat_classic_velour.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
-    "163672227249c109c8"
+    "163672227249c109c8",
+    "1636724279d23a5b2e"
   ]
 }
