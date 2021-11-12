@@ -56,11 +56,92 @@
         "height": "adapt",
         "layout": "image_first"
       }
+    },
+    "163672469154f6e53a": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "163672469154f6e53a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Super Luxury"
+          }
+        },
+        "163672469154f6e53a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wow, you can not go wrong with this extra thick tufted fabric, Only the best is good, this really  is the bees knees, a 1300g\/m2 deep pile tufted carpet that makes you want to kick off your shoes.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163672469154f6e53a-0",
+        "163672469154f6e53a-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mat_super_luxury.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
+    },
+    "1636724747000c4236": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "1636724747000c4236-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Prestige"
+          }
+        },
+        "1636724747000c4236-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Prestige is one of the highest grades of aftermarket Automotive materials, Plush Wool effect fabric, so plush this is not available for personalisation.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1636724747000c4236-0",
+        "1636724747000c4236-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mat_prestige.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
+    },
+    "163672490725b20691": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "163672490725b20691-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rubber"
+          }
+        },
+        "163672490725b20691-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3mm thick rubber mats in a chequer plate design.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163672490725b20691-0",
+        "163672490725b20691-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mat_rubber.jpg",
+        "height": "adapt",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
     "main",
     "163672227249c109c8",
-    "1636724279d23a5b2e"
+    "1636724279d23a5b2e",
+    "163672469154f6e53a",
+    "1636724747000c4236",
+    "163672490725b20691"
   ]
 }
