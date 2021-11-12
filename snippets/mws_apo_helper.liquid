@@ -57,7 +57,7 @@ function overlayImages(params) {
   $(".mw-option__value").each(function (index, element) {
     var $this = $(this);
     var selected = $this.attr("data-value-id");
-    const image = imageElement(selected, swatch);
+    const image = imageElement(selected, 'swatch');
 
     if (typeof image !== "undefined") {
       $this.find(".mw-option__swatch-image").attr("src", image);
