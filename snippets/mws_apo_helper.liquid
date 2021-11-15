@@ -116,6 +116,16 @@ window.mwApoInit.onEvent = function (event, args) {
       });
     }
 
+    const radioOptions = document.querySelectorAll('.mw-option--type-radio');
+    radioOptions.forEach(element => {
+      let image = element.querySelector('.mw-option__media-image');
+      if (image) {
+        let cloneImg = image.querySelector('img').cloneNode();
+        image.parentElement.style.display = 'none';
+        document.querySelector('.mw-stack--vertical').after(cloneImg)
+      }
+    });
+
     mws_apo_hide_our_variants(
       ".selector-wrapper",
       ".single-option-selector option"
