@@ -124,6 +124,9 @@ window.mwApoInit.onEvent = function (event, args) {
         if (image) {
           let cloneImg = image.querySelector("img").cloneNode();
           image.parentElement.style.display = "none";
+          cloneImg.style.display = 'flex';
+          cloneImg.style.width = '98px';
+          cloneImg.style.height = '98px';
           el.querySelector(".mw-stack--vertical").prepend(cloneImg);
         }
       });
