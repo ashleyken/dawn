@@ -124,13 +124,13 @@ radioOptions.forEach((element) => {
     if (image) {
       let cloneImg = image.cloneNode();
       
-      image.parentElement.style.display = "none";
-      cloneImg.style.display = "flex";
-      cloneImg.style.width = "98px";
-      cloneImg.style.height = "98px";
-      cloneImg.style.position = "absolute";
-      cloneImg.style.left = "0";
-      cloneImg.style.top = "15px";
+//       image.parentElement.style.display = "none";
+      image.style.display = "flex";
+      image.style.width = "98px";
+      image.style.height = "98px";
+      image.style.position = "absolute";
+      image.style.left = "0";
+      image.style.top = "15px";
       el.querySelector(".mw-stack--vertical").prepend(image);
     }
   });
