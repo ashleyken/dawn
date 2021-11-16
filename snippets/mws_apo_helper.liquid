@@ -117,23 +117,25 @@ window.mwApoInit.onEvent = function (event, args) {
     }
 
     const radioOptions = document.querySelectorAll(".mw-option--type-radio");
-    radioOptions.forEach((element) => {
-      let values = element.querySelectorAll(".mw-option__value");
-      values.forEach((el) => {
-        let image = el.querySelector(".mw-option__media-image");
-        if (image) {
-          let cloneImg = image.querySelector("img").cloneNode();
-          image.parentElement.style.display = "none";
-          cloneImg.style.display = 'flex';
-          cloneImg.style.width = '98px';
-          cloneImg.style.height = '98px';
-          cloneImg.style.position = 'absolute';
-          cloneImg.style.left = '0';
-          cloneImg.style.top = '15px';
-          el.querySelector(".mw-stack--vertical").prepend(cloneImg);
-        }
-      });
-    });
+radioOptions.forEach((element) => {
+  let values = element.querySelectorAll(".mw-option__value");
+  values.forEach((el) => {
+    let image = el.querySelector(".mw-option__media-image");
+    if (image) {
+      let cloneImg = image.cloneNode();
+      
+      image.parentElement.style.display = "none";
+      cloneImg.style.display = "flex";
+      cloneImg.style.width = "98px";
+      cloneImg.style.height = "98px";
+      cloneImg.style.position = "absolute";
+      cloneImg.style.left = "0";
+      cloneImg.style.top = "15px";
+      el.querySelector(".mw-stack--vertical").prepend(cloneImg);
+    }
+  });
+});
+
 
     mws_apo_hide_our_variants(
       ".selector-wrapper",
