@@ -513,6 +513,12 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 	border: none!important;
 }
 
+@media screen and (max-width: 749px) {
+	.product {
+		flex-direction: column-reverse;
+	}
+}
+
 @media screen and (min-width: 750px) {
 	.product:not(.product--no-media):not(.featured-product) .product__media-wrapper {
 		max-width: 36%!important;
