@@ -82,7 +82,7 @@
                 if (mwSelectMenu) {
                   
                   for (i = 0; i < mwSelectMenu.length; ++i){
-                    if (mwSelectMenu.options[i].text == '' + teamName + ''){
+                    if (mwSelectMenu.options[i].text == '' + teamName + ' (+£10.00)'){
                       console.log(teamName);
                       mwSelectMenu.options.selectedIndex = i;
                       mwSelectMenu.dispatchEvent(new Event('change'));
