@@ -3,7 +3,7 @@
 
 {%- assign manufacturer_handle = collection.handle -%}
 {%- assign manufacturer_handle_no_ext = collection.handle | remove: "-car-mats" | remove: "-boot-liners" -%}
-{%- assign manufacturer_name_no_ext = collection.title | remove: " Floor Mats" | remove: " Boot Liners" -%}
+{%- assign manufacturer_name_no_ext = collection.title | remove: "Floor Mats to fit " | remove: "Boot Liners to fit " -%}
 
 {%- capture manufacturer_handles %}{%- render "lookup", key: manufacturer_handle_no_ext -%}{% endcapture -%}
 {%- assign handles = manufacturer_handles | split: "," -%}
