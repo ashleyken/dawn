@@ -63,7 +63,7 @@
               <script>
               
               let teamName = document.querySelector("#teamName").value;
-              let teamTimer = setInterval(selectBadge, 500);
+              let teamTimer = setInterval(selectBadge, 200);
               
               function abortTeamTimer() { // to be called when you want to stop the timer
                 clearInterval(teamTimer);
@@ -72,7 +72,9 @@
               function selectBadge() {
               
                 let mwPrestige = document.querySelector('[data-value-id="v_115734"]');
-                mwPrestige.style.display = "none";
+                if (mwPrestige) {
+                  mwPrestige.style.display = "none";
+                }
                 
                 
                 let mwSelectMenu = document.getElementById("select_o_21162");
