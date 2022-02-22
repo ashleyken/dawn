@@ -123,12 +123,6 @@ window.theme.mam = {% render "lookup_json" %};
 			*/
 			
 			
-			manufacturer_matched.models.forEach(function(model){
-				console.log(model.name);
-			});
-			
-			// don't show boot options if we've got a collectionHandle value
-			
 			let models_html = manufacturer_matched.models.map(model => `<option value="${model.shopify_handle}">${model.name}</option>`);
 			
 			fMCDModel.innerHTML = '<option value="">MODEL</option>' + models_html.join('');
@@ -151,7 +145,16 @@ window.theme.mam = {% render "lookup_json" %};
 			.then(function(data){ 
 				let json = JSON.parse(data.replace(/(<([^>]+)>)/gi, ""));
 
+				// don't show boot options if we've got a collectionHandle value
+
+
+				let mats_html = json.products.map(function(mat){
+					return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`
+				});
+
+				/*
 				let mats_html = json.products.map(mat=> `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`);
+				*/
 
 				fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>' + mats_html.join('');
 				fMCDVariant.focus();
