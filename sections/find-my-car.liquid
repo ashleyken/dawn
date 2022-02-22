@@ -201,7 +201,7 @@ window.theme.mam = {% render "lookup_json" %};
 				collectionHandle: collectionHandle
 			};
 			
-			fetch("http://officialcarmats-co-uk.stackstaging.com/proc_lookup.php", {
+			fetch("https://cms.officialcarmats.co.uk/proc_lookup.php", {
 				method: "POST",
 				body:  JSON.stringify(formData)
 			})
@@ -209,7 +209,6 @@ window.theme.mam = {% render "lookup_json" %};
 			.then(function(data){ 
 				console.log(data)
 				fMCLookupResponse.innerHTML = data.output;
-				// https://stackoverflow.com/questions/3795481/javascript-slidedown-without-jquery
 			});
 			
 		
