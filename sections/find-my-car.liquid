@@ -149,7 +149,15 @@ window.theme.mam = {% render "lookup_json" %};
 
 
 				let mats_html = json.products.map(function(mat){
-					return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}${collectionHandle}</option>`
+					
+					let boot_checker = mat.title.includes("boot");
+					
+					if (collectionHandle && boot_checker) {
+						// don't return
+					}
+					else {
+						return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`;
+					}
 				});
 
 				/*
