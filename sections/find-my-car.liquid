@@ -149,7 +149,7 @@ window.theme.mam = {% render "lookup_json" %};
 
 
 				let mats_html = json.products.map(function(mat){
-					return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`
+					return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}${collectionHandle}</option>`
 				});
 
 				/*
