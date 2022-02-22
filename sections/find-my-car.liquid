@@ -79,6 +79,7 @@ if (document.querySelector("#collectionHandle") && document.querySelector("#coll
 	let collectionHandle_input = document.querySelector("#collectionHandle");
 	collectionHandle = '/collections/' + collectionHandle_input.value;
 	// console.log(collectionHandle);
+	// don't show boot options if we've got a collectionHandle value
 } 
 
 
@@ -120,6 +121,13 @@ window.theme.mam = {% render "lookup_json" %};
 				return `<option value="${model.shopify_handle}">${model.name}</option>`
 			});
 			*/
+			
+			
+			manufacturer_matched.models.forEach(function(model){
+				console.log(model.name);
+			});
+			
+			// don't show boot options if we've got a collectionHandle value
 			
 			let models_html = manufacturer_matched.models.map(model => `<option value="${model.shopify_handle}">${model.name}</option>`);
 			
