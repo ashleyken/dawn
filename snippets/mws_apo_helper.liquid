@@ -169,6 +169,25 @@ window.mwApoInit.onEvent = function (event, args) {
       );
     }
   }
+  
+      
+  if (event == "attachEvents::initAddToCart::clickStart") {
+      let divMWS = document.createElement('div');
+      divMWS.classList.add('mw-spinner');
+      document.body.appendChild(divMWS);
+    }
+    
+    if (event == "onClick::validate-failed") {
+      let divMWS = document.querySelector('.mw-spinner');
+      divMWS.remove();
+    }
+    
+    if (event == "attachEvents::initAddToCart::clickFinally") {
+      setTimeout(function () {
+       let divMWS = document.querySelector('.mw-spinner');
+       divMWS.remove();
+     }, 300);
+    }
 };
 
 
@@ -221,25 +240,7 @@ window.mwApoInit.onCallback = function (event, data) {
       }
     });
   }
-  
-      
-  if (event == "attachEvents::initAddToCart::clickStart") {
-      let divMWS = document.createElement('div');
-      divMWS.classList.add('mw-spinner');
-      document.body.appendChild(divMWS);
-    }
-    
-    if (event == "onClick::validate-failed") {
-      let divMWS = document.querySelector('.mw-spinner');
-      divMWS.remove();
-    }
-    
-    if (event == "attachEvents::initAddToCart::clickFinally") {
-      setTimeout(function () {
-       let divMWS = document.querySelector('.mw-spinner');
-       divMWS.remove();
-     }, 300);
-    }
+
   return data;
 };
 
