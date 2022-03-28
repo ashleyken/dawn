@@ -111,16 +111,16 @@ window.mwApoInit.onEvent = function (event, args) {
     console.log(divMWS)
     }
       
-  if (event == "onClick::validate-failed") {
-    let divMWS = document.querySelector('.mw-spinner');
-    divMWS.remove();
-  }
+//   if (event == "onClick::validate-failed") {
+//     let divMWS = document.querySelector('.mw-spinner');
+//     divMWS.remove();
+//   }
 
-  if (event == "attachEvents::initAddToCart::clickFinally") {
-    setTimeout(function () {
-      let divMWS = document.querySelector('.mw-spinner');
-      divMWS.remove();
-    }, 1000);
+//   if (event == "attachEvents::initAddToCart::clickFinally") {
+//     setTimeout(function () {
+//       let divMWS = document.querySelector('.mw-spinner');
+//       divMWS.remove();
+//     }, 1000);
   }
 
   if (event == "init::finish") {
