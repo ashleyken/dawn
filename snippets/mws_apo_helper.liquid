@@ -102,6 +102,8 @@ function overlayImages(params) {
 }
 
 window.mwApoInit.onEvent = function (event, args) {
+    console.log(event)
+
   if (event == "init::finish") {
     function isVisible(e) {
       return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
