@@ -275,9 +275,20 @@ window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selecto
      display: block !important;
   }
   
-  .mw-spinner {}
-    
-    
+  .mw-spinner {
+    width:100%;
+    height:100%;
+    position: fixed;
+    display:block !important;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: white url(//apps.mageworx.com/img/spinner-new.gif) no-repeat center;
+    z-index:99999;
+    opacity:0.5;"
+  }
+     
 </style>
 
 {% comment %}CUSTOMIZATION BELOW{% endcomment %}
