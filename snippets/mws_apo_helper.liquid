@@ -105,11 +105,9 @@ window.mwApoInit.onEvent = function (event, args) {
         
   if (event == "attachEvents::initAddToCart::clickStart") {
 
-
       let divMWS = document.createElement('div');
       divMWS.classList.add('mw-spinner');
       document.body.appendChild(divMWS);
-      console.log(divMWS)
     }
       
   if (event == "onClick::validate-failed") {
@@ -120,6 +118,8 @@ window.mwApoInit.onEvent = function (event, args) {
   if (event == "attachEvents::initAddToCart::clickFinally") {
     setTimeout(function () {
       let divMWS = document.querySelector('.mw-spinner');
+            console.log(divMWS)
+
       divMWS.remove();
     }, 300);
   }
