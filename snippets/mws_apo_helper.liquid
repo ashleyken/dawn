@@ -102,7 +102,7 @@ function overlayImages(params) {
 }
 
 window.mwApoInit.onEvent = function (event, args) {
-        
+        console.log(event)
   if (event == "attachEvents::initAddToCart::clickStart") {
 
       let divMWS = document.createElement('div');
@@ -118,8 +118,6 @@ window.mwApoInit.onEvent = function (event, args) {
   if (event == "attachEvents::initAddToCart::clickFinally") {
     setTimeout(function () {
       let divMWS = document.querySelector('.mw-spinner');
-            console.log(divMWS)
-
       divMWS.remove();
     }, 1000);
   }
