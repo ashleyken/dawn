@@ -102,9 +102,10 @@ function overlayImages(params) {
 }
 
 window.mwApoInit.onEvent = function (event, args) {
-  console.log(event)
         
   if (event == "attachEvents::initAddToCart::clickStart") {
+      console.log(event)
+
       let divMWS = document.createElement('div');
       divMWS.classList.add('mw-spinner');
       document.body.appendChild(divMWS);
