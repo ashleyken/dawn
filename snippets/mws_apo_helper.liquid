@@ -117,24 +117,22 @@ window.mwApoInit.onEvent = function (event, args) {
     }
 
     const radioOptions = document.querySelectorAll(".mw-option--type-radio");
-radioOptions.forEach((element) => {
-  let values = element.querySelectorAll(".mw-option__value");
-  values.forEach((el) => {
-    let image = el.querySelector(".mw-option__media");
-    if (image) {
-      let cloneImg = image.cloneNode();
-      
-//       image.parentElement.style.display = "none";
-      image.style.display = "flex";
-      image.style.width = "98px";
-      image.style.height = "98px";
-      image.style.position = "absolute";
-      image.style.left = "0";
-      image.style.top = "5px";
-      el.querySelector(".mw-stack--vertical").prepend(image);
-    }
-  });
-});
+    radioOptions.forEach((element) => {
+      let values = element.querySelectorAll(".mw-option__value");
+      values.forEach((el) => {
+        let image = el.querySelector(".mw-option__media");
+        if (image) {
+          let cloneImg = image.cloneNode();
+          image.style.display = "flex";
+          image.style.width = "98px";
+          image.style.height = "98px";
+          image.style.position = "absolute";
+          image.style.left = "0";
+          image.style.top = "5px";
+          el.querySelector(".mw-stack--vertical").prepend(image);
+        }
+      });
+    });
 
 
     mws_apo_hide_our_variants(
@@ -169,6 +167,23 @@ radioOptions.forEach((element) => {
       );
     }
   }
+    if (event == "attachEvents::initAddToCart::clickStart") {
+      let divMWS = document.createElement('div');
+      divMWS.classList.add('mw-spinner');
+      document.body.appendChild(divMWS);
+    }
+    
+    if (event == "onClick::validate-failed") {
+      let divMWS = document.querySelector('.mw-spinner');
+      divMWS.remove();
+    }
+    
+    if (event == "attachEvents::initAddToCart::clickFinally") {
+      setTimeout(function () {
+       let divMWS = document.querySelector('.mw-spinner');
+       divMWS.remove();
+     }, 300);
+    }
 };
 
 
