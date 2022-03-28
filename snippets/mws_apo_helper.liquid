@@ -104,12 +104,12 @@ function overlayImages(params) {
 window.mwApoInit.onEvent = function (event, args) {
         
   if (event == "attachEvents::initAddToCart::clickStart") {
-      console.log(event)
+
 
       let divMWS = document.createElement('div');
       divMWS.classList.add('mw-spinner');
       document.body.appendChild(divMWS);
-
+      console.log(divMWS)
     }
       
 //   if (event == "onClick::validate-failed") {
