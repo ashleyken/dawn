@@ -72,6 +72,7 @@
                         
                             <div class="product-option">
                                                      
+                              {%- if option.value contains '#MWS' -%}{%- continue -%}{%- endif -%}
 
                               <dt>{{ option.name }}: </dt>
                               <dd>{{ option.value }}</dd>
