@@ -37,7 +37,7 @@
 			<div class="models-list_block">
 			
 				<div class="models-list_block_text">
-				{{ model.title | remove: manufacturer_name_no_ext | remove: extension | remove: " to fit " }}<br>{{ extension }}
+				{{ model.title | remove_first: manufacturer_name_no_ext | remove: extension | remove: " to fit " }}<br>{{ extension }}
 				</div>
 			
 			</div>
