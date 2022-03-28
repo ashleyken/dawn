@@ -28,32 +28,6 @@
         "show_cart_note": false
       }
     },
-    "16484757584370aa41": {
-      "type": "rich-text-about",
-      "blocks": {
-        "16484757582d55adb8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Continue shopping",
-            "heading_size": "h1"
-          }
-        },
-        "16484757582d55adb8-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>If you would like to add more items to your basket, <a href=\"https:\/\/officialcarmats.co.uk\/\" title=\"Official Car Mats Homepage\">click here <\/a>to head to our homepage.<\/p><p><\/p><p><\/p><p><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16484757582d55adb8-0",
-        "16484757582d55adb8-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "featured-products": {
       "type": "featured-collection",
       "disabled": true,
@@ -70,12 +44,48 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "16484760373d7d5196": {
+      "type": "rich-text",
+      "blocks": {
+        "1648476037d5291501-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Continue Shopping",
+            "heading_size": "h1"
+          }
+        },
+        "1648476037d5291501-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you would like to add more items to your basket, <a href=\"https:\/\/officialcarmats.co.uk\/\" title=\"Official Car Mats Homepage\">click here <\/a>to head to our homepage.<\/p><p><\/p><p><\/p>"
+          }
+        },
+        "1648476037d5291501-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1648476037d5291501-0",
+        "1648476037d5291501-1",
+        "1648476037d5291501-2"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "full_width": true
+      }
     }
   },
   "order": [
     "cart-items",
     "cart-footer",
-    "16484757584370aa41",
-    "featured-products"
+    "featured-products",
+    "16484760373d7d5196"
   ]
 }
