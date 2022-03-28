@@ -112,16 +112,16 @@ window.mwApoInit.onEvent = function (event, args) {
 
     }
       
-  if (event == "onClick::validate-failed") {
-    let divMWS = document.querySelector('.mw-spinner');
-    divMWS.remove();
-  }
+//   if (event == "onClick::validate-failed") {
+//     let divMWS = document.querySelector('.mw-spinner');
+//     divMWS.remove();
+//   }
 
-  if (event == "attachEvents::initAddToCart::clickFinally") {
-    setTimeout(function () {
-      let divMWS = document.querySelector('.mw-spinner');
-      divMWS.remove();
-    }, 300);
+//   if (event == "attachEvents::initAddToCart::clickFinally") {
+//     setTimeout(function () {
+//       let divMWS = document.querySelector('.mw-spinner');
+//       divMWS.remove();
+//     }, 300);
   }
 
   if (event == "init::finish") {
