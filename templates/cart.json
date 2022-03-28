@@ -41,7 +41,7 @@
         "16484757582d55adb8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>If you would like to add more items to your basket, <a href=\"https:\/\/officialcarmats.co.uk\/\" title=\"Official Car Mats Homepage\">click here <\/a>to head to our homepage<\/p>"
+            "text": "<p>If you would like to add more items to your basket, <a href=\"https:\/\/officialcarmats.co.uk\/\" title=\"Official Car Mats Homepage\">click here <\/a>to head to our homepage.<\/p><p><\/p><p><\/p><p><\/p>"
           }
         }
       },
@@ -56,6 +56,7 @@
     },
     "featured-products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "collection": "all",
