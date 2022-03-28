@@ -172,6 +172,7 @@ window.mwApoInit.onEvent = function (event, args) {
 
 
 window.mwApoInit.onCallback = function (event, data) {
+  console.log(event)
   if (event == "applyAttributeStateToHtml::price") {
     $(".slider__slide .product__modal-opener .product__media .forOverlay").attr(
       "style",
