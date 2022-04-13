@@ -169,26 +169,36 @@
       "settings": {
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "164988836790b38534": {
+      "type": "rich-text-h1",
       "blocks": {
-        "heading": {
+        "1649888367521dac94-0": {
           "type": "heading",
           "settings": {
-            "heading": "Official Car Mats",
+            "heading": "OFFICIAL CAR MATS",
             "heading_size": "h1"
           }
         },
-        "text": {
+        "1649888367521dac94-1": {
           "type": "text",
           "settings": {
             "text": "<p>We are a family run British Manufacturer of car and van mats, boot mats and liners who are fast approaching our 30th Anniversary, so as you can imagine, we are getting pretty good at it.   Our mats are fully tailored to fit, Non genuine aftermarket car mats.  We are trusted to be  a supplier to some of the biggest Automotive companies and sports clubs. We bring to you our top quality Tailored to fit car mats that you would be proud to have in your car.  All our mats are designed to fit your car perfectly and come with the compatible securing fittings of clips required by the vehicle to help it stay in place in the footwell.  You can fully tailor the car mats to suit the interior of your car, by choosing the colour of carpet and trim and for that extra added bit of fun choose personalised embroidery, a perfect unique gift.  Our mats are made By us in the UK for speedy delivery and quality assurance.  All our fully tailored car mats in carpet and rubber and non slip and water resistant.  Quality is our priority and all mats go through a 3 point quality check before leaving our factory,  we are also a big believer in customer service being a state of mind and not a department, so please be rest assured that we are available for any questions you should have before you purchase.  <\/p>"
           }
+        },
+        "1649888367521dac94-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "1649888367521dac94-0",
+        "1649888367521dac94-1",
+        "1649888367521dac94-2"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -314,7 +324,7 @@
     "16360284522d566a5d",
     "image_banner",
     "find-my-car",
-    "rich_text",
+    "164988836790b38534",
     "1636122219e496d392",
     "1633519483fdefc816",
     "multi_column",
