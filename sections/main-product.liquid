@@ -120,7 +120,7 @@
               {{- product.description -}}
             </h1>
             
-            <div class="product__instructions"><b>Choose the material you want for your {{ product.vendor | escape }} {{- product.description  | strip_html -}}, select from the colour options, and then personalise them with your own text or the logo of your favourite football or rugby team.</b></div>
+            <div class="product__instructions"><b>Choose the material you want for your {{ product.vendor | escape }} {{- product.description  | strip_html | strip -}}, select from the colour options, and then personalise them with your own text or the logo of your favourite football or rugby team.</b></div>
             
             
             {%- if product.metafields.mat_options.size_name.value != blank %}
