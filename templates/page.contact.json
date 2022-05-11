@@ -1,17 +1,26 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
     },
     "form": {
       "type": "contact-form",
       "settings": {
         "heading": ""
       }
+    },
+    "16522725246740b122": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"application\/ld+json\">\n  {\n    \"@context\" : \"http:\/\/schema.org\",\n    \"@type\" : \"LocalBusiness\",\n    \"name\" : \"Official Car Mats\",\n    \"image\" : \"https:\/\/cdn.shopify.com\/s\/files\/1\/0530\/8678\/1626\/t\/6\/assets\/OCM_logoribbon.svg?v=150828043996846027091633527818\",\n    \"telephone\" : \"01257 476006\",\n    \"email\" : \"service@officialcarmats.co.uk\",\n    \"priceRange\" : \"£.££\",\n    \"address\" : {\n      \"@type\" : \"PostalAddress\",\n      \"streetAddress\" : \"Unit 5, East Chorley Business Park\",\n      \"addressLocality\" : \"Chorley\",\n      \"addressRegion\" : \"Lancashire\",\n      \"addressCountry\" : \"United Kingdom\",\n      \"postalCode\" : \"PR6 0BJ\"\n    },\n    \"openingHoursSpecification\" : {\n      \"@type\" : \"OpeningHoursSpecification\",\n      \"dayOfWeek\" : {\n        \"@type\" : \"DayOfWeek\",\n        \"name\" : \"Monday-Friday\"\n      }\n    },\n    \"url\" : \"https:\/\/officialcarmats.co.uk\/pages\/contact-us\"\n  }\n  <\/script>"
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "16522725246740b122"
   ]
 }
