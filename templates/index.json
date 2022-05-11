@@ -354,6 +354,12 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "16522723840b624d21": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script type=\"application\/ld+json\">\n{\n  \"@context\": \"http:\/\/schema.org\",\n  \"@type\": \"Corporation\",\n  \"name\": \"D&E Distributors Ltd\",\n  \"alternateName\": \"Official Car Mats\",\n  \"description\": \"We manufacture and supply top-quality aftermarket car floor mats and boot liners for all makes and models.\",\t\n  \"image\": \"https:\/\/cdn.shopify.com\/s\/files\/1\/0530\/8678\/1626\/t\/6\/assets\/OCM_logoribbon.svg?v=150828043996846027091633527818\",\n  \"url\": \"https:\/\/officialcarmats.co.uk\/\",\n  \"contactPoint\": {\n    \"@type\": \"ContactPoint\",\n    \"telephone\": \"+441257 476006\",\n    \"contactType\": \"customer service\",\n    \"areaServed\": \"United Kingdom\",\n    \"availableLanguage\": \"English\"\n  },\n  \"sameAs\": [\n    \"https:\/\/twitter.com\/officialcarmats\",\n    \"https:\/\/www.facebook.com\/OFFICIALCARMATS\/\",\n    \"https:\/\/www.linkedin.com\/company\/official-car-mats\/\"\n  ]\n}\n<\/script>"
+      }
     }
   },
   "order": [
@@ -365,6 +371,7 @@
     "multi_column",
     "16517654817c378cc7",
     "1636122219e496d392",
-    "1633520292ec6b1756"
+    "1633520292ec6b1756",
+    "16522723840b624d21"
   ]
 }
