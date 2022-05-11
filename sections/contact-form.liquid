@@ -1,34 +1,6 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
 
-<script type="application/ld+json">
-  {
-    "@context" : "http://schema.org",
-    "@type" : "LocalBusiness",
-    "name" : "Official Car Mats",
-    "image" : "https://cdn.shopify.com/s/files/1/0530/8678/1626/t/6/assets/OCM_logoribbon.svg?v=150828043996846027091633527818",
-    "telephone" : "01257 476006",
-    "email" : "service@officialcarmats.co.uk",
-    "priceRange" : "£.££",
-    "address" : {
-      "@type" : "PostalAddress",
-      "streetAddress" : "Unit 5, East Chorley Business Park",
-      "addressLocality" : "Chorley",
-      "addressRegion" : "Lancashire",
-      "addressCountry" : "United Kingdom",
-      "postalCode" : "PR6 0BJ"
-    },
-    "openingHoursSpecification" : {
-      "@type" : "OpeningHoursSpecification",
-      "dayOfWeek" : {
-        "@type" : "DayOfWeek",
-        "name" : "Monday-Friday"
-      }
-    },
-    "url" : "https://officialcarmats.co.uk/pages/contact-us"
-  }
-  </script>
-
 <div class="contact page-width page-width--narrow spaced-section">
   <h2 class="title">{{ section.settings.heading | escape }}</h2>
   {%- form 'contact', id: 'ContactForm' -%}
