@@ -1,0 +1,87 @@
+{% liquid
+
+assign real_handle = item_handle | remove_first: 'mws_apo_1_'
+
+assign mat_options = all_products[real_handle].metafields.mat_options
+
+assign boot_mat_handles = mat_options.boot_mat_handle_1.value | append: ',' | append: mat_options.boot_mat_handle_2.value | append: ',' | append: mat_options.boot_mat_handle_3.value | split: ',' 
+
+assign item_handles = ''
+
+for item in cart.items
+
+	assign item_handles = item_handles | append: item.product.handle | remove_first: 'mws_apo_1_' | append: ','
+
+endfor
+
+
+
+assign suggested_handles = ''
+
+for handle in boot_mat_handles
+
+	unless handle == empty or item_handles contains handle
+	
+		assign related_product = all_products[handle]
+		
+		if related_product != empty
+	
+			assign suggested_handles = suggested_handles | append: handle | append: ','
+	
+		endif
+		
+	endunless
+
+endfor
+
+assign suggested_handles = suggested_handles | split:','
+
+
+%}
+
+
+
+{%- if suggested_handles != empty %}
+
+<div class="suggested_bootmats">
+	
+	<div class="suggested_bootmat_header">Choose matching boot mat</div>
+	
+{%- for suggested_handle in suggested_handles %}
+
+	{%- assign suggested_product = all_products[suggested_handle] %}
+
+<a href="{{ suggested_product.url }}" class="suggested_bootmat">{{ suggested_product.title }}</a>
+
+{%- endfor %}
+
+</div>
+
+<style>
+
+.suggested_bootmats {
+	padding: 1rem;
+	background-color: rgba(var(--color-button),var(--alpha-button-background));
+}
+.suggested_bootmat_header {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 1rem;
+}
+.suggested_bootmat {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 2rem;
+}
+.suggested_bootmat:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+</style>
+
+{%- endif %}
+

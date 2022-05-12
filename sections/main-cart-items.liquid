@@ -112,6 +112,8 @@
                         </li>
                       {%- endfor -%}
                     </ul>
+                    
+                    {% render "suggested-products", item_handle: item.product.handle, cart: cart %}
 
                     <div class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}" role="alert">
                       <small class="cart-item__error-text"></small>
