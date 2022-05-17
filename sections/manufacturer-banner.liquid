@@ -20,6 +20,41 @@
   >
   {%- endif -%}
   
+  {% liquid
+  
+  assign lowest_price = 9999
+  
+  for product in collection.products
+  
+    if product.price < lowest_price
+      
+      assign lowest_price = product.price
+  
+    endif
+  
+  endfor
+  
+  %}
+  
+  <div class="manufacturer_banner_bg_bullet_points">
+    <ul>
+      {% if collection.title contains 'Boot' %}
+      
+      <li>Boot liners to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
+      <li>Tailored to fit Boot Liners</li>
+      
+      {% else %}
+      
+      <li>Car Mats to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
+      <li>Personalise your Tailored to Fit Floor Mats</li>
+      
+      {% endif %}
+      
+      <li>British Manufacturer</li>
+      <li>Free UK delivery</li>
+      <li>UK Market leader’s for over 30 years</li>
+    <ul>
+  </div>
   
 
 </div>
@@ -29,3 +64,5 @@
   <h1 class="manufacturer_banner_h1">{{- collection.title | escape -}}</h1>
   <div class="rte">{{ collection.description }}</div>
 </div>
+
+<script type="application/ld+json">{ "@context" : "http://schema.org/", "@type" : "Product", "name" : "Car Floor Mats & Boot Liner Mats", "aggregateRating" : { "@type" : "AggregateRating", "ratingValue" : "4.8", "bestRating" : "5", "worstRating" : "1", "reviewCount" : "5286" } }</script>
