@@ -132,7 +132,7 @@ function addFontToTextFilds() {
       if (elementName == 'INPUT' && targetElement.classList.contains('mws_font-input') ) {
         let id = targetElement.getAttribute('id');
         let fontName = getName(id);               
-        const optionsText = document.querySelectorAll('mw-option--type-text');        
+        const optionsText = document.querySelectorAll('.mw-option--type-text');        
                     console.log(optionsText)
 
         optionsText.forEach(function (item) {
