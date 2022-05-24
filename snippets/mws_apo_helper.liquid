@@ -130,7 +130,7 @@ function addFontToTextFilds() {
       let targetElement = event.target;
       let elementName = targetElement.tagName;
 
-      if (elementName == 'INPUT' && elementName.classList.contains('mws_font-input') ) {
+      if (elementName == 'INPUT' && targetElement.classList.contains('mws_font-input') ) {
         let id = targetElement.getAttribute('id');
         let fontName = getName(id);                    
         let div = document.createElement("div");  
