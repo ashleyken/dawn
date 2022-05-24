@@ -100,6 +100,34 @@ function overlayImages(params) {
     }
   });
 }
+  
+function addFontToTextFilds() {
+      
+  const mwContainer = document.querySelector('.mw-apo-container');
+    
+    mwContainer.addEventListener("click", function(event){
+      let targetElement = event.target;
+      console.log(targetElement)
+      let elementName = targetElement.tagName;
+
+//       if (elementName == 'INPUT') {
+//         let id = targetElement.getAttribute('id');
+//         let url = getUrl(id);                    
+//         let div = document.createElement("div");               
+              
+//         div.classList.add('mws_img-add');
+//         div.style.backgroundImage = `url('${url}')`;            
+                 
+//        if (document.querySelector('.mws_img-add')) {  
+//            let div = document.querySelector('.mws_img-add');
+                   
+//            div.style.backgroundImage = `url('${url}')`;                  
+//         } else {
+//            mwContainer.appendChild(div);
+//         }
+//       }
+  });  
+}
 
 window.mwApoInit.onEvent = function (event, args) {
   if (event == "attachEvents::initAddToCart::clickStart") {
@@ -160,6 +188,7 @@ window.mwApoInit.onEvent = function (event, args) {
 
     setTimeout(() => {
       overlayImages();
+      addFontToTextFilds();
     }, 300);
 
     if (document.querySelector(".shopify-payment-button")) {
