@@ -128,13 +128,13 @@ function addFontToTextFilds() {
     mwContainer.addEventListener("click", function(event){
       let targetElement = event.target;
       let elementName = targetElement.tagName;
-          console.log(elementName == 'INPUT' && targetElement.classList.contains('mws_font-input'))
 
       if (elementName == 'INPUT' && targetElement.classList.contains('mws_font-input') ) {
         let id = targetElement.getAttribute('id');
         let fontName = getName(id);               
         const optionsText = document.querySelectorAll('mw-option--type-text');        
-          
+                    console.log(optionsText)
+
         optionsText.forEach(function (item) {
           
           console.log(item)
