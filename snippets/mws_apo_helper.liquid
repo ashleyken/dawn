@@ -102,6 +102,20 @@ function overlayImages(params) {
 }
   
 function addFontToTextFilds() {
+        
+  function getName(id) {
+    if (typeof mwApoInit.response !== "undefined") {
+      for (const val of Object.values(mwApoInit.response)) {
+        for (const key in val.values) {
+          if (key == id) {
+            if (typeof val.values[id].value) {
+              return val.values[id].value.title;
+            }
+          }
+        }
+      }
+    }
+  }
   
   const fontSwatches = document.querySelectorAll('.mws_font-box .mw-option__value .mw-option__control');
   
@@ -114,13 +128,14 @@ function addFontToTextFilds() {
     
     mwContainer.addEventListener("click", function(event){
       let targetElement = event.target;
-      console.log(targetElement)
       let elementName = targetElement.tagName;
 
-//       if (elementName == 'INPUT') {
-//         let id = targetElement.getAttribute('id');
-//         let url = getUrl(id);                    
-//         let div = document.createElement("div");               
+      if (elementName == 'INPUT' && elementName.classList.contains('mws_font-input') ) {
+        let id = targetElement.getAttribute('id');
+        let fontName = getName(id);                    
+        let div = document.createElement("div");  
+        
+        console.log(fontName)
               
 //         div.classList.add('mws_img-add');
 //         div.style.backgroundImage = `url('${url}')`;            
@@ -132,7 +147,7 @@ function addFontToTextFilds() {
 //         } else {
 //            mwContainer.appendChild(div);
 //         }
-//       }
+      }
   });  
 }
 
