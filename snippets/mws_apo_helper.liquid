@@ -122,7 +122,6 @@ function addFontToTextFilds() {
   fontSwatches.forEach(function (item) {
   	item.classList.add('mws_font-input');
   });
-
       
   const mwContainer = document.querySelector('.mw-apo-container');
     
@@ -132,21 +131,13 @@ function addFontToTextFilds() {
 
       if (elementName == 'INPUT' && targetElement.classList.contains('mws_font-input') ) {
         let id = targetElement.getAttribute('id');
-        let fontName = getName(id);                    
-        let div = document.createElement("div");  
-        
-        console.log(fontName)
-              
-//         div.classList.add('mws_img-add');
-//         div.style.backgroundImage = `url('${url}')`;            
-                 
-//        if (document.querySelector('.mws_img-add')) {  
-//            let div = document.querySelector('.mws_img-add');
-                   
-//            div.style.backgroundImage = `url('${url}')`;                  
-//         } else {
-//            mwContainer.appendChild(div);
-//         }
+        let fontName = getName(id);               
+        const optionsText = document.querySelectorAll('mw-option--type-text');        
+          
+        optionsText.forEach(function (item) {
+
+          item.style.fontFamily = fontName;
+        });
       }
   });  
 }
@@ -335,6 +326,11 @@ window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selecto
     background: white url(//apps.mageworx.com/img/spinner-new.gif) no-repeat center;
     z-index:99999;
     opacity:0.5;"
+  }
+  
+  .mw-option--type-text .mw-option__control {
+  	text-transform: uppercase;
+    font-size: large;
   }
      
 </style>
