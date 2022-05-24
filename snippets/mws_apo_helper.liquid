@@ -102,6 +102,13 @@ function overlayImages(params) {
 }
   
 function addFontToTextFilds() {
+  
+  const fontSwatches = document.querySelectorAll('.mws_font-box .mw-option__value .mw-option__control');
+  
+  fontSwatches.forEach(function (item) {
+  	item.classList.add('mws_font-input');
+  });
+
       
   const mwContainer = document.querySelector('.mw-apo-container');
     
