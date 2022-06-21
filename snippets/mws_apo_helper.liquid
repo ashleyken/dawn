@@ -165,8 +165,9 @@ window.mwApoInit.onEvent = function (event, args) {
   }
 
   if (event == "init::finish") {
-    const mwBtncloned = document.querySelector('.mw-apo-add-to-cart-cloned');
+    const mwBtncloned = document.querySelector('.product-form__submit');
     mwBtncloned.style.display = 'block';
+    
     function isVisible(e) {
       return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
     }
@@ -293,7 +294,7 @@ window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selecto
 </script>
 
 <style>
-  .mw-apo-add-to-cart-cloned {
+  .product-form__submit {
   	 display: none;
   }
   
