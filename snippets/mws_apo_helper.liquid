@@ -165,6 +165,8 @@ window.mwApoInit.onEvent = function (event, args) {
   }
 
   if (event == "init::finish") {
+    const mwBtncloned = document.querySelector('.mw-apo-add-to-cart-cloned');
+    mwBtncloned.style.display = 'block';
     function isVisible(e) {
       return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
     }
