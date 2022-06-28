@@ -98,9 +98,36 @@ function mwApoCustom() {
       }
     }
   };
-  window.mwApoInit.onCallback = function (event, data) {
-     return data;
-  };
+  
+window.mwApoInit.onCallback = function (event, data) {
+  if (event == "applyAttributeStateToHtml::price") {
+    $(".grid-item .product__image-wrapper_original_position .forOverlay").attr(
+      "style",
+      "display: none"
+    );
+
+    $(".mw-option__value--selected:not(.mw-hidden)").each(function (
+      index,
+      element
+    ) {
+      var $this = $(this);
+      var selected = $this.attr("data-value-id");
+      const image = imageElement(selected);
+      if (typeof image !== "undefined") {
+        $(
+          ".grid-item .product__image-wrapper_original_position .forOverlay"
+        ).each(function (i, el) {
+          var $el = $(el);
+          if ($el.attr("srcset") === image) {
+            $el.removeAttr("style");
+          }
+        });
+      }
+    });
+  }
+  return data;
+};
+
   window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selector';
 }
 </script>
