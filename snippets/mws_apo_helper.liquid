@@ -53,12 +53,13 @@ function isVisible(e) {
         ".single-option-selector option"
       );
 
-	let swatches = document.querySelectorAll('.mw-option--type-swatch .mw-option__value');
+      let swatches = document.querySelectorAll('.mw-option--type-swatch .mw-option__value');
       swatches.forEach(element => {
         if (!isVisible(element)) {
           element.classList.add('mw-hidden')
-     }
-
+        }
+      });
+      
       if (document.querySelector(".shopify-payment-button")) {
         document.querySelector(".shopify-payment-button").style.display = "none";
 
