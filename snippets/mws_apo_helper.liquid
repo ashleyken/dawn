@@ -71,9 +71,11 @@ function swatches(params) {
         ".single-option-selector option"
       );
 
-      setTimeout(() => {
-        swatches();
-      }, 300);
+	let swatches = document.querySelectorAll('.mw-option--type-swatch .mw-option__value');
+      swatches.forEach(element => {
+        if (!isVisible(element)) {
+          element.classList.add('mw-hidden')
+     }
 
       if (document.querySelector(".shopify-payment-button")) {
         document.querySelector(".shopify-payment-button").style.display = "none";
