@@ -1,4 +1,66 @@
 <script>
+function mws_apo_hide_our_variants(selector_container, selector_items) {
+  const container = document.querySelectorAll(selector_container);
+  if (!container) {
+    return;
+  }
+  for (const i of container) {
+    const items = i.querySelectorAll(selector_items);
+    for (let item of items) {
+      if (item.textContent.indexOf("#MWS Options") >= 0) {
+        item.remove();
+      }
+    }
+    if (i.querySelectorAll(selector_items).length === 1) {
+      i.style.display = "none";
+    }
+  }
+}
+
+function imageElement(id) {
+  if (typeof mwApoInit.response !== "undefined") {
+    for (const val of Object.values(mwApoInit.response)) {
+      for (const key in val.values) {
+        if (key == id) {
+          if (
+            typeof val.values[id].value.images !== "undefined" &&
+            val.values[id].value.images.length &&
+            val.values[id].value.images[1]
+          ) {
+            for (const iterator of val.values[id].value.images) {
+              if (iterator.hasOwnProperty("url")) {
+                return iterator.url;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+function swatches(params) {
+  $(".mw-option__value").each(function (index, element) {
+    var $this = $(this);
+    var selected = $this.attr("data-value-id");
+    const image = imageElement(selected);
+
+    if (typeof image !== "undefined") {
+      $this.find(".mw-option__swatch-image").attr("src", image);
+
+      $(".grid-item .product__image-wrapper_original_position").append(
+        $(
+          '<img class="lazyautosizes lazyloaded forOverlay" style="display: none;" src=' +
+            image +
+            " srcset=" +
+            image +
+            " />"
+        )
+      );
+    }
+  });
+}
+
 function mwApoCustom() {
   window.mwApoInit  = window.mwApoInit  || {};
   window.mwApoInit.onEvent = function (event, args) {  
