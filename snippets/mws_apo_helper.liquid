@@ -64,31 +64,39 @@ function swatches(params) {
 function mwApoCustom() {
   window.mwApoInit  = window.mwApoInit  || {};
   window.mwApoInit.onEvent = function (event, args) {  
-      if (event == "init::finish") {
-        if (document.querySelector(".shopify-payment-button")) {
-          document.querySelector(".shopify-payment-button").style.display =
-            "none";
+    if (event == "init::finish") {
+      mws_apo_hide_our_variants(
+        ".selector-wrapper",
+        ".single-option-selector option"
+      );
 
-          var mutationObserver = new MutationObserver(function (mutations) {
-            mutations.forEach(function (mutation) {
-              document.querySelector(".shopify-payment-button").style.display =
-                "none";
-            });
+      setTimeout(() => {
+        swatches();
+      }, 300);
+
+      if (document.querySelector(".shopify-payment-button")) {
+        document.querySelector(".shopify-payment-button").style.display = "none";
+
+        var mutationObserver = new MutationObserver(function (mutations) {
+          mutations.forEach(function (mutation) {
+            document.querySelector(".shopify-payment-button").style.display =
+              "none";
           });
+        });
 
-          mutationObserver.observe(
-            document.getElementsByClassName("shopify-payment-button")[0],
-            {
-              attributes: true,
-              characterData: true,
-              childList: true,
-              subtree: true,
-              attributeOldValue: true,
-              characterDataOldValue: true,
-            }
-          );
-        }
+        mutationObserver.observe(
+          document.getElementsByClassName("shopify-payment-button")[0],
+          {
+            attributes: true,
+            characterData: true,
+            childList: true,
+            subtree: true,
+            attributeOldValue: true,
+            characterDataOldValue: true,
+          }
+        );
       }
+    }
   };
   window.mwApoInit.onCallback = function (event, data) {
      return data;
