@@ -41,26 +41,8 @@ function mwApoCustom() {
     }
   }
 
-function swatches(params) {
-  $(".mw-option__value").each(function (index, element) {
-    var $this = $(this);
-    var selected = $this.attr("data-value-id");
-    const image = imageElement(selected);
-
-    if (typeof image !== "undefined") {
-      $this.find(".mw-option__swatch-image").attr("src", image);
-
-      $(".grid-item .product__image-wrapper_original_position").append(
-        $(
-          '<img class="lazyautosizes lazyloaded forOverlay" style="display: none;" src=' +
-            image +
-            " srcset=" +
-            image +
-            " />"
-        )
-      );
-    }
-  });
+function isVisible(e) {
+  return !!( e.offsetWidth || e.offsetHeight || e.getClientRects().length );
 }
 
   window.mwApoInit  = window.mwApoInit  || {};
