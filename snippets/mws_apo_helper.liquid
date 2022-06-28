@@ -1,5 +1,7 @@
 <script>
-function mws_apo_hide_our_variants(selector_container, selector_items) {
+
+function mwApoCustom() {
+  function mws_apo_hide_our_variants(selector_container, selector_items) {
   const container = document.querySelectorAll(selector_container);
   if (!container) {
     return;
@@ -61,7 +63,6 @@ function swatches(params) {
   });
 }
 
-function mwApoCustom() {
   window.mwApoInit  = window.mwApoInit  || {};
   window.mwApoInit.onEvent = function (event, args) {  
     if (event == "init::finish") {
