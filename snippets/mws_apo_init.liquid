@@ -2,14 +2,14 @@
 {% if content_for_header contains "mws_apo_installed.js" %}
 {% comment %}AUTO-GENERATED FILE. DO NOT MODIFY.{% endcomment %}
 
-<link href="https://apo-front.mageworx.com/bundle.css?t=1656492998" rel="stylesheet" type="text/css" media="all" />
+<link href="https://apo-front.mageworx.com/bundle.css?t=1656494765" rel="stylesheet" type="text/css" media="all" />
 
 
 <script type="text/javascript">
 {% if template.name == 'product' and product.variants.size > 0 and product.selected_or_first_available_variant.title contains "#MWS Options" %}
 if (window.location.origin) {
   {% if product.variants[0].title contains "#MWS Options" and product.handle contains "mws_apo_" %}
-  window.location.href=window.location.protocol + '//' + window.location.host + "/products/{{ product.handle | replace: 'mws_apo_', '' }}";
+  window.location.href = window.location.protocol + '//' + window.location.host + "/products/{{ product.handle | replace: 'mws_apo_', '' | slice: 2, product.handle.size }}";
   {% elsif product.variants[0].title contains "#MWS Options" %}
   window.location.href=window.location.protocol + '//' + window.location.host + "/products/";
   {% else %}
@@ -41,7 +41,7 @@ if (window.location.origin) {
 
 {% render 'mws_apo_helper' %}
 
-<script async src="https://apo-front.mageworx.com/bundle.js?t=1656492998"></script>
+<script async src="https://apo-front.mageworx.com/bundle.js?t=1656494765"></script>
 
 
 {% endif %}
