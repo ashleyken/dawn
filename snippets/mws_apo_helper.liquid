@@ -1,29 +1,40 @@
 <script>
-
-function mwApoCustom() {
-  function mws_apo_hide_our_variants(selector_container, selector_items) {
-    const container = document.querySelectorAll(selector_container);
-    if (!container) {
-      return;
+function mws_apo_hide_our_variants(selector_container, selector_items) {
+  const container = document.querySelectorAll(selector_container);
+  if (!container) {
+    return;
+  }
+  for (const i of container) {
+    const items = i.querySelectorAll(selector_items);
+    for (let item of items) {
+      if (item.textContent.indexOf("#MWS Options") >= 0) {
+        item.remove();
+      }
     }
-    for (const i of container) {
-      const items = i.querySelectorAll(selector_items);
-      for (let item of items) {
-        if (item.textContent.indexOf("#MWS Options") >= 0) {
-          item.remove();
-        }
-      }
-      if (i.querySelectorAll(selector_items).length === 1) {
-        i.style.display = "none";
-      }
+    if (i.querySelectorAll(selector_items).length === 1) {
+      i.style.display = "none";
     }
   }
+}
 
-  function imageElement(id) {
-    if (typeof mwApoInit.response !== "undefined") {
-      for (const val of Object.values(mwApoInit.response)) {
-        for (const key in val.values) {
-          if (key == id) {
+function imageElement(id, optionType) {
+  if (typeof mwApoInit.response !== "undefined") {
+    for (const val of Object.values(mwApoInit.response)) {
+      for (const key in val.values) {
+        if (key == id) {
+          if (optionType === "select") {
+            if (
+              typeof val.values[id].value.images !== "undefined" &&
+              val.values[id].value.images.length &&
+              val.values[id].value.images[0]
+            ) {
+              for (const iterator of val.values[id].value.images) {
+                if (iterator.hasOwnProperty("url")) {
+                  return iterator.url;
+                }
+              }
+            }
+          } else {
             if (
               typeof val.values[id].value.images !== "undefined" &&
               val.values[id].value.images.length &&
@@ -40,54 +51,194 @@ function mwApoCustom() {
       }
     }
   }
-
-function isVisible(e) {
-  return !!( e.offsetWidth || e.offsetHeight || e.getClientRects().length );
 }
 
-  window.mwApoInit  = window.mwApoInit  || {};
-  window.mwApoInit.onEvent = function (event, args) {  
-    if (event == "init::finish") {
-      mws_apo_hide_our_variants(
-        ".selector-wrapper",
-        ".single-option-selector option"
+function overlayImages(params) {
+  $(".mw-option__value").each(function (index, element) {
+    var $this = $(this);
+    var selected = $this.attr("data-value-id");
+    const image = imageElement(selected, "swatch");
+
+    if (typeof image !== "undefined") {
+      $this.find(".mw-option__swatch-image").attr("src", image);
+
+      $(".slider__slide .product__modal-opener .product__media").append(
+        $(
+          '<img class="lazyautosizes lazyloaded forOverlay" style="display: none;" src=' +
+            image +
+            " srcset=" +
+            image +
+            " />"
+        )
+      );
+    }
+  });
+
+  let selectElement = document.querySelectorAll(
+    ".mw-option__control--type-select .mw-option__value"
+  );
+  selectElement.forEach((element) => {
+    let selected = element.getAttribute("value");
+    const image = imageElement(selected, "select");
+
+    if (typeof image !== "undefined") {
+      element.setAttribute("src", image);
+
+      let img = document.createElement("img");
+      img.classList.add("lazyautosizes", "lazyloaded", "forOverlay");
+      img.style.display = "none";
+      img.setAttribute("src", image);
+      img.setAttribute("srcset", image);
+
+      let mainImage = document.querySelector(
+        ".slider__slide .product__modal-opener .product__media"
       );
 
-      let swatches = document.querySelectorAll('.mw-option--type-swatch .mw-option__value');
-      swatches.forEach(element => {
-        if (!isVisible(element)) {
-          element.classList.add('mw-hidden')
-        }
-      });
-      
-      if (document.querySelector(".shopify-payment-button")) {
-        document.querySelector(".shopify-payment-button").style.display = "none";
-
-        var mutationObserver = new MutationObserver(function (mutations) {
-          mutations.forEach(function (mutation) {
-            document.querySelector(".shopify-payment-button").style.display =
-              "none";
-          });
-        });
-
-        mutationObserver.observe(
-          document.getElementsByClassName("shopify-payment-button")[0],
-          {
-            attributes: true,
-            characterData: true,
-            childList: true,
-            subtree: true,
-            attributeOldValue: true,
-            characterDataOldValue: true,
-          }
-        );
+      if (mainImage) {
+        mainImage.append(img);
       }
     }
-  };
+  });
+}
   
+function addFontToTextFilds() {
+        
+  function getName(id) {
+    if (typeof mwApoInit.response !== "undefined") {
+      for (const val of Object.values(mwApoInit.response)) {
+        for (const key in val.values) {
+          if (key == id) {
+            if (typeof val.values[id].value) {
+              return val.values[id].value.title;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  const fontSwatches = document.querySelectorAll('.mws_font-box .mw-option__value .mw-option__control');
+  
+  fontSwatches.forEach(function (item) {
+  	item.classList.add('mws_font-input');
+  });
+      
+  const mwContainer = document.querySelector('.mw-apo-container');
+    
+    mwContainer.addEventListener("click", function(event){
+      let targetElement = event.target;
+      let elementName = targetElement.tagName;
+
+      if (elementName == 'INPUT' && targetElement.classList.contains('mws_font-input') ) {
+        let id = targetElement.getAttribute('id');
+        let fontName = getName(id);               
+        const optionsText = document.querySelectorAll('.mw-option--type-text input.mw-option__control');        
+                    console.log(optionsText)
+
+        optionsText.forEach(function (item) {
+          
+          item.style.fontFamily = fontName;
+        });
+      }
+  });  
+}
+
+window.mwApoInit.onEvent = function (event, args) {
+  if (event == "attachEvents::initAddToCart::clickStart") {
+      let divMWS = document.createElement('div');
+      divMWS.classList.add('mw-spinner');
+      document.body.appendChild(divMWS);
+    }
+      
+  if (event == "onClick::validate-failed") {
+    let divMWS = document.querySelector('.mw-spinner');
+    divMWS.remove();
+  }
+
+  if (event == "attachEvents::initAddToCart::clickFinally") {
+    setTimeout(function () {
+      let divMWS = document.querySelector('.mw-spinner');
+      divMWS.remove();
+    }, 1000);
+  }
+
+  if (event == "init::finish") {
+//     const mwBtncloned = document.querySelector('.product-form__submit');
+//     mwBtncloned.style.display = 'block';
+    
+    function isVisible(e) {
+      return !!(e.offsetWidth || e.offsetHeight || e.getClientRects().length);
+    }
+    let options = document.querySelectorAll("div.mw-option__value");
+
+    if (options) {
+      options.forEach((element) => {
+        if (!isVisible(element)) {
+          element.classList.add("mw-hidden");
+        }
+      });
+    }
+
+    const radioOptions = document.querySelectorAll(".mw-option--type-radio");
+    radioOptions.forEach((element) => {
+      let values = element.querySelectorAll(".mw-option__value");
+      values.forEach((el) => {
+        let image = el.querySelector(".mw-option__media");
+        if (image) {
+          let cloneImg = image.cloneNode();
+          image.style.display = "flex";
+          image.style.width = "98px";
+          image.style.height = "98px";
+          image.style.position = "absolute";
+          image.style.left = "0";
+          image.style.top = "5px";
+          el.querySelector(".mw-stack--vertical").prepend(image);
+        }
+      });
+    });
+
+
+    mws_apo_hide_our_variants(
+      ".selector-wrapper",
+      ".single-option-selector option"
+    );
+
+    setTimeout(() => {
+      overlayImages();
+      addFontToTextFilds();
+    }, 300);
+
+    if (document.querySelector(".shopify-payment-button")) {
+      document.querySelector(".shopify-payment-button").style.display = "none";
+
+      var mutationObserver = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+          document.querySelector(".shopify-payment-button").style.display =
+            "none";
+        });
+      });
+
+      mutationObserver.observe(
+        document.getElementsByClassName("shopify-payment-button")[0],
+        {
+          attributes: true,
+          characterData: true,
+          childList: true,
+          subtree: true,
+          attributeOldValue: true,
+          characterDataOldValue: true,
+        }
+      );
+    }
+  }
+};
+
+
+
 window.mwApoInit.onCallback = function (event, data) {
+
   if (event == "applyAttributeStateToHtml::price") {
-    $(".grid-item .product__image-wrapper_original_position .forOverlay").attr(
+    $(".slider__slide .product__modal-opener .product__media .forOverlay").attr(
       "style",
       "display: none"
     );
@@ -98,10 +249,10 @@ window.mwApoInit.onCallback = function (event, data) {
     ) {
       var $this = $(this);
       var selected = $this.attr("data-value-id");
-      const image = imageElement(selected);
+      const image = imageElement(selected, 'swatch');
       if (typeof image !== "undefined") {
         $(
-          ".grid-item .product__image-wrapper_original_position .forOverlay"
+          ".slider__slide .product__modal-opener .product__media .forOverlay"
         ).each(function (i, el) {
           var $el = $(el);
           if ($el.attr("srcset") === image) {
@@ -110,19 +261,96 @@ window.mwApoInit.onCallback = function (event, data) {
         });
       }
     });
+
+    let selectedElem = document.querySelectorAll(
+      ".mw-option__control--type-select"
+    );
+    selectedElem.forEach((element) => {
+      const val = element.value;
+      if (val !== "") {
+        let selectedOption = element.querySelector('[value="' + val + '"');
+        let id = selectedOption.getAttribute('value');
+        const image = imageElement(id, 'select');
+
+        if (typeof image !== "undefined") {
+          document.querySelectorAll('.slider__slide .product__modal-opener .product__media .forOverlay').forEach(el => {
+            const imgOverlay = el;
+            if (imgOverlay.getAttribute('srcset') === image) {
+              imgOverlay.removeAttribute('style')
+            }
+          })
+        }
+      }
+    });
   }
+
   return data;
 };
 
-  window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selector';
-}
+
+window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selector';
 </script>
 
 <style>
+/*   .product-form__submit {
+  	 display: none;
+  } */
+  
   .mw-option__swatch-color {
-  	display: block !important;    
+    display: block !important;
+  }
+  .mw-option--type-radio .mw-option__value  {
+    margin-bottom: 15px;
+  }
+  .mw-option--type-radio .mw-option__value .mw-stack--spacing-tight .mw-stack__item:first-child {
+    margin-bottom: -8px;
+  }
+  .mw-option--type-select .mw-option__media {
+    display: none;
+  }
+  .mw-option--type-radio .mw-option__value {
+    position: relative;
+  }
+  .mw-option--type-radio .mw-option__value .mw-stack--vertical.mw-stack--spacing-tight img{
+    position: absolute;
+  }
+  .mw-option--type-radio .mw-option__value .mw-stack--vertical.mw-stack--spacing-tight{
+    padding-left: 110px;
   }
   
+  .product-option {
+     display: block !important;
+  }
+  
+  .mw-spinner {
+    width:100%;
+    height:100%;
+    position: fixed;
+    display:block !important;
+    top: 0;
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: white url(//apps.mageworx.com/img/spinner-new.gif) no-repeat center;
+    z-index:99999;
+    opacity:0.5;"
+  }
+  
+  .mw-option--type-text .mw-option__control {
+    font-size: large;
+    outline: none;
+  }
+  
+  .mw-option--type-text .mw-option__control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .mw-option--type-text .mw-option__control:focus-visible {
+    outline: none;
+    box-shadow: none;
+  }
+    
   .mw-option .mw-option__control--type-select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -132,18 +360,14 @@ window.mwApoInit.onCallback = function (event, data) {
     background-position: calc(100% - 9px) center;
     background-repeat: no-repeat;
     border: 1px solid #d4d6d8;
-    padding: 5px 30px 5px 15px;
+    padding: 5px 10px;
     border-radius: 2px;
     font-size: inherit;
     outline: none;
     box-shadow: none;
     color: black;
 }
-
-.mw-apo-configure-link {
-  color: black;
-  font-size: smaller;
-}
-
+     
 </style>
 
+{% comment %}CUSTOMIZATION BELOW{% endcomment %}
