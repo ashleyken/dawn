@@ -47,33 +47,6 @@
       "settings": {
       }
     },
-    "165711760375e2734d": {
-      "type": "rich-text-about",
-      "blocks": {
-        "16571176039ed0d0ba-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Official Car Mats is a British manufacturer of car floormats, boot mats and liners.",
-            "heading_size": "h2"
-          }
-        },
-        "16571176039ed0d0ba-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Official Car Mats is a British manufacturer of car floor mats, boot mats and liners. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16571176039ed0d0ba-0",
-        "16571176039ed0d0ba-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "16571171575cd421b3": {
       "type": "multicolumn",
       "blocks": {
@@ -120,7 +93,6 @@
     "banner",
     "1657116408f5c8768d",
     "models-list",
-    "165711760375e2734d",
     "16571171575cd421b3"
   ]
 }
