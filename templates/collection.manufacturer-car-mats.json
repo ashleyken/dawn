@@ -54,7 +54,7 @@
         "1657118656aa7286c2-1": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>ORDER YOUR CUSTOM CAR MATS TO FIT YOUR FORD TODAY<\/strong><\/p><p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p><p><\/p><p><\/p><p><\/p><p><\/p>"
+            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p><p><\/p><p><\/p><p><\/p><p><\/p>"
           }
         }
       },
