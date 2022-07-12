@@ -40,41 +40,13 @@
       "settings": {
       }
     },
-    "16571200864f58add5": {
-      "type": "rich-text-about",
-      "blocks": {
-        "1657120086f40f4181-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ collection.metafields.custom.headline_below.value }}",
-            "heading_size": "h2"
-          }
-        },
-        "1657120086f40f4181-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1657120086f40f4181-0",
-        "1657120086f40f4181-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "165711865618df3283": {
       "type": "rich-text-about",
       "blocks": {
         "1657118656aa7286c2-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "{{ collection.metafields.custom.headline_below.value }}",
             "heading_size": "h1"
           }
         },
@@ -170,7 +142,6 @@
     "banner",
     "1657116408f5c8768d",
     "models-list",
-    "16571200864f58add5",
     "165711865618df3283",
     "16571171575cd421b3",
     "1657118182c126f9c3"
