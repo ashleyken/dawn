@@ -12,7 +12,25 @@
           {%- when 'heading' -%}
             <h2 class="{{ block.settings.heading_size }} rich-text-about__heading_underline" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
           {%- when 'text' -%}
-            <div class="rich-text-about__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+            <div class="rich-text-about__text rte {%- if block.settings.read_more_enabled %} line-clamp-3{% endif -%}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+            
+            
+            
+            {% if block.settings.read_more_enabled %}
+            <a class="rich-text-about-readmore" href="#" data-id="{{ section.id }}">READ MORE</a>
+            <script>
+            $('.rich-text-about-readmore').click(function (event) {
+              event.preventDefault();
+              var section_parent = $('#shopify-section-' + $(this).attr("data-id"));
+              var clamp = section_parent.find('.line-clamp-3');
+              var readmore = section_parent.find('.rich-text-about-readmore');
+              clamp.removeClass('line-clamp-3');
+              readmore.hide();
+              
+            });
+            </script>
+            {% endif %}
+            
           {%- when 'button' -%}
             <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>
               {{ block.settings.button_label | escape }}
@@ -22,6 +40,8 @@
     </div>
   </div>
 </div>
+
+
 
 {% schema %}
 {
@@ -60,7 +80,7 @@
     {
       "type": "checkbox",
       "id": "full_width",
-      "default": true,
+      "default": false,
       "label": "t:sections.rich-text.settings.full_width.label"
     }
   ],
@@ -108,6 +128,12 @@
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "read_more_enabled",
+          "default": true,
+          "label": "Read More enabled"
         }
       ]
     }
