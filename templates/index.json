@@ -169,40 +169,43 @@
       "settings": {
       }
     },
-    "164988836790b38534": {
-      "type": "rich-text-h1",
+    "1658323764e0f5593f": {
+      "type": "rich-text",
       "blocks": {
-        "1649888367521dac94-0": {
+        "16583237645df48e0c-0": {
           "type": "heading",
           "settings": {
             "heading": "OFFICIAL CAR MATS",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "use_h1_tags_for_header": true,
+            "underline_header": false
           }
         },
-        "1649888367521dac94-1": {
+        "16583237645df48e0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are a family run British manufacturer of car and van floor mats, boot mats and liners who are fast approaching our 30th Anniversary.  As you can imagine, we are getting pretty good at it.  Our mats are fully tailored to fit, non-genuine aftermarket car mats.  <\/p>"
+            "text": "<p>We are a family run British manufacturer of car and van floor mats, boot mats and liners who are fast approaching our 30th Anniversary.  As you can imagine, we are getting pretty good at it.  Our mats are fully tailored to fit, non-genuine aftermarket car mats.  <\/p>",
+            "read_more_enabled": false
           }
         },
-        "1649888367521dac94-2": {
+        "16583237645df48e0c-2": {
           "type": "button",
           "disabled": true,
           "settings": {
-            "button_label": "",
+            "button_label": "Button label",
             "button_link": "",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "1649888367521dac94-0",
-        "1649888367521dac94-1",
-        "1649888367521dac94-2"
+        "16583237645df48e0c-0",
+        "16583237645df48e0c-1",
+        "16583237645df48e0c-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "color_scheme": "none",
+        "full_width": false
       }
     },
     "1633519483fdefc816": {
@@ -267,23 +270,26 @@
         "swipe_on_mobile": false
       }
     },
-    "16517654817c378cc7": {
-      "type": "rich-text-h1",
+    "1658323904a27ae129": {
+      "type": "rich-text",
       "blocks": {
-        "1651765481efe8d7e2-0": {
+        "1658323904db4c592d-0": {
           "type": "heading",
           "settings": {
             "heading": "Custom Car FLoor Mats",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "use_h1_tags_for_header": true,
+            "underline_header": false
           }
         },
-        "1651765481efe8d7e2-1": {
+        "1658323904db4c592d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are trusted to be a supplier to some of the biggest automotive companies and sports clubs.<\/p><p>We manufacture top quality tailored to fit car mats that you'll be proud to have in your car.  <\/p><p>All our mats are designed to fit your car perfectly and come with the compatible securing fittings of clips required by the vehicle to help it stay in place in the footwell.  <\/p><p>You can fully tailor the car mats to suit the interior of your car, by choosing the colour of carpet and trim.  <\/p><p>For that extra added bit of fun choose personalised embroidery, a perfect unique gift.  <\/p><p>Our mats are made by us in the UK for speedy delivery and quality assurance.  <\/p><p>All our car mats and boot liners are avilable in carpet and rubber and are non-slip and water resistant.  <\/p><p>Quality is our priority and all mats go through a 3 point quality check before leaving our factory.<\/p><p>We are also big believers in customer service being a state of mind and not a department, so please be rest assured that we are available for any questions you should have before you purchase.  <\/p>"
+            "text": "<p>We are trusted to be a supplier to some of the biggest automotive companies and sports clubs.<\/p><p>We manufacture top quality tailored to fit car mats that you'll be proud to have in your car.  <\/p><p>All our mats are designed to fit your car perfectly and come with the compatible securing fittings of clips required by the vehicle to help it stay in place in the footwell.  <\/p><p>You can fully tailor the car mats to suit the interior of your car, by choosing the colour of carpet and trim.  <\/p><p>For that extra added bit of fun choose personalised embroidery, a perfect unique gift.  <\/p><p>Our mats are made by us in the UK for speedy delivery and quality assurance.  <\/p><p>All our car mats and boot liners are avilable in carpet and rubber and are non-slip and water resistant.  <\/p><p>Quality is our priority and all mats go through a 3 point quality check before leaving our factory.<\/p><p>We are also big believers in customer service being a state of mind and not a department, so please be rest assured that we are available for any questions you should have before you purchase.  <\/p>",
+            "read_more_enabled": false
           }
         },
-        "1651765481efe8d7e2-2": {
+        "1658323904db4c592d-2": {
           "type": "button",
           "disabled": true,
           "settings": {
@@ -294,13 +300,13 @@
         }
       },
       "block_order": [
-        "1651765481efe8d7e2-0",
-        "1651765481efe8d7e2-1",
-        "1651765481efe8d7e2-2"
+        "1658323904db4c592d-0",
+        "1658323904db4c592d-1",
+        "1658323904db4c592d-2"
       ],
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "color_scheme": "none",
+        "full_width": false
       }
     },
     "1636122219e496d392": {
@@ -310,13 +316,16 @@
           "type": "heading",
           "settings": {
             "heading": "How do we manufacture your car mats?",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
           }
         },
         "1636122219e496d392-1": {
           "type": "text",
           "settings": {
-            "text": "<p>So how do we manufacture your car mats?<\/p><p>The 1st part of the process is cutting the mats.  These are CAD cut from your selection of over 3,000 mats shapes from a roll of fabric using leading technology, in order to produce the exact fit tailored to your car.<\/p><p>Then we add binding and a heel pad to reinforce the mat on the Classic, and Classic Velour and Super Luxury, to protect the wear and tear from your heels whilst driving.  This is not required on the prestige due to the depth and thickness of the car mat.<\/p><p>You can choose plain binding or a coloured trim which is added by one of our experienced machinists.<\/p><p>The mats are then installed with a compatible securing clip, in most cases each manufacturer of car has their own unique fitting system, we install these by hand so the mats fit snugly into your vehicle so the clips fit safely into place in the exact location required for the vehicle.<\/p><p>Each car mat is manufactured to the exact contour of your vehicle, so when ordering on line, please be sure to select your correct make, model and year, there is a shape template on line to also offer guidance. If you are unsure of which to order, then please ring one of our friendly customer service team who will be only too happy to help.<\/p><p>Uniquely, instead of a plain heel pad you can choose to add a bit of fun to your car mats with some personalistion. <\/p><p>Our Official Car Mats website enables everyone to build their own unique car mat based on your exact needs from quality, price and design.<\/p><p><\/p><p><\/p><p><\/p>"
+            "text": "<p>So how do we manufacture your car mats?<\/p><p>The 1st part of the process is cutting the mats.  These are CAD cut from your selection of over 3,000 mats shapes from a roll of fabric using leading technology, in order to produce the exact fit tailored to your car.<\/p><p>Then we add binding and a heel pad to reinforce the mat on the Classic, and Classic Velour and Super Luxury, to protect the wear and tear from your heels whilst driving.  This is not required on the prestige due to the depth and thickness of the car mat.<\/p><p>You can choose plain binding or a coloured trim which is added by one of our experienced machinists.<\/p><p>The mats are then installed with a compatible securing clip, in most cases each manufacturer of car has their own unique fitting system, we install these by hand so the mats fit snugly into your vehicle so the clips fit safely into place in the exact location required for the vehicle.<\/p><p>Each car mat is manufactured to the exact contour of your vehicle, so when ordering on line, please be sure to select your correct make, model and year, there is a shape template on line to also offer guidance. If you are unsure of which to order, then please ring one of our friendly customer service team who will be only too happy to help.<\/p><p>Uniquely, instead of a plain heel pad you can choose to add a bit of fun to your car mats with some personalistion. <\/p><p>Our Official Car Mats website enables everyone to build their own unique car mat based on your exact needs from quality, price and design.<\/p><p><\/p><p><\/p><p><\/p>",
+            "read_more_enabled": false
           }
         }
       },
@@ -325,7 +334,7 @@
         "1636122219e496d392-1"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "full_width": true
       }
     },
@@ -366,10 +375,10 @@
     "16360284522d566a5d",
     "image_banner",
     "find-my-car",
-    "164988836790b38534",
+    "1658323764e0f5593f",
     "1633519483fdefc816",
     "multi_column",
-    "16517654817c378cc7",
+    "1658323904a27ae129",
     "1636122219e496d392",
     "1633520292ec6b1756",
     "16522723840b624d21"
