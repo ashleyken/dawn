@@ -60,22 +60,17 @@
 </div>
 
 
-<div class="page-width center" id="shopify-section-manufacturer_banner">
+<div class="page-width center">
   <h1 class="manufacturer_banner_h1">{{- collection.title | escape -}}</h1>
-  <div class="rte line-clamp-3">{{ collection.description }}</div>
+  
+  <div id="shopify-section-manufacturer_banner">
+  <div class="rte line-clamp-finder line-clamp-3">{{ collection.description }}</div>
   
   <a class="rich-text-readmore" href="#" data-id="manufacturer_banner">READ MORE</a>
-  <script>
-  $('.rich-text-readmore').click(function (event) {
-    event.preventDefault();
-    var section_parent = $('#shopify-section-' + $(this).attr("data-id"));
-    var clamp = section_parent.find('.line-clamp-3');
-    var readmore = section_parent.find('.rich-text-readmore');
-    clamp.removeClass('line-clamp-3');
-    readmore.hide();
-    
-  });
-  </script>
+
+  </div>
+  
+  
   
 </div>
 

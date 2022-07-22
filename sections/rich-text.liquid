@@ -12,7 +12,7 @@
           {%- when 'heading' -%}
             <h{%- if block.settings.use_h1_tags_for_header -%}1{%- else -%}2{%- endif %} class="{{ block.settings.heading_size }} {% if block.settings.underline_header -%}rich-text__heading_underline{%- endif %} " {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h{%- if block.settings.use_h1_tags_for_header -%}1{%- else -%}2{%- endif -%}>
           {%- when 'text' -%}
-            <div class="rich-text__text rte {%- if block.settings.read_more_enabled %} line-clamp-3{% endif -%}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>            
+            <div class="rich-text__text rte {%- if block.settings.read_more_enabled %} line-clamp-finder line-clamp-3{% endif -%}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>            
             
             
             {% if block.settings.read_more_enabled %}
@@ -20,11 +20,17 @@
             <script>
             $('.rich-text-readmore').click(function (event) {
               event.preventDefault();
-              var section_parent = $('#shopify-section-' + $(this).attr("data-id"));
-              var clamp = section_parent.find('.line-clamp-3');
-              var readmore = section_parent.find('.rich-text-readmore');
-              clamp.removeClass('line-clamp-3');
-              readmore.hide();
+              let section_parent = $('#shopify-section-' + $(this).attr("data-id"));
+              let clamp = section_parent.find('.line-clamp-finder');
+              let readmore = section_parent.find('.rich-text-readmore');
+              if (readmore.text() == 'READ MORE') {
+                clamp.removeClass('line-clamp-3');
+                readmore.text('READ LESS');
+              }
+              else {
+                clamp.addClass('line-clamp-3');
+                readmore.text('READ MORE');
+              }
               
             });
             </script>
