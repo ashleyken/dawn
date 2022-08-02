@@ -1,5 +1,50 @@
 {
   "sections": {
+    "16594436784dbe051a": {
+      "type": "image-banner",
+      "blocks": {
+        "1659443678a4ed0088-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Luxury Car Floor Mats",
+            "heading_size": "medium"
+          }
+        },
+        "1659443678a4ed0088-1": {
+          "type": "text",
+          "settings": {
+            "text": "Manufactured in the UK for any make or model."
+          }
+        },
+        "1659443678a4ed0088-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1659443678a4ed0088-0",
+        "1659443678a4ed0088-1",
+        "1659443678a4ed0088-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Mark_Ian.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "16594435252aca3178": {
       "type": "find-my-car",
       "settings": {
@@ -64,6 +109,7 @@
     }
   },
   "order": [
+    "16594436784dbe051a",
     "16594435252aca3178",
     "main",
     "1659443024b9fbaa48",
