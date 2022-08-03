@@ -1,118 +1,12 @@
 {
   "sections": {
-    "16594436784dbe051a": {
-      "type": "image-banner",
-      "blocks": {
-        "1659443678a4ed0088-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Luxury Car Floor Mats",
-            "heading_size": "medium"
-          }
-        },
-        "1659443678a4ed0088-1": {
-          "type": "text",
-          "settings": {
-            "text": "Manufactured in the UK for any make or model."
-          }
-        },
-        "1659443678a4ed0088-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1659443678a4ed0088-0",
-        "1659443678a4ed0088-1",
-        "1659443678a4ed0088-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/vintage-car-steering-wheel.jpg",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "16594435252aca3178": {
-      "type": "find-my-car",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
       }
-    },
-    "1659443024b9fbaa48": {
-      "type": "image-with-text-about",
-      "blocks": {
-        "1659443024dd42435e-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Luxury Car Floor Mats"
-          }
-        },
-        "1659443024dd42435e-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We use the highest standard of materials for our car floor mats so that you can get quality, long-lasting flooring which is both fit for purpose and great value.<\/p><p>Our stitching is all high quality to ensure a top end finish with every single one we sell.<\/p><p>We never scrimp on cost when buying materials as our goal is to create customer satisfaction by providing long lasting products made from first class materials taking out thinking about keeping your car safe intact.<\/p><p>Where possible we use recycled materials so that we can help do our bit for the environment.<\/p><p>Car floor mats are an important part of every car and here at Official Car Mats we take that very seriously, that's why we only ever provide the best.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1659443024dd42435e-0",
-        "1659443024dd42435e-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/nubuck.jpg",
-        "height": "adapt",
-        "layout": "text_first"
-      }
-    },
-    "165944309468c6bc6f": {
-      "type": "image-with-text-about",
-      "blocks": {
-        "16594430942991632d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Precision Manufacturing"
-          }
-        },
-        "16594430942991632d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Each car mat is manufactured to the exact contour of your vehicle, so when ordering online, please be sure to select your correct make, model and year.<\/p><p>There is a shape template online to also offer guidance. If you are unsure of which to order, then please ring one of our friendly customer service team who will be only too happy to help.<\/p><p>Our car mats are CAD cut from over 3,000 mat shapes from a roll of fabric using leading technology, in order to produce the exact fit tailored to your car. Then we add binding and a heel pad to reinforce the mat on the Classic, and Classic Velour and Super Luxury, to protect the wear and tear from your heels whilst driving.<\/p><p>The mats are then installed with a compatible securing clip. Most manufacturers have their own unique fitting system. We install these by hand so the mats fit to the exact location required for the vehicle.<\/p><p>We use a high tech process which ensures that all of our car mats are made to an extremely high standard. This process starts with a computer generated pattern which is then cut out of a roll of fabric. The mat is then bound and a heel pad is added to reinforce it.<\/p><p>Finally, the mat is installed with a compatible securing clip.<\/p><p> <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "16594430942991632d-0",
-        "16594430942991632d-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/striped.jpg",
-        "height": "adapt",
-        "layout": "image_first"
-      }
     }
   },
   "order": [
-    "16594436784dbe051a",
-    "16594435252aca3178",
-    "main",
-    "1659443024b9fbaa48",
-    "165944309468c6bc6f"
+    "main"
   ]
 }
