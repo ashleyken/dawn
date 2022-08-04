@@ -145,7 +145,7 @@ function addFontToTextFilds() {
           item.style.fontFamily = fontName;
             
           item.addEventListener('blur', (event) => {
-            let value = item.value.toLowerCase().trim().replace(/\s+/g, ' ')
+            let value = item.value.toLowerCase().trim().replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, '');
             addWarningMessage(value);
             console.log(value);
           });
