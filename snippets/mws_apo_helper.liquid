@@ -128,17 +128,16 @@ function addFontToTextFilds() {
     let arrValue = value.split(' ');    
     let arrValueAll = value.split('');  
     let btn = document.querySelector(".product-form__buttons .mw-apo-add-to-cart-cloned");
-    
+    let result = false;
     btn.disabled = true;
     
-  for (let i=0; i < arrCopyright.length; i++) {
-    let item = arrCopyright[i];
-    if (value.includes(item)) {
-          console.log(item)
-
+    for (let i=0; i < arrCopyright.length; i++) {
+      let item = arrCopyright[i];
+      if (value.includes(item)) {
+        result = true;
+      }
     }
-  }
-    const result = arrValue.some(item=> arrCopyright.includes(item));
+    
     if (result) {
       let div = document.createElement('div');
       let targetDiv = input.parentNode;
