@@ -133,11 +133,14 @@ function addFontToTextFilds() {
         let id = targetElement.getAttribute('id');
         let fontName = getName(id);               
         const optionsText = document.querySelectorAll('.mw-option--type-text input.mw-option__control');        
-                    console.log(optionsText)
 
-        optionsText.forEach(function (item) {
-          
+        optionsText.forEach(function (item) {         
           item.style.fontFamily = fontName;
+            
+          item.addEventListener('blur', (event) => {
+            let value = item.value;
+            console.log(value);
+          });
         });
       }
   });  
