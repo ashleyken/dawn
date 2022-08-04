@@ -129,9 +129,10 @@ function addFontToTextFilds() {
     const result = arrValue.some(item=> arrCopyright.includes(item))
     if (result) {
       let div = document.createElement('div');
+      div.classList.add('');
       div.innerHTML = 'Due to copyright this embroidery is not approved, please choose something else.';
       item.appendChild(div);    
-      item.value = '';
+      item.value = 'mws_copyright';
       setTimeout(() => {
       // div.remove();
       }, 3000);
