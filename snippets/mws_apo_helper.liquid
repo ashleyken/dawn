@@ -130,7 +130,14 @@ function addFontToTextFilds() {
     let btn = document.querySelector(".product-form__buttons .mw-apo-add-to-cart-cloned");
     
     btn.disabled = true;
-    console.log(arrValueAll)
+    
+  for (let i=0; i < arr.arrCopyright; i++) {
+    let item = arrCopyright[i];
+    if (value.includes(item)) {
+          console.log(item)
+
+    }
+  }
     const result = arrValue.some(item=> arrCopyright.includes(item));
     if (result) {
       let div = document.createElement('div');
