@@ -4,9 +4,36 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "16601097444135d118": {
+      "type": "image-with-text-about",
+      "blocks": {
+        "1660109744d7ec25ef-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PRECISION MANUFACTURING"
+          }
+        },
+        "1660109744d7ec25ef-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each car mat is manufactured to the exact contour of your vehicle, so when ordering online, please be sure to select your correct make, model and year.  There is a shape template online to also offer guidance. If you are unsure of which to order, then please ring one of our friendly customer service team who will be only too happy to help.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1660109744d7ec25ef-0",
+        "1660109744d7ec25ef-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sports-badge_256x256_crop_center-removebg-preview.png",
+        "height": "adapt",
+        "layout": "image_first"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16601097444135d118"
   ]
 }
