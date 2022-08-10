@@ -9,10 +9,51 @@
       "type": "models-list",
       "settings": {
       }
+    },
+    "1660125585e7d167ba": {
+      "type": "rich-text",
+      "blocks": {
+        "1660125584b9468460-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.headline_below.value }}",
+            "heading_size": "h2",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "1660125584b9468460-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p>",
+            "read_more_enabled": true
+          }
+        },
+        "1660125584b9468460-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1660125584b9468460-0",
+        "1660125584b9468460-1",
+        "1660125584b9468460-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
     }
   },
   "order": [
     "banner",
-    "models-list"
+    "models-list",
+    "1660125585e7d167ba"
   ]
 }
