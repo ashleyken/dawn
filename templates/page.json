@@ -5,46 +5,6 @@
       "settings": {
       }
     },
-    "16602226945c2da39b": {
-      "type": "rich-text",
-      "blocks": {
-        "16602226948dc18c8d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "CAR FLOOR MATS",
-            "heading_size": "h1",
-            "use_h1_tags_for_header": false,
-            "underline_header": false
-          }
-        },
-        "16602226948dc18c8d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Looking for a new set of car floor mats? You can search for an exact match of your make and <br\/>model using our car registration plate lookup tool or call our friendly team. We are happy to help <br\/>you choose the right set for your vehicle.<br\/>We've been manufacturing car mats for nearly 30 years now, so we are getting pretty good at it!<br\/>Our car mats are precision cut to fit any car, and we offer a wide range of different materials, <br\/>colours and personalisation options.<\/p>",
-            "read_more_enabled": false
-          }
-        },
-        "16602226948dc18c8d-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "16602226948dc18c8d-0",
-        "16602226948dc18c8d-1",
-        "16602226948dc18c8d-2"
-      ],
-      "settings": {
-        "color_scheme": "none",
-        "full_width": false,
-        "remove_top_padding": false
-      }
-    },
     "16601097444135d118": {
       "type": "image-with-text-about",
       "blocks": {
@@ -149,7 +109,6 @@
   },
   "order": [
     "main",
-    "16602226945c2da39b",
     "16601097444135d118",
     "16601104919e399493",
     "166010999462534f08"
