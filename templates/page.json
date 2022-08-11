@@ -41,7 +41,7 @@
       ],
       "settings": {
         "color_scheme": "none",
-        "full_width": true,
+        "full_width": false,
         "remove_top_padding": false
       }
     },
