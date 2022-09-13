@@ -242,7 +242,9 @@ window.mwApoInit.onEvent = function (event, args) {
       overlayImages();
       addFontToTextFilds();
     }, 300);
-
+    
+    document.querySelector(".product-form__buttons").style.display = "block";
+    
     if (document.querySelector(".shopify-payment-button")) {
       document.querySelector(".shopify-payment-button").style.display = "none";
 
@@ -324,12 +326,13 @@ window.mwApoInit.onCallback = function (event, data) {
 
 
 window.mwApoInit.settings.selectors.product.gallery_container = '.custom_selector';
+  	
 </script>
 
 <style>
-/*   .product-form__submit {
+  .product-form__buttons {
   	 display: none;
-  } */
+  }
   
   .mw-option__swatch-color {
     display: block !important;
