@@ -396,5 +396,12 @@
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
     }
+  },
+  "shopify": {
+    "checkout": {
+      "thank_you": {
+        "confirmed_description": "We've shipped your order, please use the links below to track your item(s)."
+      }
+    }
   }
 }
