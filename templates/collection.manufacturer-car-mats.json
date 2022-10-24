@@ -5,11 +5,6 @@
       "settings": {
       }
     },
-    "012be9ab-43e3-44d2-b298-595765dab244": {
-      "type": "find-my-car",
-      "settings": {
-      }
-    },
     "models-list": {
       "type": "models-list",
       "settings": {
@@ -58,7 +53,6 @@
   },
   "order": [
     "banner",
-    "012be9ab-43e3-44d2-b298-595765dab244",
     "models-list",
     "1658326160f90f0ebd"
   ]
