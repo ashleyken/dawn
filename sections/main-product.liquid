@@ -135,7 +135,7 @@
             No of clips: {{ product.metafields.mat_options.no_of_clips.value }} / 
             {% endif %}
             {% if product.metafields.mat_options.fitting_type.value != blank %}
-            Fitting type: {{ product.metafields.mat_options.fitting_type.value }}
+            Fitting type: {{ product.metafields.mat_options.fitting_type.value | replace: "http://", "https://" }}
             {% endif %}
             
             
