@@ -23,8 +23,8 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "",
-              "color_scheme": "background-1",
+              "text": "Due to industrial action by Royal Mail on December 23rd & 24th, our last date to guarantee delivery for Christmas is Tuesday 13th December. All orders placed during this time will be sent on a Royal Mail 24 hour tracked service.",
+              "color_scheme": "accent-1",
               "link": ""
             }
           }
