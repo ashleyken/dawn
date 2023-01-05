@@ -53,7 +53,7 @@
         "1659702558495bef0d-0": {
           "type": "heading",
           "settings": {
-            "heading": "{{ collection.title }}",
+            "heading": "{{ collection.metafields.custom.headline_below.value }}",
             "heading_size": "h1",
             "use_h1_tags_for_header": false,
             "underline_header": false
