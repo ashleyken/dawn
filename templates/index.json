@@ -116,7 +116,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/OCM_homepage_carousel_header_1_Tall.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_1_1080px_5df33f85-cb19-47b5-9df7-27c320ab9a2b.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_1_1080x1080_px.jpg",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
@@ -151,7 +151,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/OCM_homepage_header__carousel_2_Tall.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_2_1080px.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_2_1080x1080px.jpg",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
@@ -186,7 +186,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_3_football_Tall.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_football_3_1080px.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_football_3_1080x1080px.jpg",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
