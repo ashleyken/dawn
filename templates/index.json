@@ -149,7 +149,7 @@
         "fa5949cb-ca68-425b-b4be-24e379c669c3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OCM_homepage_header__carousel_2_Tall.jpg",
+            "image": "shopify:\/\/shop_images\/OCM_homepage_header__carousel_2_wide.jpg",
             "focal_point": "center center",
             "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_2_1080x1080px.jpg",
             "focal_point_mobile": "center center",
@@ -184,7 +184,7 @@
         "54bd82bb-9076-43cd-8e21-2c41c3a25ffa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_3_football_Tall.jpg",
+            "image": "shopify:\/\/shop_images\/OCM_homepage_header__football_1920px-wide.jpg",
             "focal_point": "center center",
             "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_football_3_1080x1080px.jpg",
             "focal_point_mobile": "center center",
