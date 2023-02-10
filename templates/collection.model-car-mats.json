@@ -62,7 +62,7 @@
         "1659702558495bef0d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p>",
+            "text": "<p>{{ collection.metafields.custom.text_below_models.value }}<\/p>",
             "read_more_enabled": false
           }
         }
