@@ -1,3 +1,15 @@
+<div class="collection_banner_bg_desktop" style="background-image: url('{{ collection.metafields.custom.header_image_desktop.value | image_url: width: 1920  }}');">&nbsp;</div>
+{{ collection.metafields.custom.header_image_mobile.value | image_url: width: 600 | image_tag: class: 'collection_banner_bg_mobile'  }}
+
+
+
+
+
+{% comment %}
+
+{{ featured_image | image_url: width: 200 | image_tag: srcset: nil, class: 'product-card__image_second' }}
+
+
 <div class="manufacturer_banner_bg">
 
   {%- if collection.image -%}
@@ -20,3 +32,4 @@
   {%- endif -%}
   
 </div>
+{% endcomment %}
