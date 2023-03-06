@@ -1,0 +1,244 @@
+<section class="page-width">
+	
+		
+		<div class="find_my_car_holder">
+			
+			<div class="find_my_car_title">Find the mats to fit your car</div>
+			
+			<div class="find_my_car_title_sub">Search by registration</div>
+			
+			
+			
+			<form id="fMCLookupForm">
+				<div class="grid grid--1-col grid--2-col-tablet grid_centerer">
+					<div class="grid__item">
+						
+						<div class="reg_lookup_holder">
+							<div class="reg_lookup_outer">
+								<input id="fMCLookupInput" type="text" name="" class="reg_lookup_input" value="" aria-required="true" autocorrect="off" autocapitalize="off" placeholder="ENTER YOUR REG" required="">
+							</div>
+						</div>
+						
+						<button type="submit" class="reg_lookup_button" name="commit" id="Subscribe" aria-label="Subscribe">
+							GO
+							<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg" style="width:2.4rem;">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+	</path></svg>
+	
+						</button>
+						
+					</div>
+				</div>
+				
+				<div id="fMCLookupResponse"></div>
+				
+			</form>
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="find_my_car_title_sub">Search by model</div>
+			
+			<form id="fMCDropdownForm">
+			<div class="grid grid--1-col grid--3-col-tablet"> 
+				
+				<div class="grid__item">
+					<select id="fMCDManufacturer" class="find_my_car_select select__select">
+						<option value="">MAKE</option>
+						{%- for product_vendor in shop.vendors -%}
+						<option value="{{ product_vendor | handleize }}-car-mats">{{ product_vendor }}</option>
+						{%- endfor -%}
+					</select>
+				</div>
+			
+				<div class="grid__item">
+					<select id="fMCDModel" class="find_my_car_select select__select">
+						<option value="">MODEL</option>
+					</select>
+				</div>
+			
+				<div class="grid__item">
+					<select id="fMCDVariant" class="find_my_car_select select__select">
+						<option value="">YEAR / TYPE</option>
+					</select>
+				</div>
+			
+			</div>
+			</form>
+			
+			
+			<div class="find_my_car_title_sub">We will then take you to the page to choose your material</div>
+			
+				
+		</div>
+		
+	
+	
+</section>
+
+
+
+
+<input type="hidden" id="collectionHandle" value="{{ collection.handle }}">
+
+
+
+<script>
+
+let collectionHandle = '';
+
+if (document.querySelector("#collectionHandle") && document.querySelector("#collectionHandle").value) {
+	let collectionHandle_input = document.querySelector("#collectionHandle");
+	collectionHandle = '/collections/' + collectionHandle_input.value;
+	// console.log(collectionHandle);
+	// don't show boot options if we've got a collectionHandle value
+} 
+
+
+window.theme = window.theme || {};
+
+window.theme.mam = {% render "lookup_json" %};
+
+(function(){
+
+	if (document.querySelector("#fMCDManufacturer")) {
+	
+		let manufacturer_handle = '';
+		let model_handle = '';
+	
+		const fMCDForm = document.querySelector("#fMCDropdownForm");
+		
+		const fMCDManufacturer = fMCDForm.querySelector("#fMCDManufacturer");
+		const fMCDModel = fMCDForm.querySelector("#fMCDModel");
+		const fMCDVariant = fMCDForm.querySelector("#fMCDVariant");
+		
+		fMCDManufacturer.addEventListener('change', (event) => {
+	
+			manufacturer_handle = event.target.value;
+	
+			// console.log(manufacturer_handle);
+			
+			let manufacturer_matched = window.theme.mam.manufacturers.find(function(manufacturer_to_match){
+				return manufacturer_to_match.shopify_handle === manufacturer_handle
+			});
+			
+			/*
+			console.table(manufacturer_matched.models);
+			
+			manufacturer_matched.models.forEach(function(model){
+				console.log(model.name);
+			});
+			
+			let models_html = manufacturer_matched.models.map(function(model){
+				return `<option value="${model.shopify_handle}">${model.name}</option>`
+			});
+			*/
+			
+			
+			let models_html = manufacturer_matched.models.map(model => `<option value="${model.shopify_handle}">${model.name}</option>`);
+			
+			fMCDModel.innerHTML = '<option value="">MODEL</option>' + models_html.join('');
+			fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>';
+			
+			fMCDModel.focus();
+			
+		});
+		
+		
+	
+		fMCDModel.addEventListener('change', (event) => {
+		
+			model_handle = event.target.value;
+			
+			fetch("{{ shop.secure_url }}/collections/" + model_handle + "?view=_partial", {
+				method: "GET"
+			})
+			.then((response) => response.text())
+			.then(function(data){ 
+				let json = JSON.parse(data.replace(/(<([^>]+)>)/gi, ""));
+
+				// don't show boot options if we've got a collectionHandle value
+
+
+				let mats_html = json.products.map(function(mat){
+					
+					let boot_checker = mat.title.match(/Boot/i);
+					
+					if (collectionHandle && boot_checker) {
+						// don't return
+					}
+					else {
+						return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`;
+					}
+				});
+
+				/*
+				let mats_html = json.products.map(mat=> `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`);
+				*/
+
+				fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>' + mats_html.join('');
+				fMCDVariant.focus();
+			});
+			
+		});
+		
+		fMCDVariant.addEventListener('change', (event) => {
+			
+			let handle = event.target.value;
+		
+			if (handle.length > 0) {
+				window.location.href = handle;
+			}
+		
+		});
+		
+		
+	}
+	
+	
+	
+	if (document.querySelector("#fMCLookupForm")) {
+	
+		const fMCLookupForm = document.querySelector("#fMCLookupForm");
+		let fMCLookupInput = fMCLookupForm.querySelector("#fMCLookupInput");
+		let fMCLookupResponse = fMCLookupForm.querySelector("#fMCLookupResponse");
+		
+			
+		fMCLookupForm.addEventListener('submit', (event) => {
+			
+			event.preventDefault();
+	
+			let formData = {
+				reg: fMCLookupInput.value,
+				collectionHandle: collectionHandle
+			};
+			
+			fetch("https://cms.officialcarmats.co.uk/proc_lookup.php", {
+				method: "POST",
+				body:  JSON.stringify(formData)
+			})
+			.then((response) => response.json())
+			.then(function(data){ 
+				console.log(data)
+				fMCLookupResponse.innerHTML = data.output;
+			});
+			
+		
+		});
+		
+	}
+
+
+
+})();
+
+
+
+
+
+	
+</script>
