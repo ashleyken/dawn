@@ -98,6 +98,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "11656770355074664061": {
+        "type": "shopify:\/\/apps\/pasilobus-google-analytics-4\/blocks\/ga4\/a193266a-8f65-4da8-bcba-d9df8d371e21",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
