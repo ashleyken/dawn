@@ -40,12 +40,52 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "ba8f0c20-33ee-4e81-a879-364333ba7cad": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15140007510202__ba8f0c20-33ee-4e81-a879-364333ba7cad-167958352203bd504e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15140007510202__ba8f0c20-33ee-4e81-a879-364333ba7cad-167958352203bd504e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p>",
+            "read_more_enabled": true
+          }
+        },
+        "template--15140007510202__ba8f0c20-33ee-4e81-a879-364333ba7cad-167958352203bd504e-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15140007510202__ba8f0c20-33ee-4e81-a879-364333ba7cad-167958352203bd504e-0",
+        "template--15140007510202__ba8f0c20-33ee-4e81-a879-364333ba7cad-167958352203bd504e-1",
+        "template--15140007510202__ba8f0c20-33ee-4e81-a879-364333ba7cad-167958352203bd504e-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
     }
   },
   "order": [
     "banner",
     "find-my-car",
     "category-text",
-    "163413202562fe9aab"
+    "163413202562fe9aab",
+    "ba8f0c20-33ee-4e81-a879-364333ba7cad"
   ]
 }
