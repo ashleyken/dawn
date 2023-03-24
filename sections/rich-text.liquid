@@ -17,6 +17,7 @@
             
             {% if block.settings.read_more_enabled %}
             <a class="rich-text-readmore" href="#" data-id="{{ section.id }}">READ MORE</a>
+            {% endif %}
             <script>
             $('.rich-text-readmore').click(function (event) {
               event.preventDefault();
@@ -34,7 +35,6 @@
               
             });
             </script>
-            {% endif %}
             
           {%- when 'button' -%}
             <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" {{ block.shopify_attributes }}>

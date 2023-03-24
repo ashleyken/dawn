@@ -71,7 +71,11 @@
   <div id="shopify-section-manufacturer_banner">
   <div class="rte line-clamp-finder line-clamp-3">{{ collection.description }}</div>
   
+  {% if collection.description != blank %}
   <a class="rich-text-readmore" href="#" data-id="manufacturer_banner">READ MORE</a>
+  {% endif %}
+  
+  
 
   </div>
   
