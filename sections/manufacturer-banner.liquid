@@ -1,59 +1,63 @@
 <div class="manufacturer_banner_bg">
 
+  <div class="manufacturer_banner_holder">
+    
+    {%- if collection.image -%}
+    <img
+    srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | img_url: '165x' }} 165w,{%- endif -%}
+      {%- if collection.image.width >= 360 -%}{{ collection.image | img_url: '360x' }} 360w,{%- endif -%}
+      {%- if collection.image.width >= 535 -%}{{ collection.image | img_url: '535x' }} 535w,{%- endif -%}
+      {%- if collection.image.width >= 750 -%}{{ collection.image | img_url: '750x' }} 750w,{%- endif -%}
+      {%- if collection.image.width >= 1070 -%}{{ collection.image | img_url: '1070x' }} 1070w,{%- endif -%}
+      {%- if collection.image.width >= 1500 -%}{{ collection.image | img_url: '1500x' }} 1500w,{%- endif -%}
+      {{ collection.image | img_url: 'master' }} {{ collection.image.width }}w"
+    src="{{ collection.image | img_url: '750x' }}"
+    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
+    alt="{{ collection.title | escape }}"
+    loading="lazy"
+    width="{{ collection.image.width }}"
+    height="{{ collection.image.height }}"
+    class="manufacturer_banner_bg_logo"
+    >
+    {%- endif -%}
+    
+    
+    {% liquid
+    
+    assign lowest_price = 9999
+    
+    for product in collection.products
+    
+      if product.price < lowest_price
+        
+        assign lowest_price = product.price
+    
+      endif
+    
+    endfor
+    
+    %}
+    
+    <div class="manufacturer_banner_bg_bullet_points">
+      <ul>
+        {% if collection.title contains 'Boot' %}
+        
+        <li>Boot liners to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
+        <li>Tailored to fit Boot Liners</li>
+        
+        {% else %}
+        
+        <li>Car Mats to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
+        <li>Personalise your Tailored to Fit Floor Mats</li>
+        
+        {% endif %}
+        
+        <li>British Manufacturer</li>
+        <li>Free UK delivery</li>
+        <li>UK Market leaders for over 30 years</li>
+      <ul>
+    </div>
   
-  {%- if collection.image -%}
-  <img
-  srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | img_url: '165x' }} 165w,{%- endif -%}
-    {%- if collection.image.width >= 360 -%}{{ collection.image | img_url: '360x' }} 360w,{%- endif -%}
-    {%- if collection.image.width >= 535 -%}{{ collection.image | img_url: '535x' }} 535w,{%- endif -%}
-    {%- if collection.image.width >= 750 -%}{{ collection.image | img_url: '750x' }} 750w,{%- endif -%}
-    {%- if collection.image.width >= 1070 -%}{{ collection.image | img_url: '1070x' }} 1070w,{%- endif -%}
-    {%- if collection.image.width >= 1500 -%}{{ collection.image | img_url: '1500x' }} 1500w,{%- endif -%}
-    {{ collection.image | img_url: 'master' }} {{ collection.image.width }}w"
-  src="{{ collection.image | img_url: '750x' }}"
-  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-  alt="{{ collection.title | escape }}"
-  loading="lazy"
-  width="{{ collection.image.width }}"
-  height="{{ collection.image.height }}"
-  class="manufacturer_banner_bg_logo"
-  >
-  {%- endif -%}
-  
-  {% liquid
-  
-  assign lowest_price = 9999
-  
-  for product in collection.products
-  
-    if product.price < lowest_price
-      
-      assign lowest_price = product.price
-  
-    endif
-  
-  endfor
-  
-  %}
-  
-  <div class="manufacturer_banner_bg_bullet_points">
-    <ul>
-      {% if collection.title contains 'Boot' %}
-      
-      <li>Boot liners to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
-      <li>Tailored to fit Boot Liners</li>
-      
-      {% else %}
-      
-      <li>Car Mats to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
-      <li>Personalise your Tailored to Fit Floor Mats</li>
-      
-      {% endif %}
-      
-      <li>British Manufacturer</li>
-      <li>Free UK delivery</li>
-      <li>UK Market leader’s for over 30 years</li>
-    <ul>
   </div>
   
 
