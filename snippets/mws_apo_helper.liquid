@@ -177,6 +177,7 @@ function addFontToTextFilds() {
           
           item.addEventListener('blur', (event) => {
             let value = item.value.toLowerCase().trim().replace(/[&\/\\#\-,+_()$~%.'":*?<>{}]/g, ' ');
+            console.log(value)
             addWarningMessage(value,item);
           });
         });
