@@ -211,11 +211,11 @@ function setMaxlength() {
       }
     }
   }
-  const optionsText = document.querySelector(".mw-option__control[type='text']");
+  const optionsText = document.querySelectorAll(".mw-option__control[type='text']");
+  
   optionsText.forEach(input => {
-      let max = getMaxValue(inputText);
-      input.setAttribute('maxlength', max);
-
+    let max = getMaxValue(inputText);
+    input.setAttribute('maxlength', max);
   });  
 }
 
