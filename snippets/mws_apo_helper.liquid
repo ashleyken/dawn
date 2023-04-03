@@ -1,4 +1,4 @@
-Would it be possible to hide this error message please?sv<script>
+<script>
 function mws_apo_hide_our_variants(selector_container, selector_items) {
   const container = document.querySelectorAll(selector_container);
   if (!container) {
@@ -196,6 +196,31 @@ function addFontToTextFilds() {
   });  
 }
 
+function setMaxlength() {
+  function getMaxValue(targetElement) { 
+    const id = targetElement.getAttribute('id');    
+    if (typeof mwApoInit.response !== "undefined") {
+      for (const val of Object.values(mwApoInit.response)) {
+        for (const key in val.values) {
+          if (key == id) {
+            if ( typeof val.values[id].value !== "undefined") {
+              return val.values[id].value.length_range.max;
+            }
+          }
+        }
+      }
+    }
+  }
+  const optionsText = document.querySelector(".mw-option__control[type='text']");
+  optionsText.forEach(input => {
+    const inputText = input.querySelector('.mw-option__control');                                 
+    if (inputText) {
+      let max = getMaxValue(inputText);
+      inputText.setAttribute('maxlength', max);
+    }
+  });  
+}
+
 window.mwApoInit.onEvent = function (event, args) {
   if (event == "attachEvents::initAddToCart::clickStart") {
       let divMWS = document.createElement('div');
@@ -259,6 +284,7 @@ window.mwApoInit.onEvent = function (event, args) {
     setTimeout(() => {
       overlayImages();
       addFontToTextFilds();
+      setMaxlength();
     }, 300);
     
     document.querySelector(".product-form__buttons").style.display = "block";
