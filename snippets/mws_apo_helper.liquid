@@ -169,8 +169,8 @@ function addFontToTextFilds() {
         optionsText.forEach(function (item) {         
           item.style.fontFamily = fontName;
    
-          item.addEventListener('paste', (event) => {
-            event.stopPropagation()
+          item.addEventListener('paste', function(e){
+            e.preventDefault();
           });
           
           item.addEventListener('change', (event) => {
