@@ -174,13 +174,11 @@ function addFontToTextFilds() {
             let value = item.value.replace(/["]+/g, ' ').replace(regex, '');
             
             item.value = value;
-                       
-            let valueS = item.value.toLowerCase().trim().replace(/[&\/\\#\-,+_()$~%.'":*?<>{}]/g, ' ');
-            addWarningMessage(valueS,item);
           });
           
           item.addEventListener('blur', (event) => {
-
+            let value = item.value.toLowerCase().trim().replace(/[&\/\\#\-,+_()$~%.'":*?<>{}]/g, ' ');
+            addWarningMessage(value,item);
           });
         });
       }
