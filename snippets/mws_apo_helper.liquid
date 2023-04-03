@@ -214,7 +214,7 @@ function setMaxlength() {
   const optionsText = document.querySelectorAll(".mw-option__control[type='text']");
   
   optionsText.forEach(input => {
-    let max = getMaxValue(inputText);
+    let max = getMaxValue(input);
     input.setAttribute('maxlength', max);
   });  
 }
