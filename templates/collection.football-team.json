@@ -15,32 +15,6 @@
       "settings": {
       }
     },
-    "163413202562fe9aab": {
-      "type": "multicolumn",
-      "blocks": {
-        "163413202562fe9aab-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/flag_21d0faaf-8091-45de-a97f-9408b5d65a20.png",
-            "title": "MADE IN THE UK",
-            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163413202562fe9aab-0"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
     "ba8f0c20-33ee-4e81-a879-364333ba7cad": {
       "type": "rich-text",
       "blocks": {
@@ -80,13 +54,39 @@
         "full_width": false,
         "remove_top_padding": false
       }
+    },
+    "163413202562fe9aab": {
+      "type": "multicolumn",
+      "blocks": {
+        "163413202562fe9aab-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flag_21d0faaf-8091-45de-a97f-9408b5d65a20.png",
+            "title": "MADE IN THE UK",
+            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163413202562fe9aab-0"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "banner",
     "find-my-car",
     "category-text",
-    "163413202562fe9aab",
-    "ba8f0c20-33ee-4e81-a879-364333ba7cad"
+    "ba8f0c20-33ee-4e81-a879-364333ba7cad",
+    "163413202562fe9aab"
   ]
 }
