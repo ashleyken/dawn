@@ -166,7 +166,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/personalised_car_mats.jpg",
             "title": "personalised car gifts for Dad",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Introducing our Personalized Car Mats for Dads—a thoughtful and stylish way to celebrate fatherhood and show appreciation for the amazing dads out there! At Official Car Mats, we understand the importance of honoring the special bond between a father and his car. That's why we offer personalized car mats specifically designed to make dads feel extra special every time they step into their vehicle.<\/p>"
           }
         },
         "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1": {
@@ -174,7 +174,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/mum.jpg",
             "title": "personalised car gifts for Mum",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Celebrating Mum's Taxi!  Our personalized car mats for mums make wonderful gifts for Mother's Day, birthdays, holidays, or any occasion when you want to show your mum how much she means to you. <\/p><p>It's a meaningful gesture that expresses your love and gratitude, reminding her of your appreciation every time she enters her car.<\/p>"
           }
         },
         "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-2": {
@@ -191,13 +191,16 @@
         "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1",
         "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-2"
       ],
+      "custom_css": [
+        "{margin-bottom: 150px;}"
+      ],
       "settings": {
         "title": "Multicolumn",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
