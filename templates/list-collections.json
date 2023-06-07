@@ -1,45 +1,5 @@
 {
   "sections": {
-    "06d334e3-1cd6-4a0a-839f-af25675207a4": {
-      "type": "rich-text",
-      "blocks": {
-        "template--15125940240570__06d334e3-1cd6-4a0a-839f-af25675207a4-1686128122dcb6c37b-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Welcome",
-            "heading_size": "h1",
-            "use_h1_tags_for_header": false,
-            "underline_header": false
-          }
-        },
-        "template--15125940240570__06d334e3-1cd6-4a0a-839f-af25675207a4-1686128122dcb6c37b-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Premium aftermarket car mats, manufactured in the UK, for all makes and models.<\/p>",
-            "read_more_enabled": false
-          }
-        },
-        "template--15125940240570__06d334e3-1cd6-4a0a-839f-af25675207a4-1686128122dcb6c37b-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15125940240570__06d334e3-1cd6-4a0a-839f-af25675207a4-1686128122dcb6c37b-0",
-        "template--15125940240570__06d334e3-1cd6-4a0a-839f-af25675207a4-1686128122dcb6c37b-1",
-        "template--15125940240570__06d334e3-1cd6-4a0a-839f-af25675207a4-1686128122dcb6c37b-2"
-      ],
-      "settings": {
-        "color_scheme": "none",
-        "full_width": false,
-        "remove_top_padding": false
-      }
-    },
     "main": {
       "type": "main-list-collections",
       "custom_css": [
@@ -55,7 +15,6 @@
     }
   },
   "order": [
-    "06d334e3-1cd6-4a0a-839f-af25675207a4",
     "main"
   ]
 }
