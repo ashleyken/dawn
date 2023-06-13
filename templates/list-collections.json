@@ -46,13 +46,159 @@
         "show_text_below": true
       }
     },
+    "b6fd378e-1086-443b-83b7-9850e043969d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15125940240570__b6fd378e-1086-443b-83b7-9850e043969d-1686669769ba960f26-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Quality Car Mats",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15125940240570__b6fd378e-1086-443b-83b7-9850e043969d-1686669769ba960f26-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are the UK manufacturer and supplier of quality aftermarket car mats for every make and model.<\/p><p><\/p><p>We offer a full range of customisation and personalisation options.  Our car mats are available in five different material types.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--15125940240570__b6fd378e-1086-443b-83b7-9850e043969d-1686669769ba960f26-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940240570__b6fd378e-1086-443b-83b7-9850e043969d-1686669769ba960f26-0",
+        "template--15125940240570__b6fd378e-1086-443b-83b7-9850e043969d-1686669769ba960f26-1",
+        "template--15125940240570__b6fd378e-1086-443b-83b7-9850e043969d-1686669769ba960f26-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "e62565f4-d04b-4741-9967-5336bcc90d3b": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mat_classic.jpg",
+            "title": "Classic",
+            "text": "<p>Affordable and durable – Our classic car mats are manufactured from  600g\/m2 looped pile carpet with granular backing (made from recycled tyres).<\/p>"
+          }
+        },
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mat_classic_velour.jpg",
+            "title": "Classic Velour",
+            "text": "<p>Upgrade to the Classic Velour which  is a 900g\/m2 tufted (like a toothbrush) carpet, easy to clean and longer lasting than the Classic grade.<\/p>"
+          }
+        },
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mat_super_luxury.jpg",
+            "title": "Super Luxury",
+            "text": "<p>Wow, you can not go wrong with this extra thick tufted fabric, Only the best is good, this really  is the bees knees, a 1300g\/m2 deep pile tufted carpet that makes you want to kick off your shoes.<\/p>"
+          }
+        },
+        "1009c3f6-dd02-494a-b101-9dca593a34b0": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "5302890f-d0b6-4c42-9417-0fdb08394925": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-0",
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-1",
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-2",
+        "1009c3f6-dd02-494a-b101-9dca593a34b0",
+        "5302890f-d0b6-4c42-9417-0fdb08394925"
+      ],
+      "settings": {
+        "title": "Choice of Five Materials",
+        "image_width": "half",
+        "image_ratio": "square",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "048d63d6-5272-4458-bc33-ad2477a6df31": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mat_prestige.jpg",
+            "title": "Prestige",
+            "text": "<p>Prestige is one of the highest grades of aftermarket Automotive materials, Plush Wool effect fabric, so plush this is not available for personalisation.<\/p>"
+          }
+        },
+        "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mat_rubber.jpg",
+            "title": "Rubber",
+            "text": "<p>3mm thick rubber mats in a chequer plate design.<\/p>"
+          }
+        },
+        "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/personalised_car_mats.jpg",
+            "title": "Personalised",
+            "text": "<p>All of carpet material mats can also be personalised with text and logos.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-0",
+        "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-1",
+        "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "custom_css": [
-        "h1 {text-align: center;}"
+        "h1 {text-align: center; margin-bottom: 50px;}"
       ],
       "settings": {
-        "title": "Quality Car Mats",
+        "title": "Browse Our COllections of Quality Car Mats",
         "sort": "alphabetical",
         "image_ratio": "square",
         "color_scheme": "background-1",
@@ -62,6 +208,9 @@
   },
   "order": [
     "a5a61267-143e-4d31-aeac-2115efb801c5",
+    "b6fd378e-1086-443b-83b7-9850e043969d",
+    "e62565f4-d04b-4741-9967-5336bcc90d3b",
+    "048d63d6-5272-4458-bc33-ad2477a6df31",
     "main"
   ]
 }
