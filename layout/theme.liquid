@@ -32,18 +32,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {%- endunless -%}
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+    
+    {% if template == 'list-collections' %}
+    
+    {%- liquid
+      assign page_title = 'META TITLE HERE'
+      assign page_description = 'META DESCRIPTION HERE'
+    %}
+
+    {% endif %}
+    
     <title>
       {{ page_title }}
     </title>
-
     {% if page_description %}
-    
-      {% if template == 'list-collections' %}
-          <meta name="description" content="YOUR META DESCRIPTION HERE.">
-      {% else %}
-          <meta name="description" content="{{ page_description | escape }}">
-      {% endif %}
-      
+        <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
     {% render 'meta-tags' %}
