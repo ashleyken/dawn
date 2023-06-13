@@ -1,5 +1,51 @@
 {
   "sections": {
+    "a5a61267-143e-4d31-aeac-2115efb801c5": {
+      "type": "image-banner",
+      "blocks": {
+        "template--15125940240570__a5a61267-143e-4d31-aeac-2115efb801c5-16866688400e5c436f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "medium"
+          }
+        },
+        "template--15125940240570__a5a61267-143e-4d31-aeac-2115efb801c5-16866688400e5c436f-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "template--15125940240570__a5a61267-143e-4d31-aeac-2115efb801c5-16866688400e5c436f-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940240570__a5a61267-143e-4d31-aeac-2115efb801c5-16866688400e5c436f-0",
+        "template--15125940240570__a5a61267-143e-4d31-aeac-2115efb801c5-16866688400e5c436f-1",
+        "template--15125940240570__a5a61267-143e-4d31-aeac-2115efb801c5-16866688400e5c436f-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "custom_css": [
@@ -15,6 +61,7 @@
     }
   },
   "order": [
+    "a5a61267-143e-4d31-aeac-2115efb801c5",
     "main"
   ]
 }
