@@ -114,6 +114,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -122,9 +123,8 @@
       "blocks": {
         "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "PERSONALISED GIFTS",
             "heading_size": "h1",
             "use_h1_tags_for_header": false,
             "underline_header": false
