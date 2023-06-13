@@ -130,13 +130,6 @@
             "underline_header": false
           }
         },
-        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At Official Car Mats, we understand that your car is an extension of your personality and individuality. That's why we offer a range of options to personalize your car mats, allowing you to make a statement and add a touch of uniqueness to your vehicle.<\/p><p>One of our most popular customization options is embroidered text. Whether you want to proudly display your car as \"Mum's Taxi,\" \"Dad's Car,\" or even celebrate the milestone of \"My First Car,\" our expert embroidery team can bring your ideas to life. We also offer the option to personalize the mats with your own names, adding a personal touch that truly sets your vehicle apart.<\/p><p>But the personalization doesn't stop there! If you're a passionate sports fan, why not showcase your team pride by adding a sports team badge to your car mats? Whether you support a football club, rugby team, or any other sports team, we can embroider their badge onto your mats, allowing you to proudly display your allegiance wherever you go.<\/p>",
-            "read_more_enabled": false
-          }
-        },
         "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-2": {
           "type": "button",
           "disabled": true,
@@ -149,7 +142,6 @@
       },
       "block_order": [
         "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-0",
-        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-1",
         "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-2"
       ],
       "settings": {
@@ -165,7 +157,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/personalised_car_mats.jpg",
-            "title": "personalised car gifts for Dad",
+            "title": "Personalised Gifts",
             "text": "<p>Introducing our Personalized Car Mats for Dads—a thoughtful and stylish way to celebrate fatherhood and show appreciation for the amazing dads out there! At Official Car Mats, we understand the importance of honoring the special bond between a father and his car. That's why we offer personalized car mats specifically designed to make dads feel extra special every time they step into their vehicle.<\/p>"
           }
         },
@@ -173,7 +165,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/mum.jpg",
-            "title": "personalised car gifts for Mum",
+            "title": "Football and Rugby Teams",
             "text": "<p>Celebrating Mum's Taxi!  Our personalized car mats for mums make wonderful gifts for Mother's Day, birthdays, holidays, or any occasion when you want to show your mum how much she means to you. <\/p><p>It's a meaningful gesture that expresses your love and gratitude, reminding her of your appreciation every time she enters her car.<\/p>"
           }
         },
