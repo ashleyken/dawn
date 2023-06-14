@@ -8,15 +8,6 @@
     "1658325510d5c95862": {
       "type": "rich-text",
       "blocks": {
-        "1658325510554ec539-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "5 Mat Qualities",
-            "heading_size": "h1",
-            "use_h1_tags_for_header": false,
-            "underline_header": true
-          }
-        },
         "1658325510554ec539-1": {
           "type": "text",
           "settings": {
@@ -35,143 +26,13 @@
         }
       },
       "block_order": [
-        "1658325510554ec539-0",
         "1658325510554ec539-1",
         "1658325510554ec539-2"
       ],
       "settings": {
         "color_scheme": "none",
-        "full_width": false
-      }
-    },
-    "163672227249c109c8": {
-      "type": "image-with-text-about",
-      "blocks": {
-        "163672227249c109c8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Classic"
-          }
-        },
-        "163672227249c109c8-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Affordable and durable – Our classic car mats are manufactured from  600g\/m2 looped pile carpet with granular backing (made from recycled tyres).<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163672227249c109c8-0",
-        "163672227249c109c8-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/mat_classic.jpg",
-        "height": "adapt",
-        "layout": "image_first"
-      }
-    },
-    "1636724279d23a5b2e": {
-      "type": "image-with-text-about",
-      "blocks": {
-        "1636724279d23a5b2e-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Classic Velour"
-          }
-        },
-        "1636724279d23a5b2e-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Upgrade to the Classic Velour which  is a 900g\/m2 tufted (like a toothbrush) carpet, easy to clean and longer lasting than the Classic grade.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1636724279d23a5b2e-0",
-        "1636724279d23a5b2e-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/mat_classic_velour.jpg",
-        "height": "adapt",
-        "layout": "image_first"
-      }
-    },
-    "163672469154f6e53a": {
-      "type": "image-with-text-about",
-      "blocks": {
-        "163672469154f6e53a-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Super Luxury"
-          }
-        },
-        "163672469154f6e53a-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Wow, you can not go wrong with this extra thick tufted fabric, Only the best is good, this really  is the bees knees, a 1300g\/m2 deep pile tufted carpet that makes you want to kick off your shoes.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163672469154f6e53a-0",
-        "163672469154f6e53a-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/mat_super_luxury.jpg",
-        "height": "adapt",
-        "layout": "image_first"
-      }
-    },
-    "1636724747000c4236": {
-      "type": "image-with-text-about",
-      "blocks": {
-        "1636724747000c4236-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Prestige"
-          }
-        },
-        "1636724747000c4236-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Prestige is one of the highest grades of aftermarket Automotive materials, Plush Wool effect fabric, so plush this is not available for personalisation.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1636724747000c4236-0",
-        "1636724747000c4236-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/mat_prestige.jpg",
-        "height": "adapt",
-        "layout": "image_first"
-      }
-    },
-    "163672490725b20691": {
-      "type": "image-with-text-about",
-      "blocks": {
-        "163672490725b20691-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Rubber"
-          }
-        },
-        "163672490725b20691-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>3mm thick rubber mats in a chequer plate design.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163672490725b20691-0",
-        "163672490725b20691-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/mat_rubber.jpg",
-        "height": "adapt",
-        "layout": "image_first"
+        "full_width": false,
+        "remove_top_padding": false
       }
     },
     "16583254395ddf96c3": {
@@ -210,7 +71,8 @@
       ],
       "settings": {
         "color_scheme": "none",
-        "full_width": false
+        "full_width": false,
+        "remove_top_padding": false
       }
     },
     "1636725727d1f273d8": {
@@ -353,7 +215,8 @@
       ],
       "settings": {
         "color_scheme": "none",
-        "full_width": false
+        "full_width": false,
+        "remove_top_padding": false
       }
     },
     "16367275649deba324": {
@@ -368,7 +231,7 @@
         "16367275649deba324-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Add a team badge to your mats as part of the customisation process.<\/p>"
+            "text": "<p>Add a football or rugby team logo to your car mats as part of the customisation process.<\/p>"
           }
         }
       },
@@ -397,7 +260,7 @@
         "1658324698cb481bb9-1": {
           "type": "text",
           "settings": {
-            "text": "<p>1st Car?  Mum’s Taxi?  Birthdays?  we offer fully personalised embroidery as an option on all our car mats, you an add your own message and text on the front driver and passenger mats, spare our teams blushes though, keep it clean please !!<\/p>",
+            "text": "<p>1st Car?  Mum’s Taxi?  Birthdays? We offer fully <a href=\"\/pages\/personalised-gifts\" title=\"Personalised Gifts\">personalised embroidery as an option on all our car mats<\/a>, you an add your own message and text on the front driver and passenger mats, spare our teams blushes though, keep it clean please !!<\/p>",
             "read_more_enabled": false
           }
         },
@@ -418,7 +281,8 @@
       ],
       "settings": {
         "color_scheme": "none",
-        "full_width": false
+        "full_width": false,
+        "remove_top_padding": false
       }
     },
     "16367278284e34e058": {
@@ -451,11 +315,6 @@
   "order": [
     "main",
     "1658325510d5c95862",
-    "163672227249c109c8",
-    "1636724279d23a5b2e",
-    "163672469154f6e53a",
-    "1636724747000c4236",
-    "163672490725b20691",
     "16583254395ddf96c3",
     "1636725727d1f273d8",
     "1636725773e295c781",
