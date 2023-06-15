@@ -94,10 +94,10 @@
         "remove_top_padding": false
       }
     },
-    "e62565f4-d04b-4741-9967-5336bcc90d3b": {
+    "21eef6cd-9958-4a52-b463-73e486ef0ee5": {
       "type": "multicolumn",
       "blocks": {
-        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-0": {
+        "cc33994f-552f-408d-8295-cb7b849e25ab": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/mat_classic.jpg",
@@ -105,7 +105,7 @@
             "text": "<p>Affordable and durable – Our classic car mats are manufactured from  600g\/m2 looped pile carpet with granular backing (made from recycled tyres).<\/p>"
           }
         },
-        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-1": {
+        "752c5dc7-8f81-42ba-8d12-5d257bd8b3ee": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/mat_classic_velour.jpg",
@@ -113,7 +113,7 @@
             "text": "<p>Upgrade to the Classic Velour which  is a 900g\/m2 tufted (like a toothbrush) carpet, easy to clean and longer lasting than the Classic grade.<\/p>"
           }
         },
-        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-2": {
+        "6bff703a-2056-44ec-8e64-928ee16fef9a": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/mat_super_luxury.jpg",
@@ -121,7 +121,7 @@
             "text": "<p>Wow, you can not go wrong with this extra thick tufted fabric, Only the best is good, this really  is the bees knees, a 1300g\/m2 deep pile tufted carpet that makes you want to kick off your shoes.<\/p>"
           }
         },
-        "1009c3f6-dd02-494a-b101-9dca593a34b0": {
+        "063d65f9-8953-4f55-9852-b605227fc5fc": {
           "type": "column",
           "disabled": true,
           "settings": {
@@ -129,7 +129,7 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
-        "5302890f-d0b6-4c42-9417-0fdb08394925": {
+        "7ef99695-1847-4557-821e-78f04a1402c5": {
           "type": "column",
           "disabled": true,
           "settings": {
@@ -139,11 +139,11 @@
         }
       },
       "block_order": [
-        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-0",
-        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-1",
-        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-2",
-        "1009c3f6-dd02-494a-b101-9dca593a34b0",
-        "5302890f-d0b6-4c42-9417-0fdb08394925"
+        "cc33994f-552f-408d-8295-cb7b849e25ab",
+        "752c5dc7-8f81-42ba-8d12-5d257bd8b3ee",
+        "6bff703a-2056-44ec-8e64-928ee16fef9a",
+        "063d65f9-8953-4f55-9852-b605227fc5fc",
+        "7ef99695-1847-4557-821e-78f04a1402c5"
       ],
       "settings": {
         "title": "Choice of Five Materials",
@@ -309,16 +309,120 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "267bdc3b-b31a-42db-b287-9b205986732a": {
+      "type": "rich-text",
+      "blocks": {
+        "38f25e5a-28dd-4b3e-aadb-027c406f3f86": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bingings",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "ea0279e7-fc3e-4bf9-a2fc-44ebf86cad31": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Keep it simple and classic with a plain black binding or choose from a wide range of bindings colours and styles to suit your own exterior or interior of your cars.  <\/p><p>What ever your taste we’ve got you covered.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "0b9408d9-583a-46ea-a58d-b8c53a402345": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "38f25e5a-28dd-4b3e-aadb-027c406f3f86",
+        "ea0279e7-fc3e-4bf9-a2fc-44ebf86cad31",
+        "0b9408d9-583a-46ea-a58d-b8c53a402345"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "e62565f4-d04b-4741-9967-5336bcc90d3b": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/nubuck.jpg",
+            "title": "Nubuck",
+            "text": "<p>Affordable and durable – Our classic car mats are manufactured from  600g\/m2 looped pile carpet with granular backing (made from recycled tyres).<\/p>"
+          }
+        },
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/prestitch.jpg",
+            "title": "Prestitch",
+            "text": "<p>Upgrade to the Classic Velour which  is a 900g\/m2 tufted (like a toothbrush) carpet, easy to clean and longer lasting than the Classic grade.<\/p>"
+          }
+        },
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/striped.jpg",
+            "title": "Striped",
+            "text": "<p>Wow, you can not go wrong with this extra thick tufted fabric, Only the best is good, this really  is the bees knees, a 1300g\/m2 deep pile tufted carpet that makes you want to kick off your shoes.<\/p>"
+          }
+        },
+        "1009c3f6-dd02-494a-b101-9dca593a34b0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/full-colours_750x_db4f0eaf-9eb2-4a93-8b78-b8720e275333.webp",
+            "title": "Solid",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "5302890f-d0b6-4c42-9417-0fdb08394925": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-0",
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-1",
+        "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-2",
+        "1009c3f6-dd02-494a-b101-9dca593a34b0",
+        "5302890f-d0b6-4c42-9417-0fdb08394925"
+      ],
+      "settings": {
+        "title": "Bindings",
+        "image_width": "half",
+        "image_ratio": "square",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
     "a5a61267-143e-4d31-aeac-2115efb801c5",
     "35c28de0-e2aa-462e-9c53-b0485fe13474",
     "b6fd378e-1086-443b-83b7-9850e043969d",
-    "e62565f4-d04b-4741-9967-5336bcc90d3b",
+    "21eef6cd-9958-4a52-b463-73e486ef0ee5",
     "048d63d6-5272-4458-bc33-ad2477a6df31",
     "main",
     "8faa2e94-1cec-4537-afc6-4ea8626133b8",
-    "ecd77186-650f-4bbc-a081-08d0fb7e440a"
+    "ecd77186-650f-4bbc-a081-08d0fb7e440a",
+    "267bdc3b-b31a-42db-b287-9b205986732a",
+    "e62565f4-d04b-4741-9967-5336bcc90d3b"
   ]
 }
