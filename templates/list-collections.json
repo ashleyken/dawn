@@ -346,7 +346,7 @@
       ],
       "settings": {
         "color_scheme": "none",
-        "full_width": false,
+        "full_width": true,
         "remove_top_padding": false
       }
     },
