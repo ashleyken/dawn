@@ -46,6 +46,14 @@
         "show_text_below": true
       }
     },
+    "35c28de0-e2aa-462e-9c53-b0485fe13474": {
+      "type": "find-my-car_original",
+      "custom_css": [
+        "{margin-top: 150px; margin-bottom: 100px;}"
+      ],
+      "settings": {
+      }
+    },
     "b6fd378e-1086-443b-83b7-9850e043969d": {
       "type": "rich-text",
       "blocks": {
@@ -194,6 +202,7 @@
     },
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "custom_css": [
         "h1 {text-align: center; margin-bottom: 50px;}"
       ],
@@ -204,13 +213,112 @@
         "color_scheme": "background-1",
         "image_padding": false
       }
+    },
+    "8faa2e94-1cec-4537-afc6-4ea8626133b8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15125940240570__8faa2e94-1cec-4537-afc6-4ea8626133b8-16868205399b995e61-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Most Popular Manufacturers",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15125940240570__8faa2e94-1cec-4537-afc6-4ea8626133b8-16868205399b995e61-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We manufacture quality car floor mats for all makes and models.  Use the main menu to navigate to the vehicle you are looking for or try our find by reg tool below.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--15125940240570__8faa2e94-1cec-4537-afc6-4ea8626133b8-16868205399b995e61-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "call for help",
+            "button_link": "tel:01257 476006",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940240570__8faa2e94-1cec-4537-afc6-4ea8626133b8-16868205399b995e61-0",
+        "template--15125940240570__8faa2e94-1cec-4537-afc6-4ea8626133b8-16868205399b995e61-1",
+        "template--15125940240570__8faa2e94-1cec-4537-afc6-4ea8626133b8-16868205399b995e61-2"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "remove_top_padding": false
+      }
+    },
+    "ecd77186-650f-4bbc-a081-08d0fb7e440a": {
+      "type": "collection-list",
+      "blocks": {
+        "template--15125940240570__ecd77186-650f-4bbc-a081-08d0fb7e440a-1686820257d30c6e95-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cupra-car-mats"
+          }
+        },
+        "template--15125940240570__ecd77186-650f-4bbc-a081-08d0fb7e440a-1686820257d30c6e95-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vauxhall-car-mats"
+          }
+        },
+        "template--15125940240570__ecd77186-650f-4bbc-a081-08d0fb7e440a-1686820257d30c6e95-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "volkswagen-car-mats"
+          }
+        },
+        "7ee3104d-bbb5-4355-af07-17e953cb5505": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hyundai-car-mats"
+          }
+        },
+        "8fb60b68-d9a4-4cd9-9444-0c6da30afa7d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ford-car-mats"
+          }
+        },
+        "5f9da6c5-3cfc-4834-952a-3954dabf8892": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nissan-car-mats"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940240570__ecd77186-650f-4bbc-a081-08d0fb7e440a-1686820257d30c6e95-0",
+        "template--15125940240570__ecd77186-650f-4bbc-a081-08d0fb7e440a-1686820257d30c6e95-1",
+        "template--15125940240570__ecd77186-650f-4bbc-a081-08d0fb7e440a-1686820257d30c6e95-2",
+        "7ee3104d-bbb5-4355-af07-17e953cb5505",
+        "8fb60b68-d9a4-4cd9-9444-0c6da30afa7d",
+        "5f9da6c5-3cfc-4834-952a-3954dabf8892"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "a5a61267-143e-4d31-aeac-2115efb801c5",
+    "35c28de0-e2aa-462e-9c53-b0485fe13474",
     "b6fd378e-1086-443b-83b7-9850e043969d",
     "e62565f4-d04b-4741-9967-5336bcc90d3b",
     "048d63d6-5272-4458-bc33-ad2477a6df31",
-    "main"
+    "main",
+    "8faa2e94-1cec-4537-afc6-4ea8626133b8",
+    "ecd77186-650f-4bbc-a081-08d0fb7e440a"
   ]
 }
