@@ -17,7 +17,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
-    {% if request.path == '/collections' %}
+    {% comment %} The page https://officialcarmats.co.uk/products/ is an alias to the page https://officialcarmats.co.uk/collections/ but they want /products/ to be the canonical version {% endcomment %}
+    {% if template == 'list-collections' %}
     {% assign canonical_url = 'https://officialcarmats.co.uk/products/' %}
     {% endif %}
     <link rel="canonical" href="{{ canonical_url }}">
