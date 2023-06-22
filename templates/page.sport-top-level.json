@@ -1,0 +1,262 @@
+{
+  "sections": {
+    "7a06e8b7-1c69-4ab9-af53-5e8aae725a63": {
+      "type": "ezfy-slideshow",
+      "blocks": {
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
+            "focal_point": "center center",
+            "focal_point_mobile": "center center",
+            "title": "",
+            "subtitle": "",
+            "image_link": "",
+            "clickable_image_new_tab": false,
+            "button_text": "",
+            "button_link": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "title_font_size": 80,
+            "title_font_size_mobile": 40,
+            "subtitle_font_size": 21,
+            "subtitle_font_size_mobile": 17,
+            "button_text_size": 13,
+            "button_text_size_mobile": 13,
+            "text_shadow": 20,
+            "overlay_opacity": 0,
+            "button_background_color": "",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#ffffff",
+            "button_background_color_2": "",
+            "button_text_color_2": "#ffffff",
+            "button_border_color_2": "#ffffff",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffff",
+            "text_shadow_color": "#000000",
+            "overlay_color": "#000000",
+            "text_align": "EzfySlideshow-textbox--center"
+          }
+        },
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "focal_point": "center center",
+            "focal_point_mobile": "center center",
+            "title": "First line\nsecond line",
+            "subtitle": "Plus a wonderful subtitle here.",
+            "image_link": "",
+            "clickable_image_new_tab": false,
+            "button_text": "",
+            "button_link": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "title_font_size": 80,
+            "title_font_size_mobile": 40,
+            "subtitle_font_size": 21,
+            "subtitle_font_size_mobile": 17,
+            "button_text_size": 13,
+            "button_text_size_mobile": 13,
+            "text_shadow": 20,
+            "overlay_opacity": 0,
+            "button_background_color": "",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#ffffff",
+            "button_background_color_2": "",
+            "button_text_color_2": "#ffffff",
+            "button_border_color_2": "#ffffff",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffff",
+            "text_shadow_color": "#000000",
+            "overlay_color": "#000000",
+            "text_align": "EzfySlideshow-textbox--center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-0",
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "section_height_mobile": "auto",
+        "full_width_images": false,
+        "full_width_images_mobile": false,
+        "parallax": false,
+        "parallax_mobile": false,
+        "dots_style": "bars",
+        "arrows_style": "none",
+        "arrows_style_mobile": "none",
+        "autoplay": true,
+        "autoplay_stop": true,
+        "autoplay_speed": 5,
+        "loader_background_color": "#000000",
+        "dots_color": "#ffffff",
+        "arrow_background_color": "#ffffff",
+        "arrow_chevron_color": "#333333",
+        "dot_size": 6,
+        "dot_size_selected": 9,
+        "arrow_size": 40,
+        "arrow_size_mobile": 40,
+        "arrow_chevron_size": 12,
+        "arrow_chevron_size_mobile": 12,
+        "button_letter_spacing": 0,
+        "button_letter_spacing_mobile": 0,
+        "button_border_radius": 0,
+        "button_border_radius_mobile": 0,
+        "text_animation": true,
+        "fade": true,
+        "zoom_animation": true,
+        "parallax_speed": 80,
+        "parallax_speed_mobile": 70
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "67fb79c6-bcd8-4fc4-9599-9a90091e429c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "PERSONALISED CAR MATS",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Official Car Mats, we understand that your car is an extension of your personality and individuality. That's why we offer a range of options to personalise your car mats, allowing you to make a statement and add a touch of uniqueness to your vehicle.<\/p><p>One of our most popular customisation options is embroidered text. Whether you want to proudly display your car as \"Mum's Taxi,\" \"Dad's Car,\" or even celebrate the milestone of \"My First Car,\" our expert embroidery team can bring your ideas to life. We also offer the option to personalize the mats with your own names, adding a personal touch that truly sets your vehicle apart.<\/p><p>But the personalisation doesn't stop there! If you're a passionate sports fan, why not showcase your team pride by adding a sports team badge to your car mats? Whether you support a football club, rugby team, or any other sports team, we can embroider their badge onto your mats, allowing you to proudly display your allegiance wherever you go.  <\/p><p>Browse our collection of <a href=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\" title=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\">licensed football team car mats<\/a> and <a href=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\" title=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\">rugby team car mats.<\/a><\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-0",
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-1",
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "43c5ffb8-ffa4-4817-8f29-4b1a23641685": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/personalised_car_mats.jpg",
+            "title": "personalised car gifts for Dad",
+            "text": "<p>Introducing our Personalised Car Mats for Dads—a thoughtful and stylish way to celebrate fatherhood and show appreciation for the amazing dads out there! At Official Car Mats, we understand the importance of honoring the special bond between a father and his car. That's why we offer personalised car mats specifically designed to make dads feel extra special every time they step into their vehicle.<\/p>"
+          }
+        },
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mum.jpg",
+            "title": "personalised car gifts for Mum",
+            "text": "<p>Celebrating Mum's Taxi!  Our personalised car mats for mums make wonderful gifts for Mother's Day, birthdays, holidays, or any occasion when you want to show your mum how much she means to you. <\/p><p>It's a meaningful gesture that expresses your love and gratitude, reminding her of your appreciation every time she enters her car.<\/p>"
+          }
+        },
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-0",
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1",
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-2"
+      ],
+      "custom_css": [
+        "{margin-bottom: 150px;}"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "f6e7e718-ef27-42c0-b193-3521a7dfcc67": {
+      "type": "find-my-car_original",
+      "settings": {
+      }
+    },
+    "ddc2d41b-2f82-4f68-be30-39e0c030651a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15125940109498__ddc2d41b-2f82-4f68-be30-39e0c030651a-168606718662cb194d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unique Car Gift Ideas",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15125940109498__ddc2d41b-2f82-4f68-be30-39e0c030651a-168606718662cb194d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not only do personalised car mats add a unique touch to your vehicle, but they also make great gifts for your loved ones. Whether it's for a birthday, anniversary, or any special occasion, personalised car mats are a thoughtful and practical gift that will be cherished for years to come.<\/p><p>To get started on personalising your car mats, simply choose the option that suits you best—whether it's embroidered text or a sports team badge. Provide the details during the ordering process, and our skilled team will bring your vision to reality.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--15125940109498__ddc2d41b-2f82-4f68-be30-39e0c030651a-168606718662cb194d-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940109498__ddc2d41b-2f82-4f68-be30-39e0c030651a-168606718662cb194d-0",
+        "template--15125940109498__ddc2d41b-2f82-4f68-be30-39e0c030651a-168606718662cb194d-1",
+        "template--15125940109498__ddc2d41b-2f82-4f68-be30-39e0c030651a-168606718662cb194d-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    }
+  },
+  "order": [
+    "7a06e8b7-1c69-4ab9-af53-5e8aae725a63",
+    "main",
+    "67fb79c6-bcd8-4fc4-9599-9a90091e429c",
+    "43c5ffb8-ffa4-4817-8f29-4b1a23641685",
+    "f6e7e718-ef27-42c0-b193-3521a7dfcc67",
+    "ddc2d41b-2f82-4f68-be30-39e0c030651a"
+  ]
+}
