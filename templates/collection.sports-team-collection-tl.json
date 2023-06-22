@@ -74,6 +74,47 @@
       "settings": {
       }
     },
+    "1510e171-aa7e-4993-844a-532a4ac6909a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.headline_below.value }}",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-0",
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-1",
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
     "7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0": {
       "type": "image-with-text",
       "blocks": {
@@ -99,6 +140,7 @@
       "blocks": {
         "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "{{ collection.metafields.custom.headline_below.value }}",
             "heading_size": "h1",
@@ -130,6 +172,7 @@
     "dbf1e3fd-053d-4a59-a5eb-1143a71e4d46",
     "banner",
     "football-teams-list",
+    "1510e171-aa7e-4993-844a-532a4ac6909a",
     "7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0",
     "45183ee8-365d-404e-a64d-7ba99577dcbb"
   ]
