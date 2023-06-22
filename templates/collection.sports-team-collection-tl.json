@@ -8,7 +8,7 @@
           "settings": {
             "heading": "{{ collection.title }}",
             "heading_size": "h1",
-            "use_h1_tags_for_header": false,
+            "use_h1_tags_for_header": true,
             "underline_header": false
           }
         },
