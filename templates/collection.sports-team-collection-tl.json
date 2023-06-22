@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "collections-banner",
+      "settings": {
+      }
+    },
+    "football-teams-list": {
+      "type": "football-teams-list",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "football-teams-list"
+  ]
+}
