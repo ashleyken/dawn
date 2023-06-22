@@ -1,0 +1,179 @@
+{
+  "sections": {
+    "164727b3-f41a-41b5-b370-5a034feb5074": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16134658097338__164727b3-f41a-41b5-b370-5a034feb5074-1687446419ebe42358-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--16134658097338__164727b3-f41a-41b5-b370-5a034feb5074-1687446419ebe42358-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Official Car Mats is proud to be officially licensed to display your team's logo on our custom football car mats.<br\/><br\/>Supporting your favourite football team takes a lot of dedication, and for many it's simply a way of life. We always want to show our support to others, whether by going to weekly games, wearing the colours with pride, or chanting along with our fellow fans.<br\/><br\/>Now you can take your football team with you by personalising your football floor mats with your team's logo. This is on top of our huge range of customisation options for all our products. Make your car's interior truly yours, while you have your pride and passion on display for all to see.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--16134658097338__164727b3-f41a-41b5-b370-5a034feb5074-1687446419ebe42358-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16134658097338__164727b3-f41a-41b5-b370-5a034feb5074-1687446419ebe42358-0",
+        "template--16134658097338__164727b3-f41a-41b5-b370-5a034feb5074-1687446419ebe42358-1",
+        "template--16134658097338__164727b3-f41a-41b5-b370-5a034feb5074-1687446419ebe42358-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "dbf1e3fd-053d-4a59-a5eb-1143a71e4d46": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--16134658097338__dbf1e3fd-053d-4a59-a5eb-1143a71e4d46-16874462036ee1e77e-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16134658097338__dbf1e3fd-053d-4a59-a5eb-1143a71e4d46-16874462036ee1e77e-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "banner": {
+      "type": "collections-banner",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "football-teams-list": {
+      "type": "football-teams-list",
+      "settings": {
+      }
+    },
+    "1510e171-aa7e-4993-844a-532a4ac6909a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.headline_below.value }}",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-0",
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-1",
+        "template--16134658097338__1510e171-aa7e-4993-844a-532a4ac6909a-1687446419ebe42358-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to your one-stop-shop for premium quality, officially licensed car floor mats customised with the logos of your favourite football teams. They're the ultimate ride upgrade for die-hard fans, and an exceptional gift for the football lover in your life. Imagine the surprise when they open the door of their car and see the emblem of their beloved team cheering them on from the floor!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/all.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "45183ee8-365d-404e-a64d-7ba99577dcbb": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "{{ collection.metafields.custom.headline_below.value }}",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p>",
+            "read_more_enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-0",
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-1"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    }
+  },
+  "order": [
+    "164727b3-f41a-41b5-b370-5a034feb5074",
+    "dbf1e3fd-053d-4a59-a5eb-1143a71e4d46",
+    "banner",
+    "football-teams-list",
+    "1510e171-aa7e-4993-844a-532a4ac6909a",
+    "7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0",
+    "45183ee8-365d-404e-a64d-7ba99577dcbb"
+  ]
+}
