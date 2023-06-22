@@ -77,12 +77,6 @@
     "7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0": {
       "type": "image-with-text",
       "blocks": {
-        "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "{{ collection.metafields.custom.headline_below.value }}"
-          }
-        },
         "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-1": {
           "type": "text",
           "settings": {
@@ -91,7 +85,6 @@
         }
       },
       "block_order": [
-        "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-0",
         "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-1"
       ],
       "settings": {
@@ -101,10 +94,10 @@
         "layout": "image_first"
       }
     },
-    "1a707949-3933-4bd7-b029-5ed5c0674799": {
+    "45183ee8-365d-404e-a64d-7ba99577dcbb": {
       "type": "rich-text",
       "blocks": {
-        "template--16134658097338__1a707949-3933-4bd7-b029-5ed5c0674799-1687446419ebe42358-0": {
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-0": {
           "type": "heading",
           "settings": {
             "heading": "{{ collection.metafields.custom.headline_below.value }}",
@@ -113,7 +106,7 @@
             "underline_header": false
           }
         },
-        "template--16134658097338__1a707949-3933-4bd7-b029-5ed5c0674799-1687446419ebe42358-1": {
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-1": {
           "type": "text",
           "settings": {
             "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p>",
@@ -122,8 +115,8 @@
         }
       },
       "block_order": [
-        "template--16134658097338__1a707949-3933-4bd7-b029-5ed5c0674799-1687446419ebe42358-0",
-        "template--16134658097338__1a707949-3933-4bd7-b029-5ed5c0674799-1687446419ebe42358-1"
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-0",
+        "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-1"
       ],
       "settings": {
         "color_scheme": "none",
@@ -138,6 +131,6 @@
     "banner",
     "football-teams-list",
     "7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0",
-    "1a707949-3933-4bd7-b029-5ed5c0674799"
+    "45183ee8-365d-404e-a64d-7ba99577dcbb"
   ]
 }
