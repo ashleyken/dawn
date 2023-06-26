@@ -1,15 +1,37 @@
+<div class="collection_banner_bg collection_banner_bg_desktop" style="background-image: url('{{ collection.metafields.custom.header_image_desktop.value | image_url: width: 1920  }}');">
+  <div class="manufacturer_banner_holder">
+    <div class="manufacturer_banner_bg_bullet_points">
+      <ul>
+        <li>Officially licenced Tailored to fit car mats</li>
+        <li>Added personalisation available</li>
+        <li>Free UK delivery</li>
+      <ul>
+    </div>
+  </div>
+</div>
+
+<div class="collection_banner_bg collection_banner_bg_mobile" style="background-image: url('{{ collection.metafields.custom.header_image_mobile.value | image_url: width: 600  }}');">
+  <div class="manufacturer_banner_holder manufacturer_banner_holder_collection_mobile">
+    <div class="manufacturer_banner_bg_bullet_points">
+      <ul>
+        <li>Officially licenced Tailored to fit car mats</li>
+        <li>Added personalisation available</li>
+        <li>Free UK delivery</li>
+      <ul>
+    </div>
+  </div>
+</div>
+
+
+{% comment %}
 <div class="collection_banner_bg_desktop" style="background-image: url('{{ collection.metafields.custom.header_image_desktop.value | image_url: width: 1920  }}');">&nbsp;</div>
 {{ collection.metafields.custom.header_image_mobile.value | image_url: width: 600 | image_tag: class: 'collection_banner_bg_mobile'  }}
 
-
+{% endcomment %}
 
 
 
 {% comment %}
-
-{{ featured_image | image_url: width: 200 | image_tag: srcset: nil, class: 'product-card__image_second' }}
-
-
 <div class="manufacturer_banner_bg">
 
   {%- if collection.image -%}
