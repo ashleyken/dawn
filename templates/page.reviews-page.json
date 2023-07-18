@@ -1,0 +1,216 @@
+{
+  "sections": {
+    "7a06e8b7-1c69-4ab9-af53-5e8aae725a63": {
+      "type": "ezfy-slideshow",
+      "blocks": {
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
+            "focal_point": "center center",
+            "focal_point_mobile": "center center",
+            "title": "",
+            "subtitle": "",
+            "image_link": "",
+            "clickable_image_new_tab": false,
+            "button_text": "",
+            "button_link": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "title_font_size": 80,
+            "title_font_size_mobile": 40,
+            "subtitle_font_size": 21,
+            "subtitle_font_size_mobile": 17,
+            "button_text_size": 13,
+            "button_text_size_mobile": 13,
+            "text_shadow": 20,
+            "overlay_opacity": 0,
+            "button_background_color": "",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#ffffff",
+            "button_background_color_2": "",
+            "button_text_color_2": "#ffffff",
+            "button_border_color_2": "#ffffff",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffff",
+            "text_shadow_color": "#000000",
+            "overlay_color": "#000000",
+            "text_align": "EzfySlideshow-textbox--center"
+          }
+        },
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "focal_point": "center center",
+            "focal_point_mobile": "center center",
+            "title": "First line\nsecond line",
+            "subtitle": "Plus a wonderful subtitle here.",
+            "image_link": "",
+            "clickable_image_new_tab": false,
+            "button_text": "",
+            "button_link": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "title_font_size": 80,
+            "title_font_size_mobile": 40,
+            "subtitle_font_size": 21,
+            "subtitle_font_size_mobile": 17,
+            "button_text_size": 13,
+            "button_text_size_mobile": 13,
+            "text_shadow": 20,
+            "overlay_opacity": 0,
+            "button_background_color": "",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#ffffff",
+            "button_background_color_2": "",
+            "button_text_color_2": "#ffffff",
+            "button_border_color_2": "#ffffff",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffff",
+            "text_shadow_color": "#000000",
+            "overlay_color": "#000000",
+            "text_align": "EzfySlideshow-textbox--center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-0",
+        "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "section_height_mobile": "auto",
+        "full_width_images": false,
+        "full_width_images_mobile": false,
+        "parallax": false,
+        "parallax_mobile": false,
+        "dots_style": "bars",
+        "arrows_style": "none",
+        "arrows_style_mobile": "none",
+        "autoplay": true,
+        "autoplay_stop": true,
+        "autoplay_speed": 5,
+        "loader_background_color": "#000000",
+        "dots_color": "#ffffff",
+        "arrow_background_color": "#ffffff",
+        "arrow_chevron_color": "#333333",
+        "dot_size": 6,
+        "dot_size_selected": 9,
+        "arrow_size": 40,
+        "arrow_size_mobile": 40,
+        "arrow_chevron_size": 12,
+        "arrow_chevron_size_mobile": 12,
+        "button_letter_spacing": 0,
+        "button_letter_spacing_mobile": 0,
+        "button_border_radius": 0,
+        "button_border_radius_mobile": 0,
+        "text_animation": true,
+        "fade": true,
+        "zoom_animation": true,
+        "parallax_speed": 80,
+        "parallax_speed_mobile": 70
+      }
+    },
+    "f6e7e718-ef27-42c0-b193-3521a7dfcc67": {
+      "type": "find-my-car_original",
+      "custom_css": [
+        "{margin-bottom: 100px;}"
+      ],
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "67fb79c6-bcd8-4fc4-9599-9a90091e429c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-0",
+        "template--15125940109498__67fb79c6-bcd8-4fc4-9599-9a90091e429c-168606718662cb194d-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "43c5ffb8-ffa4-4817-8f29-4b1a23641685": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/personalised_car_mats.jpg",
+            "title": "Personalised Gifts",
+            "text": "<p>Looking for the perfect gift for the car enthusiast in your life, the parent who's always on taxi duty, or someone who's just earned their driving freedom?<\/p><p><\/p><p>For those who love their cars almost as much as they love their family, a set of our <a href=\"https:\/\/officialcarmats.co.uk\/pages\/personalised-gifts\" title=\"https:\/\/officialcarmats.co.uk\/pages\/personalised-gifts\">personalised car mats<\/a> will make the perfect gift. Choose a style that matches their car's interior, select a carpet and trim colour that suits their personality, and finish off with our personalised embroidery to add that special touch.<\/p>"
+          }
+        },
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mum.jpg",
+            "title": "Football and Rugby Teams",
+            "text": "<p>Are you a die-hard football or rugby fan looking to add a unique touch to your car? Or in search of the perfect gift for the sports fanatic in your life? Our <a href=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\" title=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\">officially licensed football team car mats<\/a> and <a href=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\" title=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\">rugby team car mats<\/a> are the ideal way to showcase team pride and loyalty.<\/p><p><\/p><p>Our mats, featuring the logo of your cherished team, are more than just an accessory – they're a testament to your unyielding support and a conversation starter for fellow supporters.<\/p>"
+          }
+        },
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-0",
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1",
+        "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-2"
+      ],
+      "custom_css": [
+        "{margin-bottom: 150px;}"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    }
+  },
+  "order": [
+    "7a06e8b7-1c69-4ab9-af53-5e8aae725a63",
+    "f6e7e718-ef27-42c0-b193-3521a7dfcc67",
+    "main",
+    "67fb79c6-bcd8-4fc4-9599-9a90091e429c",
+    "43c5ffb8-ffa4-4817-8f29-4b1a23641685"
+  ]
+}
