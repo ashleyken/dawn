@@ -149,6 +149,9 @@
         "template--16149587460282__4b2b5c3d-b33f-4dac-a4ab-5598d4bf0ee2-16896787408757bb67-0",
         "ddd7e44d-14c5-4007-9463-910ebc8ce0bf"
       ],
+      "custom_css": [
+        ".multicolumn.background-secondary {padding: 10px;}"
+      ],
       "settings": {
         "title": "Multicolumn",
         "image_width": "third",
@@ -183,6 +186,9 @@
       "block_order": [
         "15dfe7cf-6298-44b6-8b2c-f9c5539a3087",
         "d5d3c9f9-b2f0-44c5-afe7-2bd4fef01b9b"
+      ],
+      "custom_css": [
+        ".multicolumn.background-secondary {padding: 10px;}"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -219,6 +225,9 @@
         "465a0265-d4eb-4530-991a-346237c62f22",
         "213f3e80-3ff4-45ca-977f-655b944203ca"
       ],
+      "custom_css": [
+        ".multicolumn.background-secondary {padding: 10px;}"
+      ],
       "settings": {
         "title": "Multicolumn",
         "image_width": "third",
@@ -254,6 +263,9 @@
         "b674f481-ad0f-404d-94f8-b8d6529fdd91",
         "865f67dc-084c-45ec-8c12-96ea10acd2a8"
       ],
+      "custom_css": [
+        ".multicolumn.background-secondary {padding: 10px;}"
+      ],
       "settings": {
         "title": "Multicolumn",
         "image_width": "third",
@@ -288,6 +300,9 @@
       "block_order": [
         "fe60ccd3-1ffe-4af5-88a2-4e8c5d9fdb3e",
         "376cac28-32ac-46c5-9e52-bb99dc4f5172"
+      ],
+      "custom_css": [
+        ".multicolumn.background-secondary {padding: 10px;}"
       ],
       "settings": {
         "title": "Multicolumn",
