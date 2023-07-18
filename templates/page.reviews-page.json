@@ -407,7 +407,7 @@
         "3fd30b8e-56d9-4bb8-8de1-390c4c45e977"
       ],
       "custom_css": [
-        ".multicolumn.background-secondary {padding-top: 10px;}"
+        ".multicolumn.background-secondary {padding: 10px;}"
       ],
       "settings": {
         "title": "Multicolumn",
