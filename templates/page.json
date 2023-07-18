@@ -112,6 +112,14 @@
         "parallax_speed_mobile": 70
       }
     },
+    "f6e7e718-ef27-42c0-b193-3521a7dfcc67": {
+      "type": "find-my-car_original",
+      "custom_css": [
+        "{margin-bottom: 100px;}"
+      ],
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -196,21 +204,13 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
-    },
-    "f6e7e718-ef27-42c0-b193-3521a7dfcc67": {
-      "type": "find-my-car_original",
-      "custom_css": [
-        "{margin-bottom: 100px;}"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "7a06e8b7-1c69-4ab9-af53-5e8aae725a63",
+    "f6e7e718-ef27-42c0-b193-3521a7dfcc67",
     "main",
     "67fb79c6-bcd8-4fc4-9599-9a90091e429c",
-    "43c5ffb8-ffa4-4817-8f29-4b1a23641685",
-    "f6e7e718-ef27-42c0-b193-3521a7dfcc67"
+    "43c5ffb8-ffa4-4817-8f29-4b1a23641685"
   ]
 }
