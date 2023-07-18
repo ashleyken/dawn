@@ -132,7 +132,7 @@
         "template--16149582807226__978d4055-dab8-4db2-989b-f395b93f3e0a-16896772385ded602b-1": {
           "type": "text",
           "settings": {
-            "text": "<p>5% Discount on ALL orders over £5!<\/p>",
+            "text": "<p>We already offer FREE DELIVERY on ALL orders regardless of<br\/>spend.<\/p><p>You can now also get a further 5% discount on ALL orders over £50 with the code OCM5 at checkout.<\/p>",
             "read_more_enabled": false
           }
         }
