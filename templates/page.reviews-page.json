@@ -302,7 +302,7 @@
         "376cac28-32ac-46c5-9e52-bb99dc4f5172"
       ],
       "custom_css": [
-        ".multicolumn.background-secondary {padding: 10px;}"
+        ".multicolumn.background-secondary {padding: 10px, 0px, 0px, 50px;}"
       ],
       "settings": {
         "title": "Multicolumn",
