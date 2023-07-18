@@ -112,14 +112,6 @@
         "parallax_speed_mobile": 70
       }
     },
-    "f6e7e718-ef27-42c0-b193-3521a7dfcc67": {
-      "type": "find-my-car_original",
-      "custom_css": [
-        "{margin-bottom: 100px;}"
-      ],
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -143,20 +135,11 @@
             "text": "<p>5% Discount on ALL orders over £5!<\/p>",
             "read_more_enabled": false
           }
-        },
-        "template--16149582807226__978d4055-dab8-4db2-989b-f395b93f3e0a-16896772385ded602b-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "template--16149582807226__978d4055-dab8-4db2-989b-f395b93f3e0a-16896772385ded602b-0",
-        "template--16149582807226__978d4055-dab8-4db2-989b-f395b93f3e0a-16896772385ded602b-1",
-        "template--16149582807226__978d4055-dab8-4db2-989b-f395b93f3e0a-16896772385ded602b-2"
+        "template--16149582807226__978d4055-dab8-4db2-989b-f395b93f3e0a-16896772385ded602b-1"
       ],
       "settings": {
         "color_scheme": "none",
@@ -167,7 +150,6 @@
   },
   "order": [
     "7a06e8b7-1c69-4ab9-af53-5e8aae725a63",
-    "f6e7e718-ef27-42c0-b193-3521a7dfcc67",
     "main",
     "978d4055-dab8-4db2-989b-f395b93f3e0a"
   ]
