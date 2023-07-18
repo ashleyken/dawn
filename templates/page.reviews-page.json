@@ -563,6 +563,73 @@
         "swipe_on_mobile": false
       }
     },
+    "727b6317-4e32-405a-990f-6050d9546b91": {
+      "type": "multicolumn",
+      "blocks": {
+        "a53ce424-9b48-47c1-83d0-0bf0db5d72ed": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "title": "Giuseppe",
+            "text": "<p>Like to thank Dawn in regards to buying mats for my daughters car. Original mats did not fit and Dawn tried everything including another 2 different sets being sent to resolve the issue of rear mats not fitting.<\/p><p>Communication was excellent, refund was given after all options were exhausted. I would like to say I would definitely use Official Car Mats if I need to replace any car mats in our household. Quality and price is excellent. Thank you Dawn<\/p>"
+          }
+        },
+        "e8efff0b-fc59-446c-8590-66b8242a988f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "title": "Catherine",
+            "text": "<p>I received excellent service. Placed an order for personalised mats and when they arrived I was delighted with the quality of them. The drivers mat did not quite fit and I emailed regarding this to be told the order I had placed was unfortunately for a slightly older car than my partner had so I asked if I could order one single mat but I was sent a free replacement which arrived within a few days. I feel they went above and beyond and it is so good to find a company nowadays that provides service like this. Would most definitely recommend them!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a53ce424-9b48-47c1-83d0-0bf0db5d72ed",
+        "e8efff0b-fc59-446c-8590-66b8242a988f"
+      ],
+      "custom_css": [
+        ".multicolumn.background-secondary {padding: 10px;}"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "b2a277ae-fff8-4d7b-a0cb-bda413cd5d2c": {
+      "type": "multicolumn",
+      "blocks": {
+        "86acaa4e-10b9-4b96-9c9a-873e00c59d8f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "title": "Sarah",
+            "text": "<p>Bought 2 super luxury van mats, embroidered with company logo, and royal blue trim, as a present for my partner.<br\/><br\/>Turned out amazing and quality was well worth the money.<br\/>Service was really good and as these were a present I explained I needed by a certain date, sales manager, Dawn, was very helpful and I got them delivered the day before I required.<br\/><br\/>Thank you to all of the team who assisted in getting these made and to me in time for me to give to my partner for our anniversary present.<br\/>He was absolutely delighted.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "86acaa4e-10b9-4b96-9c9a-873e00c59d8f"
+      ],
+      "custom_css": [
+        ".multicolumn.background-secondary {padding-top: 10px;}"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "secondary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
     "7d9ba142-8675-44fb-b4a9-2852c61c9e31": {
       "type": "contact-form",
       "custom_css": [
@@ -589,6 +656,8 @@
     "1ad986ce-c143-4529-a75b-93fa8c811c95",
     "19157842-3849-48df-bc7e-18fb13ce5281",
     "973e53cb-2eaa-4dc9-9b94-5e39ad901d23",
+    "727b6317-4e32-405a-990f-6050d9546b91",
+    "b2a277ae-fff8-4d7b-a0cb-bda413cd5d2c",
     "7d9ba142-8675-44fb-b4a9-2852c61c9e31"
   ]
 }
