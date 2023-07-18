@@ -299,6 +299,12 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "7d9ba142-8675-44fb-b4a9-2852c61c9e31": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
     }
   },
   "order": [
@@ -309,6 +315,7 @@
     "31936143-51a8-4268-bd2e-6d32db4a6c22",
     "e441a160-ac17-4e92-a648-6cdd12e90fda",
     "17c287dc-6686-4530-891c-2522399092e9",
-    "39d042ca-9c2f-42da-a5c9-aa7d59d088c0"
+    "39d042ca-9c2f-42da-a5c9-aa7d59d088c0",
+    "7d9ba142-8675-44fb-b4a9-2852c61c9e31"
   ]
 }
