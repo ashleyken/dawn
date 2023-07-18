@@ -120,10 +120,92 @@
       ],
       "settings": {
       }
+    },
+    "9a2ef893-9add-412b-8940-bec3b1a00037": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-0": {
+          "type": "column",
+          "settings": {
+            "title": "Personalization Options",
+            "text": "<p>Make your boot liner truly unique with our personalization options. Choose custom text embroidery to add a personal touch to your boot liner. Whether it's your name, a special message, or even your favorite sports team logo, we offer a range of options to suit your style and preferences.<\/p>"
+          }
+        },
+        "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-1": {
+          "type": "column",
+          "settings": {
+            "title": "Easy Ordering Process",
+            "text": "<p>Ordering your custom boot liner is quick and convenient. Simply select your car brand and model from our extensive range, and we'll ensure a perfect fit. With our secure online ordering system, you can confidently complete your purchase and have your boot liner delivered directly to your doorstep.<\/p>"
+          }
+        },
+        "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-2": {
+          "type": "column",
+          "settings": {
+            "title": "Environmentally Conscious",
+            "text": "<p>At Official Car Mats, we are committed to sustainability. Wherever possible, we utilize recycled materials in our manufacturing process, contributing to our efforts to protect the environment.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-0",
+        "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-1",
+        "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "6398dada-ea3c-466b-973d-7c9faa43fadf": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Experience the Official Car Mats Difference",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With our wealth of experience and dedication to excellence, Official Car Mats is your trusted partner for top-quality boot liners. Join thousands of satisfied customers who have chosen our products to enhance and protect their vehicles.<br\/><br\/>Order your custom boot liner today and experience the unbeatable combination of precision, quality, and personalization from Official Car Mats. Your vehicle deserves the best.<\/p>",
+            "read_more_enabled": false
+          }
+        },
+        "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-0",
+        "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-1",
+        "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-2"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
     }
   },
   "order": [
     "da9bdbc7-9646-4143-ad85-14f761b946c0",
-    "main"
+    "main",
+    "9a2ef893-9add-412b-8940-bec3b1a00037",
+    "6398dada-ea3c-466b-973d-7c9faa43fadf"
   ]
 }
