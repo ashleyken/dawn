@@ -131,6 +131,7 @@
       "blocks": {
         "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-0": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Personalization Options",
             "text": "<p>Make your boot liner truly unique with our personalization options. Choose custom text embroidery to add a personal touch to your boot liner. Whether it's your name, a special message, or even your favorite sports team logo, we offer a range of options to suit your style and preferences.<\/p>"
