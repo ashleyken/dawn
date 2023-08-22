@@ -69,9 +69,14 @@
               
               function abortTeamTimer() { // to be called when you want to stop the timer
                 clearInterval(teamTimer);
+                console.log('timer aborted');
               }
               
               function selectBadge() {
+              
+                if (!teamName) {
+                  abortTeamTimer();
+                }
               
                 let mwPrestige = document.querySelector('[data-value-id="v_115734"]');
                 if (mwPrestige) {
@@ -84,8 +89,8 @@
                 if (mwSelectMenu) {
                   
                   for (i = 0; i < mwSelectMenu.length; ++i){
-                    console.log(mwSelectMenu.options[i].text);
-                    console.log(teamName + ' (+£9.00)');
+                    // console.log(mwSelectMenu.options[i].text);
+                    // console.log(teamName + ' (+£9.00)');
                     if (mwSelectMenu.options[i].text == teamName + ' (+£9.00)'){
                       console.log(teamName);
                       mwSelectMenu.options.selectedIndex = i;
