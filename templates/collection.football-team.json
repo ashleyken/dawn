@@ -57,12 +57,11 @@
     },
     "e4daa652-29fe-4b33-bdd5-799028bc4298": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "template--15140007510202__e4daa652-29fe-4b33-bdd5-799028bc4298-168612896321fc3a4e-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ocm_sunderland.jpg",
+            "image": "shopify:\/\/shop_images\/bolton_-_close_up.jpg",
             "title": "",
             "text": ""
           }
@@ -70,8 +69,8 @@
         "template--15140007510202__e4daa652-29fe-4b33-bdd5-799028bc4298-168612896321fc3a4e-1": {
           "type": "column",
           "settings": {
-            "title": "Order Personalised Sunderland gifts",
-            "text": "<p>Order your Sunderland AFC car floor mat today, usually dispatched within 5-7 days of your order, and enjoy free UK delivery! Show your Black Cats pride and experience the fusion of passion and craftsmanship in every journey. Whether it's a gift for a fellow fan or a treat for yourself, these mats are an exceptional way to display your unwavering support for Sunderland AFC.<\/p>"
+            "title": "Order Personalised Bolton gifts",
+            "text": "<p>Order your Bolton Wanderers car floor mats today, usually dispatched within 5-7 days of your order, and enjoy free UK delivery! Show off your Wanderers pride and experience the fusion of passion and craftsmanship in every journey. Whether it's a gift for a fellow Bolton fan or a treat for yourself, these mats are an exceptional way to display your unwavering support for your favourite team.<\/p>"
           }
         },
         "template--15140007510202__e4daa652-29fe-4b33-bdd5-799028bc4298-168612896321fc3a4e-2": {
