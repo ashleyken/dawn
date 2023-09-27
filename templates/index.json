@@ -267,7 +267,6 @@
     },
     "image_banner": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -280,6 +279,7 @@
       "block_order": [
         "heading"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/carmatslide.png",
         "adapt_height_first_image": false,
@@ -371,7 +371,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/truck_1955452f-b8b0-4c4d-851b-bb323725d141.png",
             "title": "Free Delivery",
-            "text": "<p>Your tailored car mats will usually be dispatched within 5-7 days of your order being placed with FREE UK DELIVERY included in the price.<br\/><br\/>We accept all major credit and debit cards as well as Paypal and our industry standard secure server software safeguards the confidentiality of your information at all times.<br\/><br\/>Place your order securely online or you can call a member of our team on 01257 476006 to discuss your needs - we'd love to hear from you!<br\/><br\/>You can use our live chat function to speak to someone live now.<\/p>"
+            "text": "<p>Your tailored car mats will usually be dispatched within 3-5 days of your order being placed with FREE UK DELIVERY included in the price.<br\/><br\/>We accept all major credit and debit cards as well as Paypal and our industry standard secure server software safeguards the confidentiality of your information at all times.<br\/><br\/>Place your order securely online or you can call a member of our team on 01257 476006 to discuss your needs - we'd love to hear from you!<br\/><br\/>You can use our live chat function to speak to someone live now.<\/p>"
           }
         },
         "column2": {
