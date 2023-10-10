@@ -172,8 +172,8 @@
       "settings": {
         "section_height": "750px",
         "section_height_mobile": "auto",
-        "full_width_images": false,
-        "full_width_images_mobile": false,
+        "full_width_images": true,
+        "full_width_images_mobile": true,
         "parallax": false,
         "parallax_mobile": false,
         "dots_style": "dots",
