@@ -124,6 +124,62 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "969b90ed-41ba-4191-82e5-4365893abaa4": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15140007510202__969b90ed-41ba-4191-82e5-4365893abaa4-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sunderland_-_close_up_efba67ac-ac93-4a9b-95d7-d3d32d5eb1d9.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--15140007510202__969b90ed-41ba-4191-82e5-4365893abaa4-slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sunderland_-_full_set_1.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15140007510202__969b90ed-41ba-4191-82e5-4365893abaa4-slide-1",
+        "template--15140007510202__969b90ed-41ba-4191-82e5-4365893abaa4-slide-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -132,6 +188,7 @@
     "category-text",
     "ba8f0c20-33ee-4e81-a879-364333ba7cad",
     "e4daa652-29fe-4b33-bdd5-799028bc4298",
-    "163413202562fe9aab"
+    "163413202562fe9aab",
+    "969b90ed-41ba-4191-82e5-4365893abaa4"
   ]
 }
