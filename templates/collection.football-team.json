@@ -137,7 +137,7 @@
         "section_height_mobile": "auto",
         "full_width_images": false,
         "full_width_images_mobile": true,
-        "parallax": false,
+        "parallax": true,
         "parallax_mobile": false,
         "dots_style": "dots",
         "arrows_style": "none",
