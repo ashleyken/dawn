@@ -131,9 +131,9 @@
         "template--15140007510202__a2656e2e-335f-4131-bea7-25df72145cd6-image-1": {
           "type": "image",
           "settings": {
-            "image": "{{ collection.metafields.custom.header_image_desktop.value }}",
+            "image": "{{ collection.metafields.custom.official_logos.value }}",
             "focal_point": "center center",
-            "image_mobile": "{{ collection.metafields.custom.header_image_mobile.value }}",
+            "image_mobile": "{{ collection.metafields.custom.official_logos.value }}",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
@@ -167,9 +167,9 @@
         "template--15140007510202__a2656e2e-335f-4131-bea7-25df72145cd6-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sunderland_-_full_set_1.jpg",
+            "image": "{{ collection.metafields.custom.official_logo_in_car.value }}",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/sunderland_-_full_set_1.jpg",
+            "image_mobile": "{{ collection.metafields.custom.official_logo_in_car.value }}",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
