@@ -22,7 +22,7 @@
           "type": "image",
           "settings": {
             "image": "{{ collection.metafields.custom.official_logos.value }}",
-            "focal_point": "top center",
+            "focal_point": "center center",
             "image_mobile": "{{ collection.metafields.custom.official_logos.value }}",
             "focal_point_mobile": "center center",
             "title": "",
