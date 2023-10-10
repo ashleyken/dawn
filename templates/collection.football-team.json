@@ -99,32 +99,6 @@
         "swipe_on_mobile": false
       }
     },
-    "163413202562fe9aab": {
-      "type": "multicolumn",
-      "blocks": {
-        "163413202562fe9aab-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/flag_21d0faaf-8091-45de-a97f-9408b5d65a20.png",
-            "title": "MADE IN THE UK",
-            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163413202562fe9aab-0"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "image_width": "half",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
     "969b90ed-41ba-4191-82e5-4365893abaa4": {
       "type": "slideshow",
       "blocks": {
@@ -179,6 +153,32 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "163413202562fe9aab": {
+      "type": "multicolumn",
+      "blocks": {
+        "163413202562fe9aab-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/flag_21d0faaf-8091-45de-a97f-9408b5d65a20.png",
+            "title": "MADE IN THE UK",
+            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163413202562fe9aab-0"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -187,7 +187,7 @@
     "category-text",
     "ba8f0c20-33ee-4e81-a879-364333ba7cad",
     "e4daa652-29fe-4b33-bdd5-799028bc4298",
-    "163413202562fe9aab",
-    "969b90ed-41ba-4191-82e5-4365893abaa4"
+    "969b90ed-41ba-4191-82e5-4365893abaa4",
+    "163413202562fe9aab"
   ]
 }
