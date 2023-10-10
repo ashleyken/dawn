@@ -98,7 +98,7 @@
       "settings": {
         "section_height": "550px",
         "section_height_mobile": "auto",
-        "full_width_images": true,
+        "full_width_images": false,
         "full_width_images_mobile": false,
         "parallax": false,
         "parallax_mobile": false,
