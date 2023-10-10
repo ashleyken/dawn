@@ -125,12 +125,49 @@
             "overlay_color": "#000000",
             "text_align": "EzfySlideshow-textbox--center"
           }
+        },
+        "045dc21c-4be6-4198-a4dc-63ced23a69e7": {
+          "type": "image",
+          "settings": {
+            "image": "{{ collection.metafields.custom.official_logo_4.value }}",
+            "focal_point": "center center",
+            "image_mobile": "{{ collection.metafields.custom.official_logo_4.value }}",
+            "focal_point_mobile": "center center",
+            "title": "",
+            "subtitle": "",
+            "image_link": "",
+            "clickable_image_new_tab": false,
+            "button_text": "",
+            "button_link": "",
+            "button_text_2": "",
+            "button_link_2": "",
+            "title_font_size": 80,
+            "title_font_size_mobile": 40,
+            "subtitle_font_size": 21,
+            "subtitle_font_size_mobile": 17,
+            "button_text_size": 13,
+            "button_text_size_mobile": 13,
+            "text_shadow": 20,
+            "overlay_opacity": 0,
+            "button_background_color": "",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#ffffff",
+            "button_background_color_2": "",
+            "button_text_color_2": "#ffffff",
+            "button_border_color_2": "#ffffff",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffff",
+            "text_shadow_color": "#000000",
+            "overlay_color": "#000000",
+            "text_align": "EzfySlideshow-textbox--center"
+          }
         }
       },
       "block_order": [
         "template--15140007510202__a2656e2e-335f-4131-bea7-25df72145cd6-image-1",
         "template--15140007510202__a2656e2e-335f-4131-bea7-25df72145cd6-image-2",
-        "d3320f16-8e89-4768-8b73-e1359d157a40"
+        "d3320f16-8e89-4768-8b73-e1359d157a40",
+        "045dc21c-4be6-4198-a4dc-63ced23a69e7"
       ],
       "settings": {
         "section_height": "750px",
