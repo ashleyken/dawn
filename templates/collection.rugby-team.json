@@ -139,7 +139,7 @@
         "full_width_images_mobile": false,
         "parallax": false,
         "parallax_mobile": false,
-        "dots_style": "bars",
+        "dots_style": "dots",
         "arrows_style": "none",
         "arrows_style_mobile": "none",
         "autoplay": true,
