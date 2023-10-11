@@ -133,7 +133,7 @@
         "d3320f16-8e89-4768-8b73-e1359d157a40"
       ],
       "settings": {
-        "section_height": "550px",
+        "section_height": "100vh",
         "section_height_mobile": "auto",
         "full_width_images": false,
         "full_width_images_mobile": false,
