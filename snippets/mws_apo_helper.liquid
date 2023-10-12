@@ -1,13 +1,13 @@
 <script>
-  	window.onload = function () {
-	  setTimeout(function () {
-	    let addToCart = document.querySelectorAll(".mws_disabled"); 
-	
-	    addToCart.forEach((btn) => {
-	      btn.classList.remove('mws_disabled');
-	    });
-	  }, 1500)
-	}
+window.onload = function () {
+  setTimeout(function () {
+    let addToCart = document.querySelectorAll(".mws_disabled"); 
+
+    addToCart.forEach((btn) => {
+      btn.classList.remove('mws_disabled');
+    });
+  }, 1500)
+}
 function mws_apo_hide_our_variants(selector_container, selector_items) {
   const container = document.querySelectorAll(selector_container);
   if (!container) {
