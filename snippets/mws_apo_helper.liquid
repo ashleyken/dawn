@@ -370,7 +370,7 @@ window.mwApoInit.onEvent = function (event, args) {
           const info = priceElement(id);                    
            if (typeof info !== "undefined" && info.price > 0) {         
               let newPrice = Number(info.price) * rate;                
-              let newPliceRounding  = newPrice.toFixed(2);                 
+              let newPliceRounding  = Math.round(newPrice);                 
               let formattedPrice = formPrice(
                 newPliceRounding * 100,
                 window.mwsShopInfo.shop.money_with_currency_format
