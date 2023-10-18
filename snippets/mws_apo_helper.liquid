@@ -355,7 +355,7 @@ window.mwApoInit.onEvent = function (event, args) {
           let id = input.getAttribute("id");
           const info = priceElement(id);   
            if (typeof info !== "undefined" && info.price > 0) {         
-              let newPrice = Math.round(Number(info.price) * rate);                
+              let newPrice = Number(info.price) * rate;                
               let formattedPrice = formPrice(
                 newPrice * 100,
                 window.mwsShopInfo.shop.money_with_currency_format
@@ -395,7 +395,7 @@ window.mwApoInit.onEvent = function (event, args) {
           let id = input.getAttribute("value");
           const info = priceElement(id);     
            if (info && info.price > 0) {     
-             let newPrice = Math.round(info.price * rate);                
+             let newPrice = Number(info.price * rate);                
              let newPliceRounding  = newPrice.toFixed(2);                 
              let formattedPrice = formPrice(newPliceRounding * 100, window.mwsShopInfo.shop.money_with_currency_format);   
              let labelIntoRadio = element.querySelector(".mw-option__price");                              
