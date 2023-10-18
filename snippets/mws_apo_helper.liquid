@@ -482,7 +482,7 @@ window.mwApoInit.onCallback = function (event, data) {
      if (Shopify.currency.active !== "GBP") {
         let rate = Shopify.currency.rate;                      
          if (rate > 0) {               
-           let newPrice = Math.round(price * rate);
+           let newPrice = price * rate;
             setTimeout(() => {
              prices.forEach((element) => {
               element.innerHTML = formPrice(
