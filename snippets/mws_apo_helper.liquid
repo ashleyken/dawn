@@ -374,7 +374,8 @@ window.mwApoInit.onEvent = function (event, args) {
               let formattedPrice = formPrice(
                 newPliceRounding * 100,
                 window.mwsShopInfo.shop.money_with_currency_format
-              );   
+              );  
+             console.log(formattedPrice);
                element.innerHTML = `${info.title} (+${formattedPrice})`;                                 
            }           	
            if (typeof info !== "undefined" &&  info.price < 0) {               
@@ -384,7 +385,7 @@ window.mwApoInit.onEvent = function (event, args) {
                 newPliceRounding * 100,
                 window.mwsShopInfo.shop.money_with_currency_format
               );   
-             console.log(formattedPrice);
+             
                element.innerHTML = `${info.title} (-${formattedPrice})`;  
            }
         });
