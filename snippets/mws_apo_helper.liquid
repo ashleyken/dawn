@@ -384,6 +384,7 @@ window.mwApoInit.onEvent = function (event, args) {
                 newPliceRounding * 100,
                 window.mwsShopInfo.shop.money_with_currency_format
               );   
+             console.log(formattedPrice);
                element.innerHTML = `${info.title} (-${formattedPrice})`;  
            }
         });
