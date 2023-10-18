@@ -385,7 +385,7 @@ window.mwApoInit.onEvent = function (event, args) {
                 newPliceRounding * 100,
                 window.mwsShopInfo.shop.money_with_currency_format
               );   
-             
+              console.log(formattedPrice);
                element.innerHTML = `${info.title} (-${formattedPrice})`;  
            }
         });
@@ -399,7 +399,6 @@ window.mwApoInit.onEvent = function (event, args) {
              let newPliceRounding  = newPrice.toFixed(2);                 
              let formattedPrice = formPrice(newPliceRounding * 100, window.mwsShopInfo.shop.money_with_currency_format);   
              let labelIntoRadio = element.querySelector(".mw-option__price");                              
-             console.log(formattedPrice);
              labelIntoRadio.innerHTML = `(+${formattedPrice})`;   
            }
         });
