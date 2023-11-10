@@ -16,7 +16,7 @@
         "template--15140007510202__74edcfec-fbaf-428c-8f3d-f9821d1be0a5-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Choose your car model",
+            "heading": "STep 1: find your car model",
             "heading_size": "h1",
             "use_h1_tags_for_header": false,
             "underline_header": false
@@ -133,7 +133,7 @@
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3": {
           "type": "column",
           "settings": {
-            "title": "Personalise your Mats",
+            "title": "Step 2: Personalise your Mats",
             "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>"
           }
         },
@@ -158,6 +158,9 @@
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3",
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1",
         "8c005f20-89ad-4479-a75b-103a4165bb61"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "title": "Multicolumn",
@@ -321,6 +324,36 @@
         "parallax_speed_mobile": 70
       }
     },
+    "14aac53c-d7cb-4702-bee9-6a3382c26d95": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15140007510202__14aac53c-d7cb-4702-bee9-6a3382c26d95-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 3: order with free shipping",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15140007510202__14aac53c-d7cb-4702-bee9-6a3382c26d95-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our products are made to order just for you, to ensure they are high-quality, unique, and fit you car with no adaptation needed. After manufacturing your mats with our precise techniques, we ship them out across the UK, with free, fast delivery.<\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15140007510202__14aac53c-d7cb-4702-bee9-6a3382c26d95-heading-1",
+        "template--15140007510202__14aac53c-d7cb-4702-bee9-6a3382c26d95-text-1"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
     "ba8f0c20-33ee-4e81-a879-364333ba7cad": {
       "type": "rich-text",
       "blocks": {
@@ -441,6 +474,7 @@
     "find-my-car",
     "da2f9100-5fa2-431e-bb14-776017bcf0c1",
     "a2656e2e-335f-4131-bea7-25df72145cd6",
+    "14aac53c-d7cb-4702-bee9-6a3382c26d95",
     "ba8f0c20-33ee-4e81-a879-364333ba7cad",
     "e4daa652-29fe-4b33-bdd5-799028bc4298",
     "163413202562fe9aab"
