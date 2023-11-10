@@ -141,7 +141,7 @@
         "8c005f20-89ad-4479-a75b-103a4165bb61": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/genericQuality.png",
+            "image": "shopify:\/\/shop_images\/genericQuality2.png",
             "title": "",
             "text": ""
           }
@@ -150,7 +150,7 @@
           "type": "column",
           "settings": {
             "title": "Personalise your Mats",
-            "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p><p>We can also add custom text to your floor mats to make them the perfect gift for the football fan in your life.<\/p><p>Explore our options, and personalise your car mats to match your style and interior colour scheme.<\/p>"
+            "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>"
           }
         }
       },
@@ -162,7 +162,7 @@
       "settings": {
         "title": "Multicolumn",
         "image_width": "full",
-        "image_ratio": "portrait",
+        "image_ratio": "square",
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "Our Custom Options",
