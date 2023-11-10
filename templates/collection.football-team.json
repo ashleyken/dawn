@@ -140,7 +140,7 @@
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/generic5050.png",
+            "image": "{{ collection.metafields.custom.product_mockup.value }}",
             "title": "",
             "text": ""
           }
