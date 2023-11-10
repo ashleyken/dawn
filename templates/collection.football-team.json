@@ -16,7 +16,7 @@
         "template--15140007510202__74edcfec-fbaf-428c-8f3d-f9821d1be0a5-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "STep 1: find your car model",
+            "heading": "Step 1: find your car model",
             "heading_size": "h1",
             "use_h1_tags_for_header": false,
             "underline_header": false
@@ -25,7 +25,7 @@
         "template--15140007510202__74edcfec-fbaf-428c-8f3d-f9821d1be0a5-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Official Car Mats offer products for all brand and models of cars. Find your car model in our massive selection, and start designing your unique set of car mats.<\/p>",
+            "text": "<p>Official Car Mats offer products for all brand and models of cars. Find your car model in our massive selection, and start designing your unique set of car mats.<\/p><p>You can use our Search-By-Reg function to find your exact model in seconds. Remove the guesswork, and find car mats that perfectly fit your car model.<\/p>",
             "read_more_enabled": false
           }
         }
@@ -38,88 +38,6 @@
         "color_scheme": "accent-1",
         "full_width": false,
         "remove_top_padding": false
-      }
-    },
-    "4b3b600c-123f-45c0-9d80-e45ef9834662": {
-      "type": "collection-list",
-      "blocks": {
-        "template--15140007510202__4b3b600c-123f-45c0-9d80-e45ef9834662-featured_collection-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "audi-car-mats"
-          }
-        },
-        "template--15140007510202__4b3b600c-123f-45c0-9d80-e45ef9834662-featured_collection-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "ford-car-mats"
-          }
-        },
-        "template--15140007510202__4b3b600c-123f-45c0-9d80-e45ef9834662-featured_collection-3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "vauxhall-car-mats"
-          }
-        },
-        "14dec23f-250f-4660-818a-81ea54c1d1c0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bmw-car-mats"
-          }
-        },
-        "984063b5-79ee-4418-9226-61af721cc020": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "toyota-car-mats"
-          }
-        },
-        "cb82fc06-c4d4-40b8-aa3d-10e2dc32de6e": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "volkswagen-car-mats"
-          }
-        }
-      },
-      "block_order": [
-        "template--15140007510202__4b3b600c-123f-45c0-9d80-e45ef9834662-featured_collection-1",
-        "template--15140007510202__4b3b600c-123f-45c0-9d80-e45ef9834662-featured_collection-2",
-        "template--15140007510202__4b3b600c-123f-45c0-9d80-e45ef9834662-featured_collection-3",
-        "14dec23f-250f-4660-818a-81ea54c1d1c0",
-        "984063b5-79ee-4418-9226-61af721cc020",
-        "cb82fc06-c4d4-40b8-aa3d-10e2dc32de6e"
-      ],
-      "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "color_scheme": "accent-1",
-        "swipe_on_mobile": true,
-        "image_padding": true,
-        "show_view_all": false
-      }
-    },
-    "825327a9-3920-455e-b13f-bb8bacf5c121": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--15140007510202__825327a9-3920-455e-b13f-bb8bacf5c121-column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Can't see your car?",
-            "text": "<p>You can use our Search-By-Reg function to find your exact model in seconds. Remove the guesswork, and find car mats that perfectly fit your car model.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15140007510202__825327a9-3920-455e-b13f-bb8bacf5c121-column-1"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
       }
     },
     "find-my-car": {
@@ -190,9 +108,9 @@
         "image_ratio": "square",
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "Our Custom Options",
+        "button_label": "",
         "button_link": "shopify:\/\/pages\/personalised-gifts",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "a2656e2e-335f-4131-bea7-25df72145cd6": {
@@ -491,8 +409,6 @@
     "banner",
     "category-text",
     "74edcfec-fbaf-428c-8f3d-f9821d1be0a5",
-    "4b3b600c-123f-45c0-9d80-e45ef9834662",
-    "825327a9-3920-455e-b13f-bb8bacf5c121",
     "find-my-car",
     "be798ae4-5b93-445f-a85e-d19440750230",
     "da2f9100-5fa2-431e-bb14-776017bcf0c1",
