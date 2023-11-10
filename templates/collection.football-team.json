@@ -130,6 +130,13 @@
     "da2f9100-5fa2-431e-bb14-776017bcf0c1": {
       "type": "multicolumn",
       "blocks": {
+        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Personalise your Mats",
+            "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>"
+          }
+        },
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1": {
           "type": "column",
           "settings": {
@@ -145,19 +152,12 @@
             "title": "",
             "text": ""
           }
-        },
-        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Personalise your Mats",
-            "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>"
-          }
         }
       },
       "block_order": [
+        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3",
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1",
-        "8c005f20-89ad-4479-a75b-103a4165bb61",
-        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3"
+        "8c005f20-89ad-4479-a75b-103a4165bb61"
       ],
       "settings": {
         "title": "Multicolumn",
