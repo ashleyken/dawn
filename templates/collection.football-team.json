@@ -127,16 +127,39 @@
       "settings": {
       }
     },
+    "be798ae4-5b93-445f-a85e-d19440750230": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15140007510202__be798ae4-5b93-445f-a85e-d19440750230-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Step 2: Personalise your Mats",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15140007510202__be798ae4-5b93-445f-a85e-d19440750230-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15140007510202__be798ae4-5b93-445f-a85e-d19440750230-heading-1",
+        "template--15140007510202__be798ae4-5b93-445f-a85e-d19440750230-text-1"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
     "da2f9100-5fa2-431e-bb14-776017bcf0c1": {
       "type": "multicolumn",
       "blocks": {
-        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Step 2: Personalise your Mats",
-            "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>"
-          }
-        },
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1": {
           "type": "column",
           "settings": {
@@ -155,7 +178,6 @@
         }
       },
       "block_order": [
-        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3",
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1",
         "8c005f20-89ad-4479-a75b-103a4165bb61"
       ],
@@ -472,6 +494,7 @@
     "4b3b600c-123f-45c0-9d80-e45ef9834662",
     "825327a9-3920-455e-b13f-bb8bacf5c121",
     "find-my-car",
+    "be798ae4-5b93-445f-a85e-d19440750230",
     "da2f9100-5fa2-431e-bb14-776017bcf0c1",
     "a2656e2e-335f-4131-bea7-25df72145cd6",
     "14aac53c-d7cb-4702-bee9-6a3382c26d95",
