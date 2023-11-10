@@ -15,6 +15,40 @@
       "settings": {
       }
     },
+    "da2f9100-5fa2-431e-bb14-776017bcf0c1": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "{{ collection.metafields.custom.product_mockup.value }}",
+            "title": "",
+            "text": ""
+          }
+        },
+        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Personalise your Mats",
+            "text": "<p>{{ collection.metafields.custom.football_personalisation_text | metafield_tag }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1",
+        "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
     "a2656e2e-335f-4131-bea7-25df72145cd6": {
       "type": "ezfy-slideshow",
       "blocks": {
@@ -281,6 +315,7 @@
     "banner",
     "find-my-car",
     "category-text",
+    "da2f9100-5fa2-431e-bb14-776017bcf0c1",
     "a2656e2e-335f-4131-bea7-25df72145cd6",
     "ba8f0c20-33ee-4e81-a879-364333ba7cad",
     "e4daa652-29fe-4b33-bdd5-799028bc4298",
