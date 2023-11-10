@@ -138,6 +138,14 @@
             "text": ""
           }
         },
+        "8c005f20-89ad-4479-a75b-103a4165bb61": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/genericQuality.png",
+            "title": "",
+            "text": ""
+          }
+        },
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3": {
           "type": "column",
           "settings": {
@@ -148,12 +156,13 @@
       },
       "block_order": [
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-1",
+        "8c005f20-89ad-4479-a75b-103a4165bb61",
         "template--15140007510202__da2f9100-5fa2-431e-bb14-776017bcf0c1-column-3"
       ],
       "settings": {
         "title": "Multicolumn",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "Our Custom Options",
