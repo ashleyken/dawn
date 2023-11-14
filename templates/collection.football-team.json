@@ -33,6 +33,9 @@
         "template--15140007510202__70ee57bc-e722-4aab-8a48-1519b4502528-column-1",
         "template--15140007510202__70ee57bc-e722-4aab-8a48-1519b4502528-column-2"
       ],
+      "custom_css": [
+        ".multicolumn {margin-bottom: 115px; }"
+      ],
       "settings": {
         "title": "Multicolumn",
         "image_width": "full",
