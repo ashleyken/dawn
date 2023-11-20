@@ -8,6 +8,12 @@ window.onload = function () {
     });
   }, 1500)
 }
+
+function closeErrorText() {
+  document.querySelector('.mw-error-text').classList.contains('mw-hide') ? '' : document.querySelector('.mw-error-text').classList.add('mw-hide');
+}
+
+  
 function mws_apo_hide_our_variants(selector_container, selector_items) {
   const container = document.querySelectorAll(selector_container);
   if (!container) {
@@ -341,6 +347,29 @@ window.mwApoInit.onEvent = function (event, args) {
     }, 1000);
   }
 
+      // --------------
+
+  
+    if (event == "onClick::validate-failed") {
+      if (document.querySelector('div[data-helptext-type="required"]')) {
+         event.stopPropagation();
+      }
+    } 
+   
+    if (event == 'attachEvents::initAddToCart::clickError') { 
+      setTimeout(function () {
+        let element = document.querySelector('div[data-helptext-type="required"]:not(.mw-hidden)');
+        element.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+
+        let errorBlock = document.querySelector('div[data-helptext-type="required"]:not(.mw-hidden)');
+         errorBlock .insertAdjacentHTML("afterbegin", `<div class="mw-error-text mw-hide"><div class="mws_text">${element.innerHTML}</div><span id="close-error-popup" onclick="closeErrorText()">X</span></div>`); 
+        document.querySelector('.mw-error-text').classList.contains('mw-hide') ?  document.querySelector('.mw-error-text')?.classList?.remove('mw-hide') : '';
+      }, 50);
+    }
+  
+  // --------------
+
+
   if (event == "init::finish") {
     if (Shopify.currency.active !== "GBP") {
       let rate = Shopify.currency.rate;
@@ -644,5 +673,59 @@ if(form){
     }
      
 </style>
+
+<style>
+ .mw-apo-container > .mw-option{
+  position: relative;
+}
+  .mw-error-text a {
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+  }
+  
+  .mw-hide {
+     display: none;
+  }
+
+  .mw-error-text {
+    position: absolute;
+    /* top: -113px; */
+    bottom:0;
+    width: 100%;
+    left: 0;
+    background-color: whitesmoke;
+    padding: 40px 30px 25px 30px;
+    text-align: center;
+    border-radius: 5px;
+    border:1px solid red;
+        color: var(--mw-apo-color-danger,#de3618);
+        font-size: 26px ;
+    -webkit-box-shadow: 0px 0px 20px 0px #de3618; 
+box-shadow: 0px 0px 20px 0px #de3618;
+    
+  }
+
+  #close-error-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0 20px;
+  }
+
+  
+  @media screen and (max-width: 749px) {
+  .mw-error-text {
+    left: 0;
+    max-width: 90vw;
+    font-size: smaller;
+    font-size: 18px ;
+    
+    }
+  }
+</style>
+
 
 {% comment %}CUSTOMIZATION BELOW{% endcomment %}
