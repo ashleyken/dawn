@@ -58,7 +58,7 @@
         "template--15140007510202__be798ae4-5b93-445f-a85e-d19440750230-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Step 2: Personalise your Mats",
+            "heading": "Step 2: Personalise your Mats...",
             "heading_size": "h1",
             "use_h1_tags_for_header": false,
             "underline_header": false
@@ -67,7 +67,7 @@
         "template--15140007510202__be798ae4-5b93-445f-a85e-d19440750230-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>",
+            "text": "<p>On the product page for your make and model, you can add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>",
             "read_more_enabled": false
           }
         }
@@ -78,6 +78,36 @@
       ],
       "settings": {
         "color_scheme": "accent-1",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "24b7d848-756a-4b9c-a0a8-2c1ada0d190f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15140007510202__24b7d848-756a-4b9c-a0a8-2c1ada0d190f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "...with four materials to choose from",
+            "heading_size": "h2",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "template--15140007510202__24b7d848-756a-4b9c-a0a8-2c1ada0d190f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once you've found your make and model (using the easy search tool above) you can choose the material, colours, trim and add personalisation.<\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15140007510202__24b7d848-756a-4b9c-a0a8-2c1ada0d190f-heading-1",
+        "template--15140007510202__24b7d848-756a-4b9c-a0a8-2c1ada0d190f-text-1"
+      ],
+      "settings": {
+        "color_scheme": "none",
         "full_width": false,
         "remove_top_padding": false
       }
@@ -418,6 +448,7 @@
     "70ee57bc-e722-4aab-8a48-1519b4502528",
     "find-my-car",
     "be798ae4-5b93-445f-a85e-d19440750230",
+    "24b7d848-756a-4b9c-a0a8-2c1ada0d190f",
     "da2f9100-5fa2-431e-bb14-776017bcf0c1",
     "a2656e2e-335f-4131-bea7-25df72145cd6",
     "14aac53c-d7cb-4702-bee9-6a3382c26d95",
