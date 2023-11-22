@@ -328,7 +328,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 }
 
 .find_my_car_holder {
-	background: rgb(var(--color-foreground));
+	background: rgba(var(--color-base-accent-1));
 	padding: 1rem 3rem;
 	text-align: center;
 	font-weight: 700;
@@ -354,6 +354,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 	font-weight: 400;
 	font-size: 70%;
 	line-height: 1;
+	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 }
 .find_my_car_select {
@@ -745,7 +746,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 }
 .reg_lookup_input {
 	font-family: "registration_plate_ukregular";
-	font-size: 33px;
+	font-size: 23px;
 	text-align: center;
 	background-color: #fdd405;
 	border: none;
@@ -761,12 +762,17 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 
 @media screen and (min-width: 990px) {
 	.reg_lookup_input {
+		font-size: 35px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.reg_lookup_input {
 		font-size: 40px;
 	}
 }
 
 .reg_lookup_button {
-	background-color: #fdd405;
+	background-color: #0ad200;
 	font-size: 25px;
 	text-align: center;
 	border: none;
@@ -777,7 +783,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 	padding: 1rem 2rem;
 }
 .reg_lookup_button:hover {
-	background-color: #fff;
+	background-color: #b2eeaf;
 }
 .reg_lookup_response {
 	color: #fff;
