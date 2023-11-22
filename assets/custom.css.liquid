@@ -755,11 +755,18 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 	width: 100%;
 	animation: glow 1s infinite alternate;
 }
+@keyframes glow {
+	from {
+		box-shadow: 0 0 5px -5px rgba(253,212,5,0.3);
+	}
+	to {
+		box-shadow: 0 0 5px 5px rgba(253,212,5,0.3);
+	}
+}
 .reg_lookup_input::placeholder {
 	opacity: 0.5;
 	color: #000;
 }
-
 @media screen and (min-width: 990px) {
 	.reg_lookup_input {
 		font-size: 35px;
@@ -768,14 +775,6 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 @media screen and (min-width: 1200px) {
 	.reg_lookup_input {
 		font-size: 40px;
-	}
-}
-@keyframes glow {
-	from {
-		box-shadow: 0 0 5px -5px rgba(253,212,5,0.3);
-	}
-	to {
-		box-shadow: 0 0 5px 5px rgba(253,212,5,0.3);
 	}
 }
 
