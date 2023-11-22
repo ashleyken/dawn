@@ -162,8 +162,10 @@ window.theme.mam = {% render "lookup_json" %};
 				let json = JSON.parse(data.replace(/(<([^>]+)>)/gi, ""));
 
 				// don't show boot options if we've got a collectionHandle value
+				// not really sure why we did this intentionally, I'll turn it off 22/11/23
 
 
+				/*
 				let mats_html = json.products.map(function(mat){
 					
 					let boot_checker = mat.title.match(/Boot/i);
@@ -175,10 +177,10 @@ window.theme.mam = {% render "lookup_json" %};
 						return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`;
 					}
 				});
-
-				/*
-				let mats_html = json.products.map(mat=> `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`);
 				*/
+
+				let mats_html = json.products.map(mat=> `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`);
+				
 
 				fMCDVariant.innerHTML = '<option value="">YEAR / TYPE</option>' + mats_html.join('');
 				fMCDVariant.focus();
