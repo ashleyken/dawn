@@ -325,8 +325,11 @@
         "template--15140007510202__14aac53c-d7cb-4702-bee9-6a3382c26d95-heading-1",
         "template--15140007510202__14aac53c-d7cb-4702-bee9-6a3382c26d95-text-1"
       ],
+      "custom_css": [
+        ".rich-text__blocks {margin-top: 100px;}"
+      ],
       "settings": {
-        "color_scheme": "accent-1",
+        "color_scheme": "none",
         "full_width": false,
         "remove_top_padding": false
       }
