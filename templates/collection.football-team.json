@@ -67,7 +67,7 @@
         "template--15140007510202__be798ae4-5b93-445f-a85e-d19440750230-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>On the product page for your make and model, you can add a touch of your unique style to your new set of car mats with our wide range of personalisation options. From materials,  to colours, to trims, no two sets are alike!<\/p>",
+            "text": "<p>{{ collection.metafields.custom.football_personalisation_text | metafield_tag }}<\/p>",
             "read_more_enabled": false
           }
         }
