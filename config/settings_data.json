@@ -23,7 +23,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Free Shipping on all orders. Last day to guarantee delivery before Christmas is Wednesday 13th December.",
+              "text": "Free Shipping on all orders.",
               "color_scheme": "accent-1",
               "link": ""
             }
@@ -116,9 +116,9 @@
         "settings": {
           "button_color": "#000000",
           "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "button_text": "chat_with_us",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
       }
