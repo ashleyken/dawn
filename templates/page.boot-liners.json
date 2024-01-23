@@ -141,7 +141,7 @@
           "type": "column",
           "settings": {
             "title": "Easy Ordering Process",
-            "text": "<p>Ordering your custom boot liner is quick and convenient. Simply select your car brand and model from our extensive range, and we'll ensure a perfect fit. With our secure online ordering system, you can confidently complete your purchase and have your boot<br\/>liner delivered directly to your doorstep.<\/p>"
+            "text": "<p>Ordering your boot liner is quick and convenient. Simply select your car brand and model from our extensive range, and we'll ensure a perfect fit. With our secure online ordering system, you can confidently complete your purchase and have your Custom Boot Liners delivered directly to your doorstep.<\/p>"
           }
         },
         "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-2": {
@@ -183,7 +183,7 @@
         "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Official Car Mats, we take pride in being a leading UK<br\/>manufacturer of bespoke boot liners and <a href=\"https:\/\/officialcarmats.co.uk\" title=\"https:\/\/officialcarmats.co.uk\">car mats<\/a> that are tailor-made to fit perfectly<br\/>in whatever make and model your vehicle. At Official Car Mats, we have been the UK market leader for over three decades, with over 5,000, 5 star reviews on<br\/>TrustPilot. <\/p><p>With our wealth of experience and dedication to excellence, Official Car Mats is your trusted partner for top-quality boot<br\/>liners. Join thousands of satisfied customers who have chosen our products to enhance and protect their vehicles.<\/p><p>If you are interested in ordering one of our bespoke boot liners then you may also be interested in some of our officially licenced<br\/><a href=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\" title=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\">football team car mats<\/a> or our <a href=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\" title=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\">rugby team car mats<\/a>. <br\/><br\/>Order your made to measure boot liner today and experience the unbeatable combination of precision and quality from Official Car Mats. Your vehicle<br\/>deserves the best car boot liner.<\/p>",
+            "text": "<p>At Official Car Mats, we take pride in being a leading UK manufacturer of Custom Boot Liners and <a href=\"https:\/\/officialcarmats.co.uk\" title=\"https:\/\/officialcarmats.co.uk\">car mats<\/a> that are tailor-made to fit perfectly in whatever make and model your vehicle. With over three decades of experience and over 5,000, 5 star reviews on TrustPilot, you can trust us to deliver on our promise. <\/p><p>With our wealth of experience and dedication to excellence, Official Car Mats is your trusted partner for tailored boot liners. Join thousands of satisfied customers who have chosen our products to enhance and protect their vehicles.<\/p><p>If you are interested in ordering our car boot mats then you may also be interested in some of our officially licenced <br\/><a href=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\" title=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\">football team car mats<\/a> or our <a href=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\" title=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\">rugby team car mats<\/a>. <br\/><br\/>Order your Custom Boot Liners today and experience the unbeatable combination of precision and quality from Official Car Mats. Your vehicle deserves the best car boot mats.<\/p>",
             "read_more_enabled": false
           }
         },
@@ -202,7 +202,7 @@
         "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-2"
       ],
       "custom_css": [
-        ".rte a {color:white}"
+        ".rte a {color: white;}"
       ],
       "settings": {
         "color_scheme": "none",
