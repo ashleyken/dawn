@@ -405,6 +405,13 @@
       "marketing": {
         "accept_marketing_checkbox_label": "Email me with status updates"
       }
+    },
+    "notices": {
+      "order": {
+        "fulfillment_status": {
+          "unfulfilled": "In progress"
+        }
+      }
     }
   }
 }
