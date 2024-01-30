@@ -401,6 +401,9 @@
     "checkout": {
       "thank_you": {
         "confirmed_description": "We've shipped your order, please use the links below to track your item(s)."
+      },
+      "marketing": {
+        "accept_marketing_checkbox_label": "Email me with status updates"
       }
     }
   }
