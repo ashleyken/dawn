@@ -302,9 +302,9 @@
         "16583237645df48e0c-0": {
           "type": "heading",
           "settings": {
-            "heading": "OFFICIAL CAR MATS",
+            "heading": "CAR MATS by OFFICIAL CAR MATS",
             "heading_size": "h1",
-            "use_h1_tags_for_header": false,
+            "use_h1_tags_for_header": true,
             "underline_header": false
           }
         },
