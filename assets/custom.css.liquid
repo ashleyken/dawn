@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 
 .find_my_car_holder {
 	background: rgba(var(--color-base-accent-1));
-	padding: 1rem 3rem;
+	
 	text-align: center;
 	font-weight: 700;
 	font-size: 2.4rem;
@@ -338,14 +338,23 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 	margin-top: 3rem;
 	z-index: 1;
 }
+.find_my_car_holder_section {
+	padding: 1rem 3rem;
+	background: #39585D;
+}
 @media screen and (min-width: 750px) {
 	.find_my_car_holder {
-		padding: 2rem 5rem;
 		position: relative;
 		margin-top: -7rem;
 		font-size: 4rem;
 	}
+	.find_my_car_holder_section {
+		padding: 2rem 5rem;
+	}
 }
+
+
+
 .find_my_car_title {
 	color: rgba(var(--color-base-solid-button-labels));
 }
