@@ -89,25 +89,28 @@
 
 <script>
 
-// need to send this to proc_lookup so we can generate full URLs including the collection handle
-let collectionHandle = '';
-
-if (document.querySelector("#collectionHandle") && document.querySelector("#collectionHandle").value) {
-	let collectionHandle_input = document.querySelector("#collectionHandle");
-	collectionHandle = '/collections/' + collectionHandle_input.value;
-} 
-
-
-
 // don't show boot options if we're on a sports page, check to see if categoryBanner exists (generated in /sections/category-banner.liquid)
 let hide_boot_options = '';
 if (document.querySelector("#categoryBanner")) {
 	hide_boot_options = 1;
 }
 
-// only show boot options if we're on a boot liner page
-let only_boot_options = collectionHandle.match(/Boot/i);
-console.log('OBO' + only_boot_options);
+// only show boot options if we're on a boot liner page, set it from the collection just below
+let only_boot_options = '';
+
+
+// need to send this to proc_lookup so we can generate full URLs including the collection handle
+let collectionHandle = '';
+
+if (document.querySelector("#collectionHandle") && document.querySelector("#collectionHandle").value) {
+	let collectionHandle_input = document.querySelector("#collectionHandle");
+	collectionHandle = '/collections/' + collectionHandle_input.value;
+	
+	only_boot_options = collectionHandle.match(/Boot/i);
+} 
+
+
+
 
 
 window.theme = window.theme || {};
@@ -182,7 +185,14 @@ window.theme.mam = {% render "lookup_json" %};
 						// don't return
 					}
 					else {
-						return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`;
+						if (only_boot_options) {
+							if (boot_checker) {
+								return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`;
+							}
+						}
+						else {
+							return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`;
+						}
 					}
 				});
 
