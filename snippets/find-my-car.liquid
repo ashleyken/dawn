@@ -99,6 +99,7 @@ if (document.querySelector("#collectionHandle") && document.querySelector("#coll
 } 
 
 // don't show boot options if we're on a sports page, check to see if category_banner exists (generated in /sections/category-banner.liquid)
+let hide_boot_options = '';
 if (document.querySelector("#category_banner") && document.querySelector("#category_banner").value) {
 	let hide_boot_options = 1;
 }
