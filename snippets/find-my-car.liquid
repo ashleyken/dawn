@@ -98,10 +98,12 @@ if (document.querySelector("#collectionHandle") && document.querySelector("#coll
 	// don't show boot options if we've got a collectionHandle value
 } 
 
-// don't show boot options if we're on a sports page, check to see if category_banner exists (generated in /sections/category-banner.liquid)
+
+
+// don't show boot options if we're on a sports page, check to see if categoryBanner exists (generated in /sections/category-banner.liquid)
 let hide_boot_options = '';
-if (document.querySelector("#category_banner")) {
-	let hide_boot_options = 1;
+if (document.querySelector("#categoryBanner")) {
+	hide_boot_options = 1;
 }
 console.log('HBO' + hide_boot_options);
 
