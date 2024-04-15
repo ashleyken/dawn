@@ -98,6 +98,11 @@ if (document.querySelector("#collectionHandle") && document.querySelector("#coll
 	// don't show boot options if we've got a collectionHandle value
 } 
 
+// don't show boot options if we're on a sports page, check to see if category_banner exists (generated in /sections/category-banner.liquid)
+if (document.querySelector("#category_banner") && document.querySelector("#category_banner").value) {
+	let hide_boot_options = 1;
+}
+
 
 window.theme = window.theme || {};
 
@@ -161,23 +166,19 @@ window.theme.mam = {% render "lookup_json" %};
 			.then(function(data){ 
 				let json = JSON.parse(data.replace(/(<([^>]+)>)/gi, ""));
 
-				// don't show boot options if we've got a collectionHandle value
-				// not really sure why we did this intentionally, I'll turn it off 22/11/23
+				// don't show boot options if we've got a hide_boot_options value
 
-
-				/*
 				let mats_html = json.products.map(function(mat){
 					
 					let boot_checker = mat.title.match(/Boot/i);
 					
-					if (collectionHandle && boot_checker) {
+					if (hide_boot_options && boot_checker) {
 						// don't return
 					}
 					else {
 						return `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`;
 					}
 				});
-				*/
 
 				let mats_html = json.products.map(mat=> `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`);
 				
