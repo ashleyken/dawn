@@ -105,7 +105,8 @@ let hide_boot_options = '';
 if (document.querySelector("#categoryBanner")) {
 	hide_boot_options = 1;
 }
-console.log('HBO' + hide_boot_options);
+
+// only show boot options if we're on a boot liner page
 
 
 window.theme = window.theme || {};
@@ -184,6 +185,7 @@ window.theme.mam = {% render "lookup_json" %};
 					}
 				});
 
+				// use this instead if we're not checking for boots
 				// let mats_html = json.products.map(mat=> `<option value="{{ shop.secure_url }}${collectionHandle}/products/${mat.handle}">${mat.title}</option>`);
 				
 
@@ -221,7 +223,8 @@ window.theme.mam = {% render "lookup_json" %};
 	
 			let formData = {
 				reg: fMCLookupInput.value,
-				collectionHandle: collectionHandle
+				collectionHandle: collectionHandle,
+				hide_boot_options: hide_boot_options
 			};
 			
 			fetch("https://cms.officialcarmats.co.uk/proc_lookup.php", {
