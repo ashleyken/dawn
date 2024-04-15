@@ -89,13 +89,12 @@
 
 <script>
 
+// need to send this to proc_lookup so we can generate full URLs including the collection handle
 let collectionHandle = '';
 
 if (document.querySelector("#collectionHandle") && document.querySelector("#collectionHandle").value) {
 	let collectionHandle_input = document.querySelector("#collectionHandle");
 	collectionHandle = '/collections/' + collectionHandle_input.value;
-	// console.log(collectionHandle);
-	// don't show boot options if we've got a collectionHandle value
 } 
 
 
@@ -107,6 +106,8 @@ if (document.querySelector("#categoryBanner")) {
 }
 
 // only show boot options if we're on a boot liner page
+let only_boot_options = collectionHandle.match(/Boot/i);
+console.log('OBO' + only_boot_options);
 
 
 window.theme = window.theme || {};
