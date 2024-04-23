@@ -3,6 +3,7 @@ const addCookieInformationConsentScript = () => {
 const consentScript = document.createElement('script');
 consentScript.setAttribute('src','https://policy.app.cookieinformation.com/uc.js');
 consentScript.setAttribute('data-culture', 'EN');
+consentScript.setAttribute('data-gcm-version', '2.0');
 consentScript.id = 'CookieConsent';
 document.head.appendChild(consentScript);
 };
