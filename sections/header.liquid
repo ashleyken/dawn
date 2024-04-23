@@ -1,5 +1,4 @@
-    <script>
-
+<script>
 // Define dataLayer and the gtag function.
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -12,12 +11,10 @@ gtag('consent', 'default', {
   'ad_personalization': 'denied',
   'analytics_storage': 'denied'
 });
-
-gtag('set', 'ads_data_redaction', true);
-
 </script>
 
-{% render 'cookie-information-consent' %}    
+<script id="CookieConsent" src="https://policy.app.cookieinformation.com/uc.js"
+    data-culture="EN" data-gcm-version="2.0" type="text/javascript"></script>
 
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
