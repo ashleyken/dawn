@@ -1,0 +1,58 @@
+<script>
+const addCookieInformationConsentScript = () => {
+const consentScript = document.createElement('script');
+consentScript.setAttribute('src','https://policy.app.cookieinformation.com/uc.js');
+consentScript.setAttribute('data-culture', 'EN');
+consentScript.id = 'CookieConsent';
+document.head.appendChild(consentScript);
+};
+
+const setupListenerForConsentGathering = () => {
+window.addEventListener("CookieInformationConsentGiven", () => {
+let consent = {};
+let consentSignals = {};
+
+if (window.CookieInformation) {
+consent = window.CookieInformation._getCookieValue('CookieInformationConsent');
+consent = JSON.parse(consent);
+
+if (consent) {
+consentSignals = consent.consents_approved || [];
+consentSignals = consentSignals.reduce((acc,curr)=> (acc[curr]=true,acc),{});
+}
+}
+
+customerPrivacyAPIReady = setInterval(() => {
+if (window.Shopify.customerPrivacy) {
+clearInterval(customerPrivacyAPIReady);
+window.Shopify.customerPrivacy.setTrackingConsent(
+{
+"analytics": consentSignals['cookie_cat_statistic'] || false,
+"marketing": consentSignals['cookie_cat_marketing'] || false,
+"preferences": consentSignals['cookie_cat_functional'] || false,
+"sale_of_data": consentSignals['cookie_cat_marketing'] || false,
+},
+() => console.log("Cookie Information: consent gathered"),
+);
+}
+}, 100);
+});
+};
+
+window.Shopify.loadFeatures(
+[
+{
+name: 'consent-tracking-api',
+version: '0.1',
+},
+],
+error => {
+if (error) {
+throw error; 
+}
+setupListenerForConsentGathering();
+addCookieInformationConsentScript(); 
+}
+);
+
+</script>
