@@ -120,6 +120,90 @@
       "settings": {
       }
     },
+    "rich_text_BPTHxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zQK4Yc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Prestige & Premium Car Mats",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": true,
+            "underline_header": false
+          }
+        },
+        "text_Pj9DL4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Looking for a new set of Luxury Car Mats? You can search for an exact match of your make and model using our car registration plate lookup tool, or call our friendly team. We are happy to help you choose the right set for your vehicle.<\/p><p>We've been manufacturing Luxury <a href=\"https:\/\/officialcarmats.co.uk\/\" title=\"https:\/\/officialcarmats.co.uk\/\">Car Mats<\/a> for nearly 30 years now with over 5,000, 5 star reviews on TrustPilot, so you can trust we will deliver on our promise! <\/p><p>Our Luxury Car Mats are precision cut to fit any car, and we offer a wide range of different materials, colours and personalisation options.<\/p><p>When it comes to Luxury Car Mats, there are a few things you should keep in mind.<\/p><p>First, you need to decide what material you want your Luxury Car Mats to be made out of. There are a few different options available, including super luxury and Prestige Car Mats. Each material has its own set of benefits and drawbacks, so you'll need to decide which one is right for you. Your choice might depend on the type of vehicle you have, but it might also depend on your lifestyle.<\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zQK4Yc",
+        "text_Pj9DL4"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "image_with_text_rcw9Hf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KqBUj6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Super Luxury Car Mats"
+          }
+        },
+        "text_9LNCEJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With our super luxury car mats, functionality meets style seamlessly. The extra thick tufted fabric not only provides unmatched comfort but also ensures exceptional durability. Each mat boasts a plush 1300g\/m2 deep pile tufted carpet that will caress your feet like a gentle cloud. Rest assured, these mats will withstand the test of time, keeping your vehicle's interior immaculate for years to come.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KqBUj6",
+        "text_9LNCEJ"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mat_super_luxury.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "image_with_text_Bngyqj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PgzyVb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Prestige Car Mats"
+          }
+        },
+        "text_BxccNa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Prestige Car Mats are the peak of luxury and quality when it comes to aftermarket automotive accessories. Crafted from the highest grades of materials, our Prestige Car Mats are designed to provide an unmatched level of comfort and sophistication to your vehicle's interior. The plush wool effect fabric is so luxurious and indulgent that it's almost impossible to resist sinking your feet into it.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PgzyVb",
+        "text_BxccNa"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Prestige-black-1-1.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -172,7 +256,7 @@
         "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mum.jpg",
+            "image": "shopify:\/\/shop_images\/Chelsea_FC_-_in_car.png",
             "title": "Football and Rugby Teams",
             "text": "<p>Are you a die-hard football or rugby fan looking to add a unique touch to your car? Or in search of the perfect gift for the sports fanatic in your life? Our <a href=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\"><span style=\"text-decoration:underline\">officially licensed football team car mats<\/span><\/a> and <a href=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\"><span style=\"text-decoration:underline\">rugby team car mats<\/span><\/a> are the ideal way to showcase team pride and loyalty.<\/p><p>Our mats, featuring the logo of your cherished team, are more than just an accessory – they're a testament to your unyielding support and a conversation starter for fellow supporters.<\/p>"
           }
@@ -210,6 +294,9 @@
   "order": [
     "7a06e8b7-1c69-4ab9-af53-5e8aae725a63",
     "f6e7e718-ef27-42c0-b193-3521a7dfcc67",
+    "rich_text_BPTHxC",
+    "image_with_text_rcw9Hf",
+    "image_with_text_Bngyqj",
     "main",
     "67fb79c6-bcd8-4fc4-9599-9a90091e429c",
     "43c5ffb8-ffa4-4817-8f29-4b1a23641685"
