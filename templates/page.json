@@ -120,34 +120,9 @@
       "settings": {
       }
     },
-    "rich_text_BPTHxC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_zQK4Yc": {
-          "type": "heading",
-          "settings": {
-            "heading": "Prestige & Premium Car Mats",
-            "heading_size": "h1",
-            "use_h1_tags_for_header": true,
-            "underline_header": false
-          }
-        },
-        "text_Pj9DL4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Looking for a new set of Luxury Car Mats? You can search for an exact match of your make and model using our car registration plate lookup tool, or call our friendly team. We are happy to help you choose the right set for your vehicle.<\/p><p>We've been manufacturing Luxury <a href=\"https:\/\/officialcarmats.co.uk\/\" title=\"https:\/\/officialcarmats.co.uk\/\">Car Mats<\/a> for nearly 30 years now with over 5,000, 5 star reviews on TrustPilot, so you can trust we will deliver on our promise! <\/p><p>Our Luxury Car Mats are precision cut to fit any car, and we offer a wide range of different materials, colours and personalisation options.<\/p><p>When it comes to Luxury Car Mats, there are a few things you should keep in mind.<\/p><p>First, you need to decide what material you want your Luxury Car Mats to be made out of. There are a few different options available, including super luxury and Prestige Car Mats. Each material has its own set of benefits and drawbacks, so you'll need to decide which one is right for you. Your choice might depend on the type of vehicle you have, but it might also depend on your lifestyle.<\/p>",
-            "read_more_enabled": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_zQK4Yc",
-        "text_Pj9DL4"
-      ],
+    "main": {
+      "type": "main-page",
       "settings": {
-        "color_scheme": "none",
-        "full_width": false,
-        "remove_top_padding": false
       }
     },
     "image_with_text_rcw9Hf": {
@@ -204,9 +179,54 @@
         "layout": "image_first"
       }
     },
-    "main": {
-      "type": "main-page",
+    "rich_text_R6FwHV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Xe3EiK": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>HOW MUCH PROTECTION DO YOU WANT?<\/h2><p>If you're looking for protection, our rubber mats might be the perfect fit for you. They are easy to clean and offer great protection for your car's interior. <\/p><p><\/p><h2>HOW MUCH DRIVING DO YOU DO?<\/h2><p>If you are looking for a more quality drive, our super luxury or Prestige Car Mats might be the best option for you.<\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "text_Xe3EiK"
+      ],
       "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "rich_text_BPTHxC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zQK4Yc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium Car Mats",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "text_Pj9DL4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Floor mats play an important role in protecting your car's interior, they can also be a great way to add a touch of your own style.<\/p><p>All our Luxury Car Mats and boot liners are available in carpet and rubber and are non-slip and water resistant.<\/p><p>Second, you need to consider the colour of your mats. You can choose from a huge variety of different colours, so you'll definitely be able to find something that matches your car's interior.<\/p><p>Finally, you need to decide if you want to personalise your Premium Car Mats. This is a great way to add your own style to your car. If you are buying a gift for a car enthusiast you can add text and even the logo of a favourite sports team to create a unique present you know they'll love.<\/p><p>If you keep these things in mind, you should be able to find the perfect Premium Car Mats  for your needs.<\/p><h2>LUXURY CAR MATS WITH LOGOS<\/h2><p>We use the highest standard of materials for all of our Luxury Car Mats so that you can get quality, long-lasting flooring which is both fit for purpose and great value. <\/p><p>Our stitching is all high quality to ensure a top end finish with every single one we sell.<\/p><p>We never scrimp on cost when buying materials as our goal is to create customer satisfaction by providing long lasting products made from first class materials taking out thinking about keeping your car safe intact.<\/p><p>Where possible we use recycled materials so that we can help do our bit for the environment.<\/p><p>Luxury Car Mats are an important part of every car and here at Official Car Mats we take that very seriously, that's why we only ever provide the best.<\/p><p>It's not just about enhancing the aesthetic appeal of your vehicle's interior; they also offer an opportunity for personalisation and customisation.<\/p><p>In addition to their premium materials and exceptional craftsmanship, these floor mats can be further tailored to reflect your unique style and interests.<\/p><p>One popular customisation option is the ability to add the logo of your favourite sports teams to the floor mats. If you're a die-hard fan of a local football or rugby team, or you know someone who would appreciate the unique gift, these Luxury Car Mats can proudly display the badge of your choice.<\/p><p>Search for your make and model by registration, then add customisations on the product page before checkout.<\/p><h2>PRESTIGE CAR MATS CUT WITH PRECISION <\/h2><p>Our Prestige Car Mats are CAD cut from over 3,000 mat shapes from a roll of fabric using leading technology, to produce the exact fit tailored to your car.<\/p><p>Then we add binding and a heel pad to reinforce the mat on the Classic, and Classic Velour and Super Luxury, to protect the wear and tear from your heels whilst driving.<\/p><p>The mats are then installed with a compatible securing clip.  Most manufacturers have their own fitting system.  We install these by hand so the mats fit to the exact location required for the vehicle.<\/p><p>We use a high tech process which ensures that all of our Luxury Car Mats are made to an extremely high standard. This process starts with a computer generated pattern which is then cut out of a roll of fabric. The mat is then bound and a heel pad is added to reinforce it. Finally, the mat is installed with a compatible securing clip.<\/p><p><\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zQK4Yc",
+        "text_Pj9DL4"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
       }
     },
     "67fb79c6-bcd8-4fc4-9599-9a90091e429c": {
@@ -250,7 +270,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/personalised_car_mats.jpg",
             "title": "Personalised Gifts",
-            "text": "<p>Looking for the perfect gift for the car enthusiast in your life, the parent who's always on taxi duty, or someone who's just earned their driving freedom?<\/p><p>For those who love their cars almost as much as they love their family, a set of our <a href=\"https:\/\/officialcarmats.co.uk\/pages\/personalised-gifts\"><span style=\"text-decoration:underline\">personalised car mats<\/span><\/a> will make the perfect gift. Choose a style that matches their car's interior, select the car carpets and trim options that suits their personality, and finish off with our personalised embroidery to add that special touch.<\/p>"
+            "text": "<p>Looking for the perfect gift for the car enthusiast in your life, the parent who's always on taxi duty, or someone who's just earned their driving freedom?<\/p><p>For those who love their cars almost as much as they love their family, a set of our Luxury Car Mats will make the perfect gift. Choose a style that matches their car's interior, select the car carpets and trim options that suits their personality, and finish off with our personalised embroidery to add that special touch.<\/p>"
           }
         },
         "template--15125940109498__43c5ffb8-ffa4-4817-8f29-4b1a23641685-16860679278a9500ce-1": {
@@ -294,10 +314,11 @@
   "order": [
     "7a06e8b7-1c69-4ab9-af53-5e8aae725a63",
     "f6e7e718-ef27-42c0-b193-3521a7dfcc67",
-    "rich_text_BPTHxC",
+    "main",
     "image_with_text_rcw9Hf",
     "image_with_text_Bngyqj",
-    "main",
+    "rich_text_R6FwHV",
+    "rich_text_BPTHxC",
     "67fb79c6-bcd8-4fc4-9599-9a90091e429c",
     "43c5ffb8-ffa4-4817-8f29-4b1a23641685"
   ]
