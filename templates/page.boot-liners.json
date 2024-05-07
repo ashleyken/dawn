@@ -126,6 +126,167 @@
       "settings": {
       }
     },
+    "multicolumn_Tbb9if": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YKFwN9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Super_Luxury_Car_Mats.webp",
+            "title": "",
+            "text": ""
+          }
+        },
+        "column_McfVPU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mat_rubber.jpg",
+            "title": "",
+            "text": ""
+          }
+        },
+        "column_WTAzPV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/prestige-black-1-6-2-nu-buck-binding.jpg",
+            "title": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YKFwN9",
+        "column_McfVPU",
+        "column_WTAzPV"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "square",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "rich_text_CEXiid": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_U8wEqp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Durable Car Boot Liners",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "text_CwHGmm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choose from a variety of durable materials for your Car Boot Liners, including heavy-duty rubber for maximum protection or luxury carpet for a refined look. You also have a choice of colours for your Boot Mat to match or contrast with your vehicle’s interior. <\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_U8wEqp",
+        "text_CwHGmm"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "rich_text_wJWpEy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FG6BBL": {
+          "type": "heading",
+          "settings": {
+            "heading": "QUALITY CAR BOOT LINERS",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "text_gt6Vtm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We take pride in using the finest materials to ensure exceptional quality and durability. Our Car Boot Liners are designed to withstand daily wear and tear, providing heavy duty protection for your car's interior from dirt, spills, and damage.<\/p><p>Whether frequent traveller, or an outdoor enthusiast, or a busy parent, our Car Boot Liners provide reliable protection for your vehicle. <\/p><h3><strong>How much Protection do you want?<\/strong><\/h3><p>Nobody wants a muddy boot, so if you're looking for protection, our rubber boot liners might be the perfect fit for you. For our fellow dog owners, our rubber boot liners are easy to clean and offer great protection for your car boot. <\/p><h3><strong>What Style do you want?<\/strong><\/h3><p>If you are looking for a more quality feeling Car Boot Liner, our super luxury boot mats might be the best option for you.<\/p><p>Take a look at our quality car mat options to see the types of materials available for your boot liner.<\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_FG6BBL",
+        "text_gt6Vtm"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
+    "image_with_text_d6cJG8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gRHWMy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Personalised Car Boot Liners"
+          }
+        },
+        "text_Jb9iAy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We offer personalisation for your Car Boot Liners like choosing stitching staples and colours to make your boot liner truly bespoke. Whether you're looking to protect against dirt and spills or add a stylish touch to your vehicle, our Car Boot Liners are tailored to suit your lifestyle and aesthetic preferences.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gRHWMy",
+        "text_Jb9iAy"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/full-colours.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "rich_text_kkibBN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_683JrA": {
+          "type": "heading",
+          "settings": {
+            "heading": "MADE TO MEASURE CAR BOOT LINERS",
+            "heading_size": "h1",
+            "use_h1_tags_for_header": false,
+            "underline_header": false
+          }
+        },
+        "text_UkqW6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Official Car Mats, we understand the importance of a perfect fit. That's why our Car Boot Liners are meticulously crafted to match the precise specifications of your car model. With our expertise and attention to detail, your new Car Boot Liner will seamlessly integrate into your vehicle, requiring no modifications.<\/p><p>All of our Car Boot Liners are designed specifically to your recommendations, we have a search by reg function at the top of this page that allows us to find your car's make and model, so we will have all the necessary measurements for the boot of your car, so you will have easy to fit custom boot liners to fit your vehicle's specific dimensions.<\/p>",
+            "read_more_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_683JrA",
+        "text_UkqW6C"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "full_width": false,
+        "remove_top_padding": false
+      }
+    },
     "9a2ef893-9add-412b-8940-bec3b1a00037": {
       "type": "multicolumn",
       "blocks": {
@@ -141,7 +302,7 @@
           "type": "column",
           "settings": {
             "title": "Easy Ordering Process",
-            "text": "<p>Ordering your boot liner is quick and convenient. Simply select your car brand and model from our extensive range, and we'll ensure a perfect fit. With our secure online ordering system, you can confidently complete your purchase and have your Custom Boot Liners delivered directly to your doorstep.<\/p>"
+            "text": "<p>Ordering your Car Boot Mat is quick and convenient. Simply select your car brand and model from our extensive range, and we'll ensure a perfect fit. With our secure online ordering system, you can confidently complete your purchase and have your Custom Boot Liners delivered directly to your doorstep.<\/p>"
           }
         },
         "template--15741908549818__9a2ef893-9add-412b-8940-bec3b1a00037-16896753753f59ded5-2": {
@@ -183,7 +344,7 @@
         "template--15741908549818__6398dada-ea3c-466b-973d-7c9faa43fadf-1689675838f86dfe06-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At Official Car Mats, we take pride in being a leading UK manufacturer of Custom Boot Liners and <a href=\"https:\/\/officialcarmats.co.uk\" title=\"https:\/\/officialcarmats.co.uk\">car mats<\/a> that are tailor-made to fit perfectly in whatever make and model your vehicle. With over three decades of experience and over 5,000, 5 star reviews on TrustPilot, you can trust us to deliver on our promise. <\/p><p>With our wealth of experience and dedication to excellence, Official Car Mats is your trusted partner for tailored boot liners. Join thousands of satisfied customers who have chosen our products to enhance and protect their vehicles.<\/p><p>If you are interested in ordering our car boot mats then you may also be interested in some of our officially licenced <br\/><a href=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\" title=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\">football team car mats<\/a> or our <a href=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\" title=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\">rugby team car mats<\/a>. <br\/><br\/>Order your Custom Boot Liners today and experience the unbeatable combination of precision and quality from Official Car Mats. Your vehicle deserves the best car boot mats.<\/p>",
+            "text": "<p>At Official Car Mats, we take pride in being a leading UK manufacturer of Car Boot Liners that are tailor-made to fit perfectly in whatever make and model your vehicle. With over three decades of experience and over 5,000, 5 star reviews on TrustPilot, you can trust us to deliver on our promise. <\/p><p>With our wealth of experience and dedication to excellence, Official Car Mats is your trusted partner for tailored boot liners. Join thousands of satisfied customers who have chosen our products to enhance and protect their vehicles.<\/p><p>If you are interested in ordering our car boot mats then you may also be interested in some of our officially licenced <br\/><a href=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\" title=\"https:\/\/officialcarmats.co.uk\/collections\/football-team-car-mats\">football team car mats<\/a> or our <a href=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\" title=\"https:\/\/officialcarmats.co.uk\/collections\/rugby-teams\">rugby team car mats<\/a>. <br\/><br\/>Order your Car Boot Liners today and experience the unbeatable combination of precision and quality from Official Car Mats. Your vehicle deserves the best car boot mats.<\/p>",
             "read_more_enabled": false
           }
         },
@@ -215,6 +376,11 @@
     "da9bdbc7-9646-4143-ad85-14f761b946c0",
     "efacfb9c-da8c-4d99-8c3e-3093bee3b63c",
     "main",
+    "multicolumn_Tbb9if",
+    "rich_text_CEXiid",
+    "rich_text_wJWpEy",
+    "image_with_text_d6cJG8",
+    "rich_text_kkibBN",
     "9a2ef893-9add-412b-8940-bec3b1a00037",
     "6398dada-ea3c-466b-973d-7c9faa43fadf"
   ]
