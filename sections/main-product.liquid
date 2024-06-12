@@ -78,7 +78,15 @@
                   abortTeamTimer();
                 }
               
-                let mwPrestige = document.querySelector('[data-value-id="v_115734"]');
+                let mwPrestige;
+                
+                if (document.querySelector('[data-value-id="v_115734"]')) {
+                  mwPrestige = document.querySelector('[data-value-id="v_115734"]');
+                }
+                else if (document.querySelector('[data-value-id="v_14455868"]')) {
+                  mwPrestige = document.querySelector('[data-value-id="v_14455868"]');
+                }
+                
                 if (mwPrestige) {
                   mwPrestige.style.display = "none";
                 }
@@ -86,7 +94,7 @@
                 
                 let mwSelectMenu;
                 
-                if(document.getElementById("select_o_21162")) {
+                if (document.getElementById("select_o_21162")) {
                   mwSelectMenu = document.getElementById("select_o_21162");
                 }
                 else if (document.getElementById("select_o_1728298")) {
