@@ -84,7 +84,12 @@
                 }
                 
                 
-                let mwSelectMenu = document.getElementById("select_o_21162");
+                if(document.getElementById("select_o_21162")) {
+                  let mwSelectMenu = document.getElementById("select_o_21162");
+                }
+                else if (document.getElementById("select_o_1728298")) {
+                  let mwSelectMenu = document.getElementById("select_o_1728298");
+                }
                 
                 if (mwSelectMenu) {
                   
