@@ -184,6 +184,9 @@ window.theme.mam = {% render "lookup_json" %};
 
 				let mats_html = json.products.map(function(mat){
 					
+					console.log(mat);
+					console.log(mat.product_type);
+					
 					let boot_checker = mat.title.match(/Boot/i);
 					
 					if ((hide_boot_options == 1) && boot_checker) {
