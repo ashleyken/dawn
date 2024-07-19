@@ -144,7 +144,7 @@
               {{- product.description -}}
             </h1>
             
-            <div class="product__instructions"><b>Keep scrolling to the next step to choose the material you want for your {{ product.vendor | escape }} {{- product.description  | strip_html | strip -}}{% if product.description contains 'Boot' %} boot matselect from the colour and binding options and add to cart.{% else %} car mat, select from the colour and binding options and add to cart.<br><br>For a little bit of extra fun you can also choose to personalise your mats with your own text or you can pick from a large number of out official licensed football and rugby teams.{% endif %}</b></div>
+            <div class="product__instructions"><b>Keep scrolling to the next step to choose the material you want for your {{ product.vendor | escape }} {{- product.description  | strip_html | strip -}}{% if product.description contains 'Boot' %}, select from the colour and binding options and add to cart.{% else %}, select from the colour and binding options and add to cart.<br><br>For a little bit of extra fun you can also choose to personalise your mats with your own text or you can pick from a large number of out official licensed football and rugby teams.{% endif %}</b></div>
             
             
             {%- if product.metafields.mat_options.size_name.value != blank %}
