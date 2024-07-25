@@ -69,7 +69,16 @@
 
 
 <div class="page-width center">
-  <h1 class="manufacturer_banner_h1">{{- collection.title | escape -}}</h1>
+  <h1 class="manufacturer_banner_h1">
+    {% if collection.title contains 'Boot' %}
+    
+    {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} Boot liners
+    
+    {% else %}
+    
+    {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} Car Mats
+    
+    {% endif %}</h1>
   
   <div id="shopify-section-manufacturer_banner">
   <div class="rte line-clamp-finder line-clamp-3">{{ collection.description }}</div>
