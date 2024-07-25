@@ -42,19 +42,18 @@
       <ul>
         {% if collection.title contains 'Boot' %}
         
-        <li>Boot liners to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
-        <li>Tailored to fit Boot Liners</li>
+        <li>{{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} Boot liners from {{ lowest_price | money }}</li>
         
         {% else %}
         
-        <li>Car Mats to fit {{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} from {{ lowest_price | money }}</li>
-        <li>Personalise your Tailored to Fit Floor Mats</li>
+        <li>{{ collection.title | escape | remove: "Custom Floor Mats to fit "  | remove: "Custom Car Boot Liners to fit "  | remove: " cars" }} Car Mats from {{ lowest_price | money }}</li>
         
         {% endif %}
         
-        <li>British Manufacturer</li>
+        <li>Tailored to Fit!</li>
         <li>Free UK delivery</li>
         <li>UK Market leaders for over 30 years</li>
+        <li>After market British Manufacturer</li>
       <ul>
     </div>
   
