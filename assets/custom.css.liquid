@@ -115,10 +115,31 @@ thicken and colour border bottom
 	width: 50px;
 	height: 50px;
 }
+
+.header_logo_strip {
+	background-color: rgba(var(--color-base-accent-1));
+	display: flex;
+	justify-content: center;
+}
+.header_logo_new {
+	height: 50px;
+	margin: 20px 0;
+	display: block;
+}
+
 /*
 add ribbon
 */
 @media screen and (min-width: 990px) {
+	
+	.header_logo_new {
+		height: 60px;
+	}
+	.header--middle-left .header__inline-menu {
+		text-align: center;
+		padding-left: 120px;
+	}
+
 	.header {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -143,7 +164,7 @@ add ribbon
 	
 	.header__submenu.list-menu {
 		width: auto;
-		background: #97b6b7;
+		background: #84abd5;
 	}
 	.header__submenu .list-menu__item {
 		color: rgba(var(--color-base-solid-button-labels));
@@ -164,7 +185,7 @@ add ribbon
 	}
 }
 .menu-drawer__navigation, .menu-drawer__inner-submenu {
-	background: #97b6b7;
+	background: #84abd5;
 }
 .menu-drawer__navigation .link--text {
 	color: rgba(var(--color-base-solid-button-labels));
@@ -177,7 +198,7 @@ add ribbon
 }
 .footer::after{
 	content: '';
-	background-image: url('{{ "OCM_logo.svg" | asset_url }}');
+	background-image: url('{{ "OCM_logo_circle_new.png" | asset_url }}');
 	background-size: cover;
 	width: 80px;
 	height: 80px;
@@ -262,7 +283,7 @@ there's a separate /assets/section-footer.css included within /sections/footer.l
 
 
 .content-for-layout {
-	background: linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(92,145,150,1) 100%);
+	background: linear-gradient(180deg, rgba(255,255,255,1) 75%, rgba(107,146,189,1) 100%);
 }
 
 .button, .button-label, .shopify-challenge__button, .customer button {
@@ -340,7 +361,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
 }
 .find_my_car_holder_section {
 	padding: 1rem 3rem;
-	background: #39585D;
+	background: rgba(var(--color-base-accent-1));
 }
 @media screen and (min-width: 750px) {
 	.find_my_car_holder {

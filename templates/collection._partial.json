@@ -1,12 +1,13 @@
 {
-	"layout": false,
-	"wrapper": "",
-	"sections": {
-		"partial": {
-			"type": "partial-collection"
-		}
-	},
-	"order": [
-		"partial"
-	]
+  "layout": false,
+  "sections": {
+    "partial": {
+      "type": "partial-collection",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "partial"
+  ]
 }
