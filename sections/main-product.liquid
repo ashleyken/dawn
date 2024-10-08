@@ -66,8 +66,44 @@
               
               <script>
               
-              let teamName = document.querySelector("#teamName").value;
-              let teamTimer = setInterval(selectBadge, 200);
+              const teamName = document.querySelector("#teamName").value;
+              const teamTimer = setInterval(selectBadge, 200);
+              
+              const teamLookup = {
+                "Barnsley FC" : "v_16639280",
+                "Blackburn Rovers FC" : "v_17380361",
+                "Bolton Wanderers" : "v_16639281",
+                "Brentford FC" : "v_16639282",
+                "Brighton & Hove Albion" : "v_16639283",
+                "Celtic FC" : "v_17499485",
+                "Chelsea FC" : "v_16639284",
+                "Crystal Palace" : "v_16639285",
+                "Hartlepool United FC" : "v_17380362",
+                "Heart of Midlothian FC" : "v_16639287",
+                "Huddersfield Town" : "v_16639288",
+                "Kilmarnock" : "v_16639289",
+                "Leeds United" : "v_16639290",
+                "Norwich City FC" : "v_16639291",
+                "QPR" : "v_16639292",
+                "Rangers FC" : "v_16639293",
+                "Rotherham United FC" : "v_17380363",
+                "St Helens RFC" : "v_16639296",
+                "Warrington Wolves" : "v_16639297",
+                "Watford FC" : "v_17380364",
+                "Wigan Athletic" : "v_16639295",
+                "Wigan Warriors" : "v_16639298",
+              }
+              
+              function getTeamID(value) {
+                for (const [team, id] of Object.entries(teamLookup)) {
+                  if (team === value) {
+                    return id;
+                  }
+                }
+                return null; // Return null if not found
+              }
+              
+              const teamID = getTeamID(teamName);
               
               function abortTeamTimer() { // to be called when you want to stop the timer
                 clearInterval(teamTimer);
@@ -79,44 +115,30 @@
                 if (!teamName) {
                   abortTeamTimer();
                 }
+                if (!teamID) {
+                  abortTeamTimer();
+                }
               
                 let mwPrestige;
                 
-                if (document.querySelector('[data-value-id="v_115734"]')) {
-                  mwPrestige = document.querySelector('[data-value-id="v_115734"]');
+                if (document.querySelector('[data-value-id="v_16639227"]')) {
+                  mwPrestige = document.querySelector('[data-value-id="v_16639227"]');
                 }
-                else if (document.querySelector('[data-value-id="v_14455868"]')) {
-                  mwPrestige = document.querySelector('[data-value-id="v_14455868"]');
+                else if (document.querySelector('[data-value-id="v_16639226"]')) {
+                  mwPrestige = document.querySelector('[data-value-id="v_16639226"]');
                 }
-                
                 if (mwPrestige) {
                   mwPrestige.style.display = "none";
                 }
                 
                 
-                let mwSelectMenu;
+                let teamRadio;
+                const clickEvent = new MouseEvent('click', {button: 0, which: 1});
                 
-                if (document.getElementById("select_o_21162")) {
-                  mwSelectMenu = document.getElementById("select_o_21162");
-                }
-                else if (document.getElementById("select_o_1728298")) {
-                  mwSelectMenu = document.getElementById("select_o_1728298");
-                }
-                
-                if (mwSelectMenu) {
-                  
-                  for (i = 0; i < mwSelectMenu.length; ++i){
-                    // console.log(mwSelectMenu.options[i].text);
-                    // console.log(teamName + ' (+£9.00)');
-                    if (mwSelectMenu.options[i].text == teamName + ' (+£9.00)'){
-                      console.log(teamName);
-                      mwSelectMenu.options.selectedIndex = i;
-                      mwSelectMenu.dispatchEvent(new Event('change'));
-                      abortTeamTimer();
-                    }
-                  }
-                  
-                  
+                if (document.getElementById(teamID)) {
+                  teamRadio = document.getElementById(teamID);
+                  teamRadio.dispatchEvent(clickEvent);
+                  abortTeamTimer();
                 }
               
               }
