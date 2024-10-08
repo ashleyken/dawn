@@ -135,7 +135,7 @@
         "8c005f20-89ad-4479-a75b-103a4165bb61": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/genericQuality2.png",
+            "image": "shopify://shop_images/OCM_-_Sports_Team_Mat_Quality.png",
             "title": "",
             "text": ""
           }
@@ -154,8 +154,8 @@
         "image_ratio": "square",
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "shopify://pages/personalised-gifts",
+        "button_label": "Start Customising",
+        "button_link": "#shopify-section-template--15140007510202__70ee57bc-e722-4aab-8a48-1519b4502528",
         "swipe_on_mobile": true
       }
     },
