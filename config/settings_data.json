@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "colors_solid_button_labels": "#FFFFFF",
@@ -11,10 +20,10 @@
     "type_header_font": "sans-serif",
     "type_body_font": "sans-serif",
     "page_width": "1600",
-    "social_twitter_link": "http:\/\/www.twitter.com\/officialcarmats",
-    "social_facebook_link": "https:\/\/www.facebook.com\/OFFICIALCARMATS\/",
-    "social_pinterest_link": "http:\/\/www.pinterest.com\/officialcarmats\/",
-    "favicon": "shopify:\/\/shop_images\/OCM_NEW_LOGO.png",
+    "social_twitter_link": "http://www.twitter.com/officialcarmats",
+    "social_facebook_link": "https://www.facebook.com/OFFICIALCARMATS/",
+    "social_pinterest_link": "http://www.pinterest.com/officialcarmats/",
+    "favicon": "shopify://shop_images/OCM_NEW_LOGO.png",
     "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
@@ -39,7 +48,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/carmatslogo.png",
+          "logo": "shopify://shop_images/carmatslogo.png",
           "logo_width": 250,
           "logo_position": "middle-left",
           "menu": "main-menu",
@@ -54,14 +63,14 @@
             "type": "text",
             "settings": {
               "heading": "Address",
-              "subtext": "<p>Official Car Mats<\/p><p>Unit 5, East Chorley Business Park<\/p><p>Chorley<\/p><p>Lancashire<\/p><p>PR6 0BJ<\/p><p>UK<\/p>"
+              "subtext": "<p>Official Car Mats</p><p>Unit 5, East Chorley Business Park</p><p>Chorley</p><p>Lancashire</p><p>PR6 0BJ</p><p>UK</p>"
             }
           },
           "dfcaa1c8-fc60-400b-abca-96dd41cdb361": {
             "type": "text",
             "settings": {
               "heading": "Contact Info",
-              "subtext": "<p><strong>Telephone Support<\/strong><\/p><p>+44 1257 476006<\/p><p><strong>Email<\/strong><\/p><p><a href=\"mailto:service@officialcarmats.co.uk\" target=\"_blank\" title=\"mailto:service@officialcarmats.co.uk\">service@officialcarmats.co.uk<\/a><\/p>"
+              "subtext": "<p><strong>Telephone Support</strong></p><p>+44 1257 476006</p><p><strong>Email</strong></p><p><a href=\"mailto:service@officialcarmats.co.uk\" target=\"_blank\" title=\"mailto:service@officialcarmats.co.uk\">service@officialcarmats.co.uk</a></p>"
             }
           },
           "footer-0": {
@@ -93,19 +102,19 @@
     ],
     "blocks": {
       "14656832010101544780": {
-        "type": "shopify:\/\/apps\/advanced-product-options\/blocks\/app-embed-block\/a1199153-7462-4b5b-8a80-f0eefba85e99",
+        "type": "shopify://apps/advanced-product-options/blocks/app-embed-block/a1199153-7462-4b5b-8a80-f0eefba85e99",
         "disabled": false,
         "settings": {
         }
       },
       "4551646370426404704": {
-        "type": "shopify:\/\/apps\/pasilobus-turbo-speed-booster\/blocks\/turbo\/b60f64a7-2618-4d56-876c-fcf619939a47",
+        "type": "shopify://apps/pasilobus-turbo-speed-booster/blocks/turbo/b60f64a7-2618-4d56-876c-fcf619939a47",
         "disabled": false,
         "settings": {
         }
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#000000",
@@ -117,7 +126,7 @@
         }
       },
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
