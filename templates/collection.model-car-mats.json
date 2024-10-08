@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "banner": {
@@ -27,9 +36,9 @@
         "16337014055bf82889-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2021-10-06_at_12.45.20.png",
+            "image": "shopify://shop_images/Screenshot_2021-10-06_at_12.45.20.png",
             "title": "Made in the UK",
-            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.<\/p>"
+            "text": "<p>Our products are supplied as NON GENUINE aftermarket car mats. We have over 25 years of experience in the industry, working with some of the biggest sporting clubs and automotive companies, to bring you top quality car mats that you would be proud to have in your car.</p>"
           }
         }
       },
@@ -62,7 +71,7 @@
         "1659702558495bef0d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.custom.text_below_models.value }}<\/p>",
+            "text": "<p>{{ collection.metafields.custom.text_below_models.value }}</p>",
             "read_more_enabled": false
           }
         }

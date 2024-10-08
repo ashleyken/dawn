@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "7a06e8b7-1c69-4ab9-af53-5e8aae725a63": {
@@ -6,7 +15,7 @@
         "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
+            "image": "shopify://shop_images/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
             "focal_point": "center center",
             "focal_point_mobile": "center center",
             "title": "",
@@ -132,7 +141,7 @@
         "template--16149582807226__978d4055-dab8-4db2-989b-f395b93f3e0a-16896772385ded602b-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We already offer FREE DELIVERY on ALL orders regardless of<br\/>spend.<\/p><p>You can now also get a further 5% discount on ALL orders over £50 with the code OCM5 at checkout.<\/p>",
+            "text": "<p>We already offer FREE DELIVERY on ALL orders regardless of<br/>spend.</p><p>You can now also get a further 5% discount on ALL orders over £50 with the code OCM5 at checkout.</p>",
             "read_more_enabled": false
           }
         }

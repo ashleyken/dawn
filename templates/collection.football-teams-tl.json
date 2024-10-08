@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "164727b3-f41a-41b5-b370-5a034feb5074": {
@@ -15,7 +24,7 @@
         "template--16134658097338__164727b3-f41a-41b5-b370-5a034feb5074-1687446419ebe42358-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Official Car Mats is proud to be officially licensed to display your team's logo on our custom football car mats.<br\/><br\/>Supporting your favourite football team takes a lot of dedication, and for many it's simply a way of life. We always want to show our support to others, whether by going to weekly games, wearing the colours with pride, or chanting along with our fellow fans.<br\/><br\/>Now you can take your football team with you by personalising your football floor mats with your team's logo. This is on top of our huge range of customisation options for all our products. Make your car's interior truly yours, while you have your pride and passion on display for all to see.<\/p>",
+            "text": "<p>Official Car Mats is proud to be officially licensed to display your team's logo on our custom football car mats.<br/><br/>Supporting your favourite football team takes a lot of dedication, and for many it's simply a way of life. We always want to show our support to others, whether by going to weekly games, wearing the colours with pride, or chanting along with our fellow fans.<br/><br/>Now you can take your football team with you by personalising your football floor mats with your team's logo. This is on top of our huge range of customisation options for all our products. Make your car's interior truly yours, while you have your pride and passion on display for all to see.</p>",
             "read_more_enabled": false
           }
         },
@@ -90,7 +99,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
             "read_more_enabled": false
           }
         },
@@ -121,7 +130,7 @@
         "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Welcome to your one-stop-shop for premium quality, officially licensed car floor mats customised with the logos of your favourite football teams. They're the ultimate ride upgrade for die-hard fans, and an exceptional gift for the football lover in your life. Imagine the surprise when they open the door of their car and see the emblem of their beloved team cheering them on from the floor!<\/p>"
+            "text": "<p>Welcome to your one-stop-shop for premium quality, officially licensed car floor mats customised with the logos of your favourite football teams. They're the ultimate ride upgrade for die-hard fans, and an exceptional gift for the football lover in your life. Imagine the surprise when they open the door of their car and see the emblem of their beloved team cheering them on from the floor!</p>"
           }
         }
       },
@@ -129,7 +138,7 @@
         "template--16134658097338__7cc64e18-1fa9-44e9-9eea-4f9a41fae8b0-16874466470f2e98cb-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/full-colours_750x_db4f0eaf-9eb2-4a93-8b78-b8720e275333.webp",
+        "image": "shopify://shop_images/full-colours_750x_db4f0eaf-9eb2-4a93-8b78-b8720e275333.webp",
         "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
@@ -151,7 +160,7 @@
         "template--16134658097338__45183ee8-365d-404e-a64d-7ba99577dcbb-1687446419ebe42358-1": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p>",
+            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}</p>",
             "read_more_enabled": true
           }
         }

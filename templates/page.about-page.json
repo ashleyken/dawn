@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -50,7 +59,7 @@
         "165832543916aa1a3f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Keep it simple and classic with a plain black binding or Choose from a wide range of bindings colours and styles to suit your own exterior or interior of your cars, what ever your taste we’ve got you covered.<\/p>",
+            "text": "<p>Keep it simple and classic with a plain black binding or Choose from a wide range of bindings colours and styles to suit your own exterior or interior of your cars, what ever your taste we’ve got you covered.</p>",
             "read_more_enabled": false
           }
         },
@@ -87,7 +96,7 @@
         "1636725727d1f273d8-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Smart and Executive – Nubuck is a sanded down grain effect.<\/p>"
+            "text": "<p>Smart and Executive – Nubuck is a sanded down grain effect.</p>"
           }
         }
       },
@@ -96,7 +105,7 @@
         "1636725727d1f273d8-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/nubuck.jpg",
+        "image": "shopify://shop_images/nubuck.jpg",
         "height": "adapt",
         "layout": "image_first"
       }
@@ -113,7 +122,7 @@
         "1636725773e295c781-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Plain binding with a single colour stitch to add a subtle hint of colour<\/p>"
+            "text": "<p>Plain binding with a single colour stitch to add a subtle hint of colour</p>"
           }
         }
       },
@@ -122,7 +131,7 @@
         "1636725773e295c781-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/prestitch.jpg",
+        "image": "shopify://shop_images/prestitch.jpg",
         "height": "adapt",
         "layout": "image_first"
       }
@@ -139,7 +148,7 @@
         "16367258033ac61c5f-1": {
           "type": "text",
           "settings": {
-            "text": "<p>For those who love to add a pop of colour to their life – coloured Nylon stripe binding<\/p>"
+            "text": "<p>For those who love to add a pop of colour to their life – coloured Nylon stripe binding</p>"
           }
         }
       },
@@ -148,7 +157,7 @@
         "16367258033ac61c5f-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/striped.jpg",
+        "image": "shopify://shop_images/striped.jpg",
         "height": "adapt",
         "layout": "image_first"
       }
@@ -165,7 +174,7 @@
         "163672582810abe785-1": {
           "type": "text",
           "settings": {
-            "text": "<p>A Classic Nylon edge binding in a range of colours to suit most vehicle.<\/p>"
+            "text": "<p>A Classic Nylon edge binding in a range of colours to suit most vehicle.</p>"
           }
         }
       },
@@ -174,7 +183,7 @@
         "163672582810abe785-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/full-colours.jpg",
+        "image": "shopify://shop_images/full-colours.jpg",
         "height": "adapt",
         "layout": "image_first"
       }
@@ -194,7 +203,7 @@
         "1658325234b55b1269-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are a supplier of car mats to some of the biggest brands and they entrust us to be the officially licensed partner to produce fully tailored car mats including their brands, please see our branded section to see some of the sports and rugby clubs you are able to order.<\/p>",
+            "text": "<p>We are a supplier of car mats to some of the biggest brands and they entrust us to be the officially licensed partner to produce fully tailored car mats including their brands, please see our branded section to see some of the sports and rugby clubs you are able to order.</p>",
             "read_more_enabled": false
           }
         },
@@ -231,7 +240,7 @@
         "16367275649deba324-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Add a football or rugby team logo to your car mats as part of the customisation process.<\/p>"
+            "text": "<p>Add a football or rugby team logo to your car mats as part of the customisation process.</p>"
           }
         }
       },
@@ -240,7 +249,7 @@
         "16367275649deba324-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sports-badge.jpg",
+        "image": "shopify://shop_images/sports-badge.jpg",
         "height": "adapt",
         "layout": "image_first"
       }
@@ -260,7 +269,7 @@
         "1658324698cb481bb9-1": {
           "type": "text",
           "settings": {
-            "text": "<p>1st Car?  Mum’s Taxi?  Birthdays? We offer fully <a href=\"\/pages\/personalised-gifts\" title=\"Personalised Gifts\">personalised embroidery as an option on all our car mats<\/a>, you an add your own message and text on the front driver and passenger mats, spare our teams blushes though, keep it clean please !!<\/p>",
+            "text": "<p>1st Car?  Mum’s Taxi?  Birthdays? We offer fully <a href=\"/pages/personalised-gifts\" title=\"Personalised Gifts\">personalised embroidery as an option on all our car mats</a>, you an add your own message and text on the front driver and passenger mats, spare our teams blushes though, keep it clean please !!</p>",
             "read_more_enabled": false
           }
         },
@@ -297,7 +306,7 @@
         "16367278284e34e058-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Up to 20 characters on each mat, a choice of three fonts and 14 colours to choose from.<\/p>"
+            "text": "<p>Up to 20 characters on each mat, a choice of three fonts and 14 colours to choose from.</p>"
           }
         }
       },
@@ -306,7 +315,7 @@
         "16367278284e34e058-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mark_Ian.jpg",
+        "image": "shopify://shop_images/Mark_Ian.jpg",
         "height": "adapt",
         "layout": "image_first"
       }

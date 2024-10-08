@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "4b2d8ca9-2609-413b-929f-969b3a7eefb9": {
@@ -15,7 +24,7 @@
         "template--16134677070010__4b2d8ca9-2609-413b-929f-969b3a7eefb9-1687446419ebe42358-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Welcome, rugby fans, to your ultimate destination for premium quality, officially licensed car floor mats featuring the logos of your favourite rugby teams. These mats are the perfect car upgrade for ardent supporters and an unbeatable gift for any rugby enthusiast. Picture their delight when they open their car door to be greeted by the emblem of their cherished team!<br\/><br\/>Over our 30 years of experience, we've perfected the craft of creating high-quality rugby teams car mats. Our love for rugby and commitment to superior craftsmanship fuse to bring you these impressive, non-genuine aftermarket car mats, designed to enhance your vehicle's interior while displaying your unwavering team spirit.<\/p>",
+            "text": "<p>Welcome, rugby fans, to your ultimate destination for premium quality, officially licensed car floor mats featuring the logos of your favourite rugby teams. These mats are the perfect car upgrade for ardent supporters and an unbeatable gift for any rugby enthusiast. Picture their delight when they open their car door to be greeted by the emblem of their cherished team!<br/><br/>Over our 30 years of experience, we've perfected the craft of creating high-quality rugby teams car mats. Our love for rugby and commitment to superior craftsmanship fuse to bring you these impressive, non-genuine aftermarket car mats, designed to enhance your vehicle's interior while displaying your unwavering team spirit.</p>",
             "read_more_enabled": false
           }
         }
@@ -69,7 +78,7 @@
         "template--16134677070010__cb3d4f59-8aed-4506-a044-ccd65d63749f-16874466470f2e98cb-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We ensure that each car mat produced in our factory is a flawless fit for your vehicle. Meticulously tailored to your car's footwell, all mats come equipped with the essential securing clips, providing a secure fit even when the journey mirrors the intensity of a fierce rugby match.<\/p>"
+            "text": "<p>We ensure that each car mat produced in our factory is a flawless fit for your vehicle. Meticulously tailored to your car's footwell, all mats come equipped with the essential securing clips, providing a secure fit even when the journey mirrors the intensity of a fierce rugby match.</p>"
           }
         }
       },
@@ -77,7 +86,7 @@
         "template--16134677070010__cb3d4f59-8aed-4506-a044-ccd65d63749f-16874466470f2e98cb-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/striped.jpg",
+        "image": "shopify://shop_images/striped.jpg",
         "height": "small",
         "color_scheme": "background-1",
         "layout": "image_first"
@@ -89,7 +98,7 @@
         "template--16134677070010__475c6494-2c38-43ff-9d33-1cf62e4ce35e-1687446419ebe42358-1": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}<\/p>",
+            "text": "<p>{{ collection.metafields.custom.text_below_models | metafield_tag }}</p>",
             "read_more_enabled": true
           }
         }

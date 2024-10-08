@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "7a06e8b7-1c69-4ab9-af53-5e8aae725a63": {
@@ -6,7 +15,7 @@
         "template--15125940109498__7a06e8b7-1c69-4ab9-af53-5e8aae725a63-16860657036659d3f6-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
+            "image": "shopify://shop_images/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
             "focal_point": "center center",
             "focal_point_mobile": "center center",
             "title": "",
@@ -131,17 +140,17 @@
         "template--16149587460282__4b2b5c3d-b33f-4dac-a4ab-5598d4bf0ee2-16896787408757bb67-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Paulina",
-            "text": "<p>Fast shipment, fit perfectly for my fiesta. Made very well, super quality and excellent price. Highly recommend!!<\/p>"
+            "text": "<p>Fast shipment, fit perfectly for my fiesta. Made very well, super quality and excellent price. Highly recommend!!</p>"
           }
         },
         "ddd7e44d-14c5-4007-9463-910ebc8ce0bf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Finn",
-            "text": "<p>Good quality mats that fit my Fiesta perfectly. Quick delivery. Would use again.<\/p>"
+            "text": "<p>Good quality mats that fit my Fiesta perfectly. Quick delivery. Would use again.</p>"
           }
         }
       },
@@ -169,17 +178,17 @@
         "15dfe7cf-6298-44b6-8b2c-f9c5539a3087": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Ellie",
-            "text": "<p>Good quality product and amazing price. Got them for my new car they fit perfectly.<\/p>"
+            "text": "<p>Good quality product and amazing price. Got them for my new car they fit perfectly.</p>"
           }
         },
         "d5d3c9f9-b2f0-44c5-afe7-2bd4fef01b9b": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Mark",
-            "text": "<p>On time delivery...good quality product...perfect fit...and really good price!<\/p>"
+            "text": "<p>On time delivery...good quality product...perfect fit...and really good price!</p>"
           }
         }
       },
@@ -207,17 +216,17 @@
         "465a0265-d4eb-4530-991a-346237c62f22": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Edwin",
-            "text": "<p>Competitive prices. Lovely mats which fit very well.<\/p>"
+            "text": "<p>Competitive prices. Lovely mats which fit very well.</p>"
           }
         },
         "213f3e80-3ff4-45ca-977f-655b944203ca": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Amanda",
-            "text": "<p>Bought for Kia sportage, Great fit, would recommend. Will be ordering a spare pair, Love being able to customise the colours.<\/p>"
+            "text": "<p>Bought for Kia sportage, Great fit, would recommend. Will be ordering a spare pair, Love being able to customise the colours.</p>"
           }
         }
       },
@@ -245,17 +254,17 @@
         "b674f481-ad0f-404d-94f8-b8d6529fdd91": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Dylan",
-            "text": "<p>Delivery took a little longer than expected but it was around bank holidays so it’s to be expected but the mats fit perfectly in my car and look amazing so I’m not too bothered by the longer shipping!<\/p>"
+            "text": "<p>Delivery took a little longer than expected but it was around bank holidays so it’s to be expected but the mats fit perfectly in my car and look amazing so I’m not too bothered by the longer shipping!</p>"
           }
         },
         "865f67dc-084c-45ec-8c12-96ea10acd2a8": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Alan",
-            "text": "<p>This is the first time I have used this company and they are brilliant. The mats were exactly the same as Vauxhalls but a lot cheaper and they were made in 3 days and very fast delivery totally professional 5 stars.<\/p>"
+            "text": "<p>This is the first time I have used this company and they are brilliant. The mats were exactly the same as Vauxhalls but a lot cheaper and they were made in 3 days and very fast delivery totally professional 5 stars.</p>"
           }
         }
       },
@@ -283,17 +292,17 @@
         "fe60ccd3-1ffe-4af5-88a2-4e8c5d9fdb3e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Penelope",
-            "text": "<p>A great choice of fabrics, colours and edgings available. Delivery was as promised and I am so happy with the product. I chose the rubber and silver edged mats as I visit the beach often and they are a cinch to clean! I can’t recommend them highly enough!<\/p>"
+            "text": "<p>A great choice of fabrics, colours and edgings available. Delivery was as promised and I am so happy with the product. I chose the rubber and silver edged mats as I visit the beach often and they are a cinch to clean! I can’t recommend them highly enough!</p>"
           }
         },
         "376cac28-32ac-46c5-9e52-bb99dc4f5172": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "James",
-            "text": "<p>Really good quality and very happy with the purchase. Took a little longer than expected to arrive but that might be due to Royal Mail. Would recommend and will order again in the future!<\/p>"
+            "text": "<p>Really good quality and very happy with the purchase. Took a little longer than expected to arrive but that might be due to Royal Mail. Would recommend and will order again in the future!</p>"
           }
         }
       },
@@ -321,9 +330,9 @@
         "c3a8cfc0-ed39-4fd3-a042-965a51814c93": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "John",
-            "text": "<p>I ordered a set of car floor mats from Official Car Mats because the garage omitted to include a set in the purchase I made.<\/p><p><br\/>I firstly contacted their office to enquire about the various qualities and related prices.<\/p><p><br\/>I was very impressed by the varied choices available at very reasonable costs, considering these mats are bespoke made to order, to your personal choice and to suit the make of your car. They are a perfect fit and look great, especially with the colour coded band around the edges. The customer service was excellent, polite and very professional. mats arrived exactly as promised.<\/p>"
+            "text": "<p>I ordered a set of car floor mats from Official Car Mats because the garage omitted to include a set in the purchase I made.</p><p><br/>I firstly contacted their office to enquire about the various qualities and related prices.</p><p><br/>I was very impressed by the varied choices available at very reasonable costs, considering these mats are bespoke made to order, to your personal choice and to suit the make of your car. They are a perfect fit and look great, especially with the colour coded band around the edges. The customer service was excellent, polite and very professional. mats arrived exactly as promised.</p>"
           }
         }
       },
@@ -350,17 +359,17 @@
         "e1bb0cc1-adbc-43f4-96a8-7f722b55a80d": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Andrew",
-            "text": "<p>Excellent customer service and good quality mats.<br\/><br\/>I ordered some of the thicker mats for our new car and noticed straight away that the car was less noisy on poor road surfaces.  Really impressed - will order a second set for our other car.<\/p>"
+            "text": "<p>Excellent customer service and good quality mats.<br/><br/>I ordered some of the thicker mats for our new car and noticed straight away that the car was less noisy on poor road surfaces.  Really impressed - will order a second set for our other car.</p>"
           }
         },
         "0489b713-2ae2-4b82-88a8-dadf8474dc63": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Laura",
-            "text": "<p>Excellent service and product. I Have purchased for another car earlier in the year and was so impressed i have ordered for Hubby's car .....went for Classic Velour which is good quality. Waited about a week for delivery. Would recommend<\/p>"
+            "text": "<p>Excellent service and product. I Have purchased for another car earlier in the year and was so impressed i have ordered for Hubby's car .....went for Classic Velour which is good quality. Waited about a week for delivery. Would recommend</p>"
           }
         }
       },
@@ -388,17 +397,17 @@
         "7e7ae1ef-33f9-466c-95ba-357bb0ac6310": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Kevin",
-            "text": "<p>Great Car Mats. Just as good, if not better, than the manufacturers replacements for my Insignia Grand Sport. Excellent price, easy to order from the website, and a perfect fit. Gives the inside of my GS a facelift with a premium quality feel.<\/p>"
+            "text": "<p>Great Car Mats. Just as good, if not better, than the manufacturers replacements for my Insignia Grand Sport. Excellent price, easy to order from the website, and a perfect fit. Gives the inside of my GS a facelift with a premium quality feel.</p>"
           }
         },
         "3fd30b8e-56d9-4bb8-8de1-390c4c45e977": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Tim",
-            "text": "<p>Stunned by the excellent quality of the mats I bought for my taxi firm. The logo was perfectly centred on the mat and you can tell they were made by a quality craftsman. I also appreciated the speed with which they were produced and sent out to me. My employees have stated that the mats are easy to clean when they get muddy which has helped immensely with cleaning bills. I’m one very happy camper, and will be a returning customer!<\/p>"
+            "text": "<p>Stunned by the excellent quality of the mats I bought for my taxi firm. The logo was perfectly centred on the mat and you can tell they were made by a quality craftsman. I also appreciated the speed with which they were produced and sent out to me. My employees have stated that the mats are easy to clean when they get muddy which has helped immensely with cleaning bills. I’m one very happy camper, and will be a returning customer!</p>"
           }
         }
       },
@@ -426,17 +435,17 @@
         "c8fcf843-e8e2-4ea7-b46d-338d899c7d1e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Lucas",
-            "text": "<p>Ordered the \"Prestige\" option for my Vauxhall Corsa D, the mats look great, extremely thick pile and high quality. Fixings work well too to hold the mat in place.<br\/><br\/>Time will tell as to how long the mats last but I have feeling it will be for many years.<\/p>"
+            "text": "<p>Ordered the \"Prestige\" option for my Vauxhall Corsa D, the mats look great, extremely thick pile and high quality. Fixings work well too to hold the mat in place.<br/><br/>Time will tell as to how long the mats last but I have feeling it will be for many years.</p>"
           }
         },
         "92f892c7-b103-42e8-8705-f9568dc50a32": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Linda",
-            "text": "<p>Good quality product and delivered on time. The whole process was very smooth. Would recommend to others.<\/p>"
+            "text": "<p>Good quality product and delivered on time. The whole process was very smooth. Would recommend to others.</p>"
           }
         }
       },
@@ -464,17 +473,17 @@
         "4a4e3eae-4f05-408e-bb14-78e20502d773": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Charlotte",
-            "text": "<p>Great quality and perfect fit would definitely recommend. Also unexpected plus was that could customise them!<\/p>"
+            "text": "<p>Great quality and perfect fit would definitely recommend. Also unexpected plus was that could customise them!</p>"
           }
         },
         "e1731cb4-25ca-4197-a149-8cc8fb0c7991": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "David",
-            "text": "<p>Beautiful custom made mats, black rubber with grey trim.....Good value, excellent delivery service<\/p>"
+            "text": "<p>Beautiful custom made mats, black rubber with grey trim.....Good value, excellent delivery service</p>"
           }
         }
       },
@@ -502,9 +511,9 @@
         "e03c8da1-9cca-4691-b671-4e07ffaff4f7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Hattie",
-            "text": "<p>Cannot fault Official Car mats! The service was perfect, website easy to use and showed clearly the mats needed for my car, plenty of choice for material quality, thickness, colour and you can even have the mats personalised! Excellent quality for a very reasonable price, will definitely be recommending to friends and family.<\/p>"
+            "text": "<p>Cannot fault Official Car mats! The service was perfect, website easy to use and showed clearly the mats needed for my car, plenty of choice for material quality, thickness, colour and you can even have the mats personalised! Excellent quality for a very reasonable price, will definitely be recommending to friends and family.</p>"
           }
         }
       },
@@ -531,17 +540,17 @@
         "77cd1c0a-93b4-4709-928c-a712b1e8326c": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Aiden",
-            "text": "<p>The car mats fitted first time with no effort,the colour combinations are great. We wanted to have the model of our car embroidered on the mats but due to copyright we had to change this. The mats look great and the service provided by Dawn who contacted us by email to keep us up-to-date was above and beyond. Thanks Dawn<\/p>"
+            "text": "<p>The car mats fitted first time with no effort,the colour combinations are great. We wanted to have the model of our car embroidered on the mats but due to copyright we had to change this. The mats look great and the service provided by Dawn who contacted us by email to keep us up-to-date was above and beyond. Thanks Dawn</p>"
           }
         },
         "8cf6b223-9429-41bf-b26e-aafe49f36d78": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Daniel",
-            "text": "<p>The ordering process was simple and my mats were received promptly and I was kept informed of the status of my order and when they had been dispatched. The mats have arrived and I am very happy with them.<\/p>"
+            "text": "<p>The ordering process was simple and my mats were received promptly and I was kept informed of the status of my order and when they had been dispatched. The mats have arrived and I am very happy with them.</p>"
           }
         }
       },
@@ -569,17 +578,17 @@
         "a53ce424-9b48-47c1-83d0-0bf0db5d72ed": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Giuseppe",
-            "text": "<p>Like to thank Dawn in regards to buying mats for my daughters car. Original mats did not fit and Dawn tried everything including another 2 different sets being sent to resolve the issue of rear mats not fitting.<\/p><p>Communication was excellent, refund was given after all options were exhausted. I would like to say I would definitely use Official Car Mats if I need to replace any car mats in our household. Quality and price is excellent. Thank you Dawn<\/p>"
+            "text": "<p>Like to thank Dawn in regards to buying mats for my daughters car. Original mats did not fit and Dawn tried everything including another 2 different sets being sent to resolve the issue of rear mats not fitting.</p><p>Communication was excellent, refund was given after all options were exhausted. I would like to say I would definitely use Official Car Mats if I need to replace any car mats in our household. Quality and price is excellent. Thank you Dawn</p>"
           }
         },
         "e8efff0b-fc59-446c-8590-66b8242a988f": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Catherine",
-            "text": "<p>I received excellent service. Placed an order for personalised mats and when they arrived I was delighted with the quality of them. The drivers mat did not quite fit and I emailed regarding this to be told the order I had placed was unfortunately for a slightly older car than my partner had so I asked if I could order one single mat but I was sent a free replacement which arrived within a few days. I feel they went above and beyond and it is so good to find a company nowadays that provides service like this. Would most definitely recommend them!<\/p>"
+            "text": "<p>I received excellent service. Placed an order for personalised mats and when they arrived I was delighted with the quality of them. The drivers mat did not quite fit and I emailed regarding this to be told the order I had placed was unfortunately for a slightly older car than my partner had so I asked if I could order one single mat but I was sent a free replacement which arrived within a few days. I feel they went above and beyond and it is so good to find a company nowadays that provides service like this. Would most definitely recommend them!</p>"
           }
         }
       },
@@ -607,9 +616,9 @@
         "86acaa4e-10b9-4b96-9c9a-873e00c59d8f": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/star-removebg-preview.png",
+            "image": "shopify://shop_images/star-removebg-preview.png",
             "title": "Sarah",
-            "text": "<p>Bought 2 super luxury van mats, embroidered with company logo, and royal blue trim, as a present for my partner.<br\/><br\/>Turned out amazing and quality was well worth the money.<br\/>Service was really good and as these were a present I explained I needed by a certain date, sales manager, Dawn, was very helpful and I got them delivered the day before I required.<br\/><br\/>Thank you to all of the team who assisted in getting these made and to me in time for me to give to my partner for our anniversary present.<br\/>He was absolutely delighted.<\/p>"
+            "text": "<p>Bought 2 super luxury van mats, embroidered with company logo, and royal blue trim, as a present for my partner.<br/><br/>Turned out amazing and quality was well worth the money.<br/>Service was really good and as these were a present I explained I needed by a certain date, sales manager, Dawn, was very helpful and I got them delivered the day before I required.<br/><br/>Thank you to all of the team who assisted in getting these made and to me in time for me to give to my partner for our anniversary present.<br/>He was absolutely delighted.</p>"
           }
         }
       },

@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "a5a61267-143e-4d31-aeac-2115efb801c5": {
@@ -36,7 +45,7 @@
         "template--15125940240570__a5a61267-143e-4d31-aeac-2115efb801c5-16866688400e5c436f-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
+        "image": "shopify://shop_images/OCM_homepage_header__blue_1920px-max_wide_97e39d14-e494-4eb2-9735-946c9b618ab4.jpg",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
@@ -69,7 +78,7 @@
         "template--15125940240570__b6fd378e-1086-443b-83b7-9850e043969d-1686669769ba960f26-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are the UK manufacturer and supplier of quality aftermarket car mats for every make and model.<\/p><p><\/p><p>We offer a full range of customisation and personalisation options.  Our car mats are available in five different material types.<\/p>",
+            "text": "<p>We are the UK manufacturer and supplier of quality aftermarket car mats for every make and model.</p><p></p><p>We offer a full range of customisation and personalisation options.  Our car mats are available in five different material types.</p>",
             "read_more_enabled": false
           }
         },
@@ -100,25 +109,25 @@
         "cc33994f-552f-408d-8295-cb7b849e25ab": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mat_classic.jpg",
+            "image": "shopify://shop_images/mat_classic.jpg",
             "title": "Classic",
-            "text": "<p>Affordable and durable – Our classic car mats are manufactured from  600g\/m2 looped pile carpet with granular backing (made from recycled tyres).<\/p>"
+            "text": "<p>Affordable and durable – Our classic car mats are manufactured from  600g/m2 looped pile carpet with granular backing (made from recycled tyres).</p>"
           }
         },
         "752c5dc7-8f81-42ba-8d12-5d257bd8b3ee": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mat_classic_velour.jpg",
+            "image": "shopify://shop_images/mat_classic_velour.jpg",
             "title": "Classic Velour",
-            "text": "<p>Upgrade to the Classic Velour which  is a 900g\/m2 tufted (like a toothbrush) carpet, easy to clean and longer lasting than the Classic grade.<\/p>"
+            "text": "<p>Upgrade to the Classic Velour which  is a 900g/m2 tufted (like a toothbrush) carpet, easy to clean and longer lasting than the Classic grade.</p>"
           }
         },
         "6bff703a-2056-44ec-8e64-928ee16fef9a": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mat_super_luxury.jpg",
+            "image": "shopify://shop_images/mat_super_luxury.jpg",
             "title": "Super Luxury",
-            "text": "<p>Wow, you can not go wrong with this extra thick tufted fabric, Only the best is good, this really  is the bees knees, a 1300g\/m2 deep pile tufted carpet that makes you want to kick off your shoes.<\/p>"
+            "text": "<p>Wow, you can not go wrong with this extra thick tufted fabric, Only the best is good, this really  is the bees knees, a 1300g/m2 deep pile tufted carpet that makes you want to kick off your shoes.</p>"
           }
         },
         "063d65f9-8953-4f55-9852-b605227fc5fc": {
@@ -126,7 +135,7 @@
           "disabled": true,
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
         },
         "7ef99695-1847-4557-821e-78f04a1402c5": {
@@ -134,7 +143,7 @@
           "disabled": true,
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
         }
       },
@@ -162,25 +171,25 @@
         "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mat_prestige.jpg",
+            "image": "shopify://shop_images/mat_prestige.jpg",
             "title": "Prestige",
-            "text": "<p>Prestige is one of the highest grades of aftermarket Automotive materials, Plush Wool effect fabric, so plush this is not available for personalisation.<\/p>"
+            "text": "<p>Prestige is one of the highest grades of aftermarket Automotive materials, Plush Wool effect fabric, so plush this is not available for personalisation.</p>"
           }
         },
         "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/mat_rubber.jpg",
+            "image": "shopify://shop_images/mat_rubber.jpg",
             "title": "Rubber",
-            "text": "<p>3mm thick rubber mats in a chequer plate design.<\/p>"
+            "text": "<p>3mm thick rubber mats in a chequer plate design.</p>"
           }
         },
         "template--15125940240570__048d63d6-5272-4458-bc33-ad2477a6df31-1686670507f483b56d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/personalised_car_mats.jpg",
+            "image": "shopify://shop_images/personalised_car_mats.jpg",
             "title": "Personalised",
-            "text": "<p>All of carpet material mats can also be personalised with text and logos.<\/p>"
+            "text": "<p>All of carpet material mats can also be personalised with text and logos.</p>"
           }
         }
       },
@@ -229,7 +238,7 @@
         "template--15125940240570__8faa2e94-1cec-4537-afc6-4ea8626133b8-16868205399b995e61-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We manufacture quality car floor mats for all makes and models.  Use the main menu to navigate to the vehicle you are looking for or try our find by reg tool below.<\/p>",
+            "text": "<p>We manufacture quality car floor mats for all makes and models.  Use the main menu to navigate to the vehicle you are looking for or try our find by reg tool below.</p>",
             "read_more_enabled": false
           }
         },
@@ -325,7 +334,7 @@
         "ea0279e7-fc3e-4bf9-a2fc-44ebf86cad31": {
           "type": "text",
           "settings": {
-            "text": "<p>Bindings are the edge or border of the mat.  We offer a choice of durable materials that enhance the mat's appearance and prevent fraying or unraveling. <\/p><p>The binding acts as a protective strip that is sewn or heat-sealed around the perimeter of the floor mat, enclosing the edges and providing a neat and finished look.  <\/p><p>The binding can provide a contrast or complementing color to the mat, adding to the overall aesthetic appeal of the car's interior.<\/p><p>Keep it simple and classic with a plain black binding or choose from a wide range of bindings colours and styles to suit your own exterior or interior of your cars.  <\/p><p>Whatever your taste we’ve got you covered.<\/p>",
+            "text": "<p>Bindings are the edge or border of the mat.  We offer a choice of durable materials that enhance the mat's appearance and prevent fraying or unraveling. </p><p>The binding acts as a protective strip that is sewn or heat-sealed around the perimeter of the floor mat, enclosing the edges and providing a neat and finished look.  </p><p>The binding can provide a contrast or complementing color to the mat, adding to the overall aesthetic appeal of the car's interior.</p><p>Keep it simple and classic with a plain black binding or choose from a wide range of bindings colours and styles to suit your own exterior or interior of your cars.  </p><p>Whatever your taste we’ve got you covered.</p>",
             "read_more_enabled": false
           }
         },
@@ -356,7 +365,7 @@
         "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/nubuck.jpg",
+            "image": "shopify://shop_images/nubuck.jpg",
             "title": "Nubuck",
             "text": ""
           }
@@ -364,7 +373,7 @@
         "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/prestitch.jpg",
+            "image": "shopify://shop_images/prestitch.jpg",
             "title": "Prestitch",
             "text": ""
           }
@@ -372,7 +381,7 @@
         "template--15125940240570__e62565f4-d04b-4741-9967-5336bcc90d3b-1686670507f483b56d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/striped.jpg",
+            "image": "shopify://shop_images/striped.jpg",
             "title": "Striped",
             "text": ""
           }
@@ -380,7 +389,7 @@
         "1009c3f6-dd02-494a-b101-9dca593a34b0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/full-colours_750x_db4f0eaf-9eb2-4a93-8b78-b8720e275333.webp",
+            "image": "shopify://shop_images/full-colours_750x_db4f0eaf-9eb2-4a93-8b78-b8720e275333.webp",
             "title": "Solid",
             "text": ""
           }
@@ -390,7 +399,7 @@
           "disabled": true,
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
           }
         }
       },
