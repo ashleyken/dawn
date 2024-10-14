@@ -1,16 +1,21 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
       "type": "category-banner",
+      "settings": {
+      }
+    },
+    "find-my-car": {
+      "type": "find-my-car",
       "settings": {
       }
     },
@@ -25,8 +30,8 @@
         "template--15140007510202__70ee57bc-e722-4aab-8a48-1519b4502528-column-1": {
           "type": "column",
           "settings": {
-            "title": "Step 1: easily find your car with the search tool below",
-            "text": "<p>Official Car Mats offer products for all brand and models of cars. Find your car model in our massive selection, and start designing your unique set of car mats.</p><p><strong>You can use our Search-By-Reg function below to find your exact model in seconds.</strong> Remove the guesswork, and find car mats that perfectly fit your car model.</p>"
+            "title": "Step 1: easily find your car with the search tool",
+            "text": "<p>Official Car Mats offer products for all brand and models of cars. Find your car model in our massive selection, and start designing your unique set of car mats.</p><p><strong>You can use our Search-By-Reg function to find your exact model in seconds.</strong> Remove the guesswork, and find car mats that perfectly fit your car model.</p>"
           }
         },
         "template--15140007510202__70ee57bc-e722-4aab-8a48-1519b4502528-column-2": {
@@ -54,11 +59,6 @@
         "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
-      }
-    },
-    "find-my-car": {
-      "type": "find-my-car",
-      "settings": {
       }
     },
     "be798ae4-5b93-445f-a85e-d19440750230": {
@@ -457,9 +457,9 @@
   },
   "order": [
     "banner",
+    "find-my-car",
     "category-text",
     "70ee57bc-e722-4aab-8a48-1519b4502528",
-    "find-my-car",
     "be798ae4-5b93-445f-a85e-d19440750230",
     "24b7d848-756a-4b9c-a0a8-2c1ada0d190f",
     "da2f9100-5fa2-431e-bb14-776017bcf0c1",
