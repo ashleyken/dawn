@@ -154,7 +154,7 @@
         "image_ratio": "square",
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "Start Customising",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": true
       }
