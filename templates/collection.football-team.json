@@ -154,9 +154,9 @@
         "image_ratio": "square",
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "Start Customising",
+        "button_label": "",
         "button_link": "#shopify-section-template--15140007510202__banner",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "a2656e2e-335f-4131-bea7-25df72145cd6": {
