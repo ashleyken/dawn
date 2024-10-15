@@ -131,9 +131,10 @@
                   mwPrestige.style.display = "none";
                 }
                 
-                
-                const badgesSection = document.getElementById("o_1892325");
-                const badges = badgesSection.querySelectorAll('.mw-option__swatch-image');
+                if (document.getElementById("o_1892325")) {
+                  const badgesSection = document.getElementById("o_1892325");
+                  const badges = badgesSection.querySelectorAll('.mw-option__swatch-image');
+                }
                 
                 if (!badges) {
                   abortTeamTimer();
