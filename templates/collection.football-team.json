@@ -155,7 +155,7 @@
         "column_alignment": "left",
         "background_style": "none",
         "button_label": "Search By Reg",
-        "button_link": "#collection_banner_bg collection_banner_bg_desktop",
+        "button_link": "#shopify-section-template--15140007510202__banner",
         "swipe_on_mobile": true
       }
     },
