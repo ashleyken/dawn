@@ -156,7 +156,7 @@
         "background_style": "none",
         "button_label": "Search By Reg",
         "button_link": "#shopify-section-template--15140007510202__banner",
-        "swipe_on_mobile": true
+        "swipe_on_mobile": false
       }
     },
     "a2656e2e-335f-4131-bea7-25df72145cd6": {
