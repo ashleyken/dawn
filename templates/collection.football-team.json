@@ -135,7 +135,7 @@
         "8c005f20-89ad-4479-a75b-103a4165bb61": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/OCM_-_Sports_Team_Mat_Quality.png",
+            "image": "shopify://shop_images/OCM_-_Sports_Team_Mat_Quality_1.jpg",
             "title": "",
             "text": ""
           }
@@ -154,8 +154,8 @@
         "image_ratio": "square",
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "#shopify-section-template--15140007510202__banner",
+        "button_label": "Search By Reg",
+        "button_link": "#collection_banner_bg collection_banner_bg_desktop",
         "swipe_on_mobile": true
       }
     },
