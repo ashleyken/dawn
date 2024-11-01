@@ -198,7 +198,7 @@
               {{- product.description -}}
             </h1>
             
-            <div class="product__instructions">{%- if product.title == 'Universal fit 4 piece car mats' %}For a quick fix, one mat fits most options, these Universal fit car mats are designed in 1 size to fit most small and Medium cars well.<br><br>For a model specific, perfect fit, please try our tailored car mat range instead.{% else %}<b>Keep scrolling to the next step to choose the material you want for your {{ product.vendor | escape }} {{- product.description  | strip_html | strip -}}{% if product.description contains 'Boot' %}, select from the colour and binding options and add to cart.{% else %}, select from the colour and binding options and add to cart.<br><br>For a little bit of extra fun you can also choose to personalise your <a href="{{ shop.url }}/collections/{{ product.vendor | escape | downcase | replace: " ", "-" }}-car-mats">{{ product.vendor | escape }} car mats</a> with your own text or you can pick from a large number of our official licensed football and rugby teams.{% endif %}{% endif %}</b></div>
+            <div class="product__instructions"><b>{%- if product.title == 'Universal fit 4 piece car mats' %}For a quick fix, one mat fits most options, these Universal fit car mats are designed in 1 size to fit most small and Medium cars well.<br><br>For a model specific, perfect fit, please try our tailored car mat range instead.{% else %}Keep scrolling to the next step to choose the material you want for your {{ product.vendor | escape }} {{- product.description  | strip_html | strip -}}{% if product.description contains 'Boot' %}, select from the colour and binding options and add to cart.{% else %}, select from the colour and binding options and add to cart.<br><br>For a little bit of extra fun you can also choose to personalise your <a href="{{ shop.url }}/collections/{{ product.vendor | escape | downcase | replace: " ", "-" }}-car-mats">{{ product.vendor | escape }} car mats</a> with your own text or you can pick from a large number of our official licensed football and rugby teams.{% endif %}{% endif %}</b></div>
             
             
             {%- if product.metafields.mat_options.size_name.value != blank %}
@@ -406,12 +406,16 @@
             </noscript>
           {%- when 'buy_buttons' -%}
           
-            <div class="product_value_propositions">
-              ✓ British Manufactured direct from our factory<br>
-              ✓ Super fast production 3-5 working days from order<br>
-              ✓ Perfectly tailored to fit your floor or boot, ensuring 100% fit to your vehicle<br>
-              ✓ Free Uk delivery on ALL orders regardless of spend<br>
-              ✓ Compatible car mat securing clips to suit your vehicle.
+            <div class="product_value_propositions">{%- if product.title == 'Universal fit 4 piece car mats' %}✓ 4 piece Universal car mats – 2 x front and 2 rears<br>
+              ✓ Double thick heel mat to extend your mats life<br>
+              ✓ Anti Slip rubber backing<br>
+              ✓ Quick delivery – despatch within 48 hours<br>
+              ✓ Choice of coloured binding.{% else %}✓ British Manufactured direct from our factory<br>
+            ✓ Super fast production 3-5 working days from order<br>
+            ✓ Perfectly tailored to fit your floor or boot, ensuring 100% fit to your vehicle<br>
+            ✓ Free Uk delivery on ALL orders regardless of spend<br>
+            ✓ Compatible car mat securing clips to suit your vehicle.{% endif %}
+              
               
             </div>
           
