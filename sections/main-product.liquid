@@ -163,10 +163,13 @@
               }
               
               </script>
-            {%- else if product.title == 'Universal fit 4 piece car mats' %}
-            
+          
             
             {% else %}
+            {%- if product.title == 'Universal fit 4 piece car mats' %}
+                       
+            {% else %} 
+            
             <div class="grid grid--2-col">
               <div class="grid__item">
                 <div class="product_image_holder"></div>  
@@ -177,6 +180,7 @@
                 </div>  
               </div>  
             </div>
+            {% endif %}
             {% endif %}
           
         
