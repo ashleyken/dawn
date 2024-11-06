@@ -723,3 +723,23 @@ class VariantRadios extends VariantSelects {
 }
 
 customElements.define('variant-radios', VariantRadios);
+
+
+
+
+document.querySelectorAll('.rich-text-readmore').forEach(function(button) {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    let sectionParent = document.getElementById('shopify-section-' + button.getAttribute('data-id'));
+    let clamp = sectionParent.querySelector('.line-clamp-finder');
+    let readmore = sectionParent.querySelector('.rich-text-readmore');
+
+    if (readmore.textContent === 'READ MORE') {
+      clamp.classList.remove('line-clamp-3');
+      readmore.textContent = 'READ LESS';
+    } else {
+      clamp.classList.add('line-clamp-3');
+      readmore.textContent = 'READ MORE';
+    }
+  });
+});
