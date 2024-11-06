@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16360284522d566a5d": {
@@ -7,9 +16,9 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/carmatslide_3000_cars.jpg",
+            "image": "shopify://shop_images/carmatslide_3000_cars.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/carmatslide_3000_cars.jpg",
+            "image_mobile": "shopify://shop_images/carmatslide_3000_cars.jpg",
             "focal_point_mobile": "center center",
             "title": "PLAIN OR PERSONALISED TAILORED TO FIT CAR MATS FOR ALL UK MAKES AND MODELS OF CARS OR VANS",
             "subtitle": "",
@@ -44,9 +53,9 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/royandbecky_slide.jpg",
+            "image": "shopify://shop_images/royandbecky_slide.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/royandbecky_slide.jpg",
+            "image_mobile": "shopify://shop_images/royandbecky_slide.jpg",
             "focal_point_mobile": "center center",
             "title": "CAR AND VAN MATS IN CARPET AND RUBBER PRODUCED IN THE UK DIRECT FROM THE MANUFACTURER TO YOUR DOOR",
             "subtitle": "",
@@ -81,9 +90,9 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/carmatslide_3000_football.jpg",
+            "image": "shopify://shop_images/carmatslide_3000_football.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/carmatslide_3000_football.jpg",
+            "image_mobile": "shopify://shop_images/carmatslide_3000_football.jpg",
             "focal_point_mobile": "center center",
             "title": "OFFICIALLY LICENSED BRANDS INCLUDING FOOTBALL AND RUGBY CLUBS",
             "subtitle": "",
@@ -117,9 +126,9 @@
         "4a7e86c1-2235-440e-9a52-5d30ee43a8fc": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OCM_homepage_header__blue_1920px-max_wide_bc14a26e-23b0-4fe3-9488-71c466f4a30b.jpg",
+            "image": "shopify://shop_images/OCM_homepage_header__blue_1920px-max_wide_bc14a26e-23b0-4fe3-9488-71c466f4a30b.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_1_1080x1080_px_01c7311d-bf3c-4974-a1a2-81a40cd77c4d.jpg",
+            "image_mobile": "shopify://shop_images/OCM_homepage_header_carousel_1_1080x1080_px_01c7311d-bf3c-4974-a1a2-81a40cd77c4d.jpg",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
@@ -153,9 +162,9 @@
         "fa5949cb-ca68-425b-b4be-24e379c669c3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OCM_homepage_header__carousel_2_wide.jpg",
+            "image": "shopify://shop_images/OCM_homepage_header__carousel_2_wide.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_2_1080x1080px.jpg",
+            "image_mobile": "shopify://shop_images/OCM_homepage_header_carousel_2_1080x1080px.jpg",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
@@ -189,9 +198,9 @@
         "54bd82bb-9076-43cd-8e21-2c41c3a25ffa": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/OCM_homepage_header__football_1920px-max_wide_1.jpg",
+            "image": "shopify://shop_images/OCM_homepage_header__football_1920px-max_wide_1.jpg",
             "focal_point": "center center",
-            "image_mobile": "shopify:\/\/shop_images\/OCM_homepage_header_carousel_football_3_1080x1080px_b8320314-188d-4d0c-99f5-79e9e98f4b8a.jpg",
+            "image_mobile": "shopify://shop_images/OCM_homepage_header_carousel_football_3_1080x1080px_b8320314-188d-4d0c-99f5-79e9e98f4b8a.jpg",
             "focal_point_mobile": "center center",
             "title": "",
             "subtitle": "",
@@ -281,7 +290,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/carmatslide.png",
+        "image": "shopify://shop_images/carmatslide.png",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
@@ -311,7 +320,7 @@
         "16583237645df48e0c-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our Car Mats and boot liners are manufactured here in Britain at our family run, family-owned manufacturing site specialising in Car Mats, car floor mats, van floor mats, boot mats and liners.<\/p><p>We're fast approaching our 30th Anniversary, so as you can imagine, we are pretty good at what we do and how we do it. Our Car Mats & <a href=\"https:\/\/officialcarmats.co.uk\/pages\/boot-liners\" title=\"https:\/\/officialcarmats.co.uk\/pages\/boot-liners\">Boot Liners<\/a> are of the highest quality and fully tailored to fit every make and model!<\/p>",
+            "text": "<p>Our Car Mats and boot liners are manufactured here in Britain at our family run, family-owned manufacturing site specialising in Car Mats, car floor mats, van floor mats, boot mats and liners.</p><p>We're fast approaching our 30th Anniversary, so as you can imagine, we are pretty good at what we do and how we do it. Our Car Mats & <a href=\"https://officialcarmats.co.uk/pages/boot-liners\" title=\"https://officialcarmats.co.uk/pages/boot-liners\">Boot Liners</a> are of the highest quality and fully tailored to fit every make and model!</p>",
             "read_more_enabled": false
           }
         },
@@ -348,7 +357,7 @@
         "1633519483fdefc816-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Manufacturing tailored Car Mats and boot liners to fit all makes and models.<\/p>"
+            "text": "<p>Manufacturing tailored Car Mats and boot liners to fit all makes and models.</p>"
           }
         }
       },
@@ -357,7 +366,7 @@
         "1633519483fdefc816-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/car_flags_new.png",
+        "image": "shopify://shop_images/car_flags_new.png",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"
@@ -369,17 +378,17 @@
         "column1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/truck_1955452f-b8b0-4c4d-851b-bb323725d141.png",
+            "image": "shopify://shop_images/truck_1955452f-b8b0-4c4d-851b-bb323725d141.png",
             "title": "Free Delivery",
-            "text": "<p>Your tailored car mats will usually be dispatched within 3-5 working days of your order being placed with Free UK Delivery included in the price.<br\/><br\/>We accept all major credit and debit cards as well as Paypal and our industry standard secure server software safeguards the confidentiality of your information at all times.<br\/><br\/>Place your order securely online or you can call a member of our team on 01257 476006 to discuss your needs - we'd love to hear from you!<br\/><br\/>You can use our live chat function to speak to someone live now.<\/p>"
+            "text": "<p>Your tailored car mats will usually be dispatched within 3-5 working days of your order being placed with Free UK Delivery included in the price.<br/><br/>We accept all major credit and debit cards as well as Paypal and our industry standard secure server software safeguards the confidentiality of your information at all times.<br/><br/>Place your order securely online or you can call a member of our team on 01257 476006 to discuss your needs - we'd love to hear from you!<br/><br/>You can use our live chat function to speak to someone live now.</p>"
           }
         },
         "column2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/stars_566addfe-b42e-45c0-8ff7-454dc3ea0506.png",
+            "image": "shopify://shop_images/stars_566addfe-b42e-45c0-8ff7-454dc3ea0506.png",
             "title": "5 Qualities",
-            "text": "<p>Finest durable materials - We use only the best materials to ensure that what you purchase, is of the highest standard and will last a long time.<br\/><br\/>Top quality stitching - All of our stitching is quality controlled so that can ensure a high standard of finish throughout.<br\/><br\/>Rubber backed - Granular crumb backing will be used for your car mats to ensure they stay in place while driving.<br\/><br\/>Tailored car mats - All of our car mats are designed with quality in mind. We don’t scrimp on the materials we buy as we want our products to last you a long time. Where possible, we use recycled materials for our Bespoke Car Mats, so that we can help do our bit for the environment.<\/p>"
+            "text": "<p>Finest durable materials - We use only the best materials to ensure that what you purchase, is of the highest standard and will last a long time.<br/><br/>Top quality stitching - All of our stitching is quality controlled so that can ensure a high standard of finish throughout.<br/><br/>Rubber backed - Granular crumb backing will be used for your car mats to ensure they stay in place while driving.<br/><br/>Tailored car mats - All of our car mats are designed with quality in mind. We don’t scrimp on the materials we buy as we want our products to last you a long time. Where possible, we use recycled materials for our Bespoke Car Mats, so that we can help do our bit for the environment.</p>"
           }
         }
       },
@@ -413,8 +422,8 @@
         "1658323904db4c592d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We are trusted to be a supplier to some of the biggest automotive companies and sports clubs!<\/p><p>We manufacture top quality tailored to fit Car Mats that you'll be proud to have in your car. <\/p><p>All our mats are designed to fit your car perfectly and come with the compatible securing fittings of clips required by the vehicle to help it stay in place in the footwell. <\/p><p>You can fully tailor our Bespoke Car Mats to suit the interior of your car, by choosing the colour of carpet and trim.<\/p><p>For that extra added bit of fun choose personalised embroidery, a perfect unique gift. <\/p><p>Our Car Mats are made by us in the UK for speedy delivery and quality assurance. <\/p><p>All our Car Mats and boot liners are available in carpet and rubber and are non-slip and water resistant. <\/p><p>Quality is our priority and all mats go through a 3 point quality check before leaving our factory.<\/p><p>We are known for customer service being a state of mind and not a department, so please be rest assured that we are available for any questions you should have before you purchase.  <\/p>",
-            "read_more_enabled": false
+            "text": "<p>We are trusted to be a supplier to some of the biggest automotive companies and sports clubs!</p><p>We manufacture top quality tailored to fit Car Mats that you'll be proud to have in your car. </p><p>All our mats are designed to fit your car perfectly and come with the compatible securing fittings of clips required by the vehicle to help it stay in place in the footwell. </p><p>You can fully tailor our Bespoke Car Mats to suit the interior of your car, by choosing the colour of carpet and trim.</p><p>For that extra added bit of fun choose personalised embroidery, a perfect unique gift. </p><p>Our Car Mats are made by us in the UK for speedy delivery and quality assurance. </p><p>All our Car Mats and boot liners are available in carpet and rubber and are non-slip and water resistant. </p><p>Quality is our priority and all mats go through a 3 point quality check before leaving our factory.</p><p>We are known for customer service being a state of mind and not a department, so please be rest assured that we are available for any questions you should have before you purchase.  </p>",
+            "read_more_enabled": true
           }
         },
         "1658323904db4c592d-2": {
@@ -453,8 +462,8 @@
         "1636122219e496d392-1": {
           "type": "text",
           "settings": {
-            "text": "<p>So how do we manufacture your Car Mats?<\/p><p>The 1st part of the process is cutting the mats. These are CAD cut from your selection of over 3,000 mats shapes from a roll of fabric using leading technology, in order to produce the exact fit tailored to your car.<\/p><p>Then we add binding and a heel pad to reinforce the mat on the Classic, and Classic Velour and Super Luxury, to protect the wear and tear from your heels whilst driving. This is not required on the prestige due to the depth and thickness of the Car Mat.<\/p><p>You can choose plain binding or a coloured trim which is added by one of our experienced machinists.<\/p><p>The mats are then installed with a compatible securing clip, in most cases each manufacturer of car has their own unique fitting system, we install these by hand so the mats fit snugly into your vehicle so the clips fit safely into place in the exact location required for the vehicle.<\/p><p>Each Car Mat is manufactured to the exact contour of your vehicle, so when ordering online, please be sure to select your correct make, model and year, there is a shape template on line to also offer guidance. If you are unsure of which to order, then please ring one of our friendly customer service team who will be only too happy to help.<\/p><p>Uniquely, instead of a plain heel pad you can choose to add a bit of fun with a set of Bespoke Car Mats. <\/p><p>Our Official Car Mats website enables everyone to build their own unique, custom & personalised Car Mats based on your exact needs from quality, price and design.<\/p><p><\/p><p><\/p><p><\/p>",
-            "read_more_enabled": false
+            "text": "<p>So how do we manufacture your Car Mats?</p><p>The 1st part of the process is cutting the mats. These are CAD cut from your selection of over 3,000 mats shapes from a roll of fabric using leading technology, in order to produce the exact fit tailored to your car.</p><p>Then we add binding and a heel pad to reinforce the mat on the Classic, and Classic Velour and Super Luxury, to protect the wear and tear from your heels whilst driving. This is not required on the prestige due to the depth and thickness of the Car Mat.</p><p>You can choose plain binding or a coloured trim which is added by one of our experienced machinists.</p><p>The mats are then installed with a compatible securing clip, in most cases each manufacturer of car has their own unique fitting system, we install these by hand so the mats fit snugly into your vehicle so the clips fit safely into place in the exact location required for the vehicle.</p><p>Each Car Mat is manufactured to the exact contour of your vehicle, so when ordering online, please be sure to select your correct make, model and year, there is a shape template on line to also offer guidance. If you are unsure of which to order, then please ring one of our friendly customer service team who will be only too happy to help.</p><p>Uniquely, instead of a plain heel pad you can choose to add a bit of fun with a set of Bespoke Car Mats. </p><p>Our Official Car Mats website enables everyone to build their own unique, custom & personalised Car Mats based on your exact needs from quality, price and design.</p><p></p><p></p><p></p>",
+            "read_more_enabled": true
           }
         }
       },
@@ -474,7 +483,7 @@
         "1633520292ec6b1756-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/flag_21d0faaf-8091-45de-a97f-9408b5d65a20.png",
+            "image": "shopify://shop_images/flag_21d0faaf-8091-45de-a97f-9408b5d65a20.png",
             "title": "Made in the UK",
             "text": ""
           }
@@ -497,7 +506,7 @@
     "16522723840b624d21": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script type=\"application\/ld+json\">\n{\n  \"@context\": \"http:\/\/schema.org\",\n  \"@type\": \"Corporation\",\n  \"name\": \"D&E Distributors Ltd\",\n  \"alternateName\": \"Official Car Mats\",\n  \"description\": \"We manufacture and supply top-quality aftermarket car floor mats and boot liners for all makes and models.\",\t\n  \"image\": \"https:\/\/cdn.shopify.com\/s\/files\/1\/0530\/8678\/1626\/t\/6\/assets\/OCM_logoribbon.svg?v=150828043996846027091633527818\",\n  \"url\": \"https:\/\/officialcarmats.co.uk\/\",\n  \"contactPoint\": {\n    \"@type\": \"ContactPoint\",\n    \"telephone\": \"+441257 476006\",\n    \"contactType\": \"customer service\",\n    \"areaServed\": \"United Kingdom\",\n    \"availableLanguage\": \"English\"\n  },\n  \"sameAs\": [\n    \"https:\/\/twitter.com\/officialcarmats\",\n    \"https:\/\/www.facebook.com\/OFFICIALCARMATS\/\",\n    \"https:\/\/www.linkedin.com\/company\/official-car-mats\/\"\n  ]\n}\n<\/script>"
+        "custom_liquid": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"http://schema.org\",\n  \"@type\": \"Corporation\",\n  \"name\": \"D&E Distributors Ltd\",\n  \"alternateName\": \"Official Car Mats\",\n  \"description\": \"We manufacture and supply top-quality aftermarket car floor mats and boot liners for all makes and models.\",\t\n  \"image\": \"https://cdn.shopify.com/s/files/1/0530/8678/1626/t/6/assets/OCM_logoribbon.svg?v=150828043996846027091633527818\",\n  \"url\": \"https://officialcarmats.co.uk/\",\n  \"contactPoint\": {\n    \"@type\": \"ContactPoint\",\n    \"telephone\": \"+441257 476006\",\n    \"contactType\": \"customer service\",\n    \"areaServed\": \"United Kingdom\",\n    \"availableLanguage\": \"English\"\n  },\n  \"sameAs\": [\n    \"https://twitter.com/officialcarmats\",\n    \"https://www.facebook.com/OFFICIALCARMATS/\",\n    \"https://www.linkedin.com/company/official-car-mats/\"\n  ]\n}\n</script>"
       }
     }
   },
